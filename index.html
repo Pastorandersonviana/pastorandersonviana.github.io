@@ -2,20 +2,16 @@
 <html lang="pt-BR">
 
 <head>
+
 <meta charset="UTF-8">
 
-<meta
-name="viewport"
-content="width=device-width, initial-scale=1.0"
->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>
-Pastor Anderson Viana | Ministério, Palavra e Fé
-</title>
+<title>Pastor Anderson Viana | Ministério, Palavra e Fé</title>
 
 <meta
 name="description"
-content="Site oficial do Pastor Anderson Viana. Ministério, Palavra, Fé, estudos bíblicos, reflexões e a obra Altares em Cinzas."
+content="Site oficial do Pastor Anderson Viana. Ministério, Palavra, Fé, Estudos e Reflexões."
 >
 
 <meta
@@ -36,19 +32,14 @@ scroll-behavior: smooth;
 }
 
 body {
-font-family: Georgia, "Times New Roman", serif;
-background: #f7f5ef;
-color: #222;
-line-height: 1.7;
+font-family: Georgia, 'Times New Roman', serif;
+background: #080808;
+color: #f5f5f5;
+line-height: 1.8;
 }
 
 a {
 text-decoration: none;
-}
-
-img {
-max-width: 100%;
-display: block;
 }
 
 .container {
@@ -58,20 +49,19 @@ margin: auto;
 }
 
 /* =========================
-MENU
+CABEÇALHO
 ========================= */
 
 header {
-background: #101010;
-color: #fff;
+background: #050505;
+border-bottom: 1px solid #a98745;
 position: sticky;
 top: 0;
 z-index: 1000;
-box-shadow: 0 3px 15px rgba(0, 0, 0, 0.25);
 }
 
 .nav {
-min-height: 78px;
+min-height: 80px;
 display: flex;
 align-items: center;
 justify-content: space-between;
@@ -79,26 +69,26 @@ gap: 25px;
 }
 
 .brand {
-color: #d4af37;
-font-size: 1.3rem;
+color: #d8b15a;
+font-size: 23px;
 font-weight: bold;
 }
 
-.nav-links {
+nav ul {
+list-style: none;
 display: flex;
+gap: 25px;
 flex-wrap: wrap;
-justify-content: center;
-gap: 20px;
 }
 
-.nav-links a {
-color: #fff;
+nav a {
+color: #ffffff;
 font-weight: bold;
 transition: 0.3s;
 }
 
-.nav-links a:hover {
-color: #d4af37;
+nav a:hover {
+color: #d8b15a;
 }
 
 /* =========================
@@ -106,69 +96,93 @@ HERO
 ========================= */
 
 .hero {
-min-height: 650px;
-background:
-linear-gradient(
-rgba(10, 25, 55, 0.75),
-rgba(15, 40, 80, 0.75)
-),
-url("altares-em-cinzas.jpg")
-center / cover;
+min-height: 720px;
 display: flex;
 align-items: center;
+background:
+linear-gradient(
+rgba(0, 0, 0, 0.72),
+rgba(0, 0, 0, 0.9)
+);
+}
+
+.hero-inner {
+display: grid;
+grid-template-columns: 1fr 1fr;
+align-items: center;
+gap: 50px;
+}
+
+.hero-photo {
 text-align: center;
-color: #fff;
 }
 
-.hero-content {
+.hero-photo img {
 width: 100%;
-padding: 70px 0;
+max-width: 470px;
+height: auto;
+display: block;
+margin: auto;
 }
 
-.brasao {
-width: 190px;
-margin: 0 auto 25px;
-filter: drop-shadow(0 5px 12px rgba(0, 0, 0, 0.5));
+.hero-text h1 {
+color: #d8b15a;
+font-size: 58px;
+line-height: 1.1;
+margin-bottom: 25px;
 }
 
-.eyebrow {
-color: #e4c45b;
-letter-spacing: 5px;
-font-weight: bold;
-margin-bottom: 15px;
-}
-
-.hero h1 {
-font-size: clamp(2.5rem, 7vw, 5rem);
-margin-bottom: 15px;
-}
-
-.hero h2 {
-font-size: clamp(1.3rem, 3vw, 2rem);
-font-weight: normal;
+.hero-text h2 {
+font-size: 28px;
 margin-bottom: 20px;
 }
 
-.hero p {
-max-width: 750px;
-margin: auto;
-font-size: 1.1rem;
+.hero-text p {
+color: #d8d8d8;
+font-size: 19px;
+margin-bottom: 25px;
 }
 
-.button {
+.gold {
+color: #d8b15a;
+}
+
+/* =========================
+BOTÕES
+========================= */
+
+.buttons {
+display: flex;
+gap: 15px;
+flex-wrap: wrap;
+}
+
+.btn {
 display: inline-block;
-margin-top: 30px;
-padding: 13px 28px;
-border-radius: 30px;
-background: #d4af37;
-color: #111;
+padding: 13px 24px;
+border-radius: 5px;
 font-weight: bold;
 transition: 0.3s;
 }
 
-.button:hover {
-transform: translateY(-3px);
-background: #f0d46b;
+.btn-gold {
+background: #b88a32;
+color: #ffffff;
+}
+
+.btn-gold:hover {
+background: #d8b15a;
+color: #000000;
+}
+
+.btn-dark {
+border: 1px solid #d8b15a;
+color: #d8b15a;
+}
+
+.btn-dark:hover {
+background: #d8b15a;
+color: #000000;
 }
 
 /* =========================
@@ -181,25 +195,18 @@ padding: 90px 0;
 
 .section-title {
 text-align: center;
-margin-bottom: 50px;
-}
-
-.section-title span {
-color: #b08b19;
-font-weight: bold;
-letter-spacing: 3px;
-text-transform: uppercase;
+margin-bottom: 55px;
 }
 
 .section-title h2 {
-font-size: 2.5rem;
-margin: 10px 0;
+color: #d8b15a;
+font-size: 40px;
+margin-bottom: 12px;
 }
 
 .section-title p {
-max-width: 750px;
-margin: auto;
-color: #666;
+color: #c8c8c8;
+font-size: 18px;
 }
 
 /* =========================
@@ -207,69 +214,35 @@ SOBRE
 ========================= */
 
 .about {
-background: #fff;
+background: #101010;
 }
 
 .about-grid {
 display: grid;
 grid-template-columns: 1fr 1fr;
-gap: 55px;
+gap: 50px;
 align-items: center;
 }
 
-.pastor-photo {
-width: 100%;
-max-width: 480px;
-margin: auto;
-border-radius: 18px;
-box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
-}
-
 .about-text h3 {
-font-size: 2rem;
+color: #d8b15a;
+font-size: 30px;
 margin-bottom: 20px;
 }
 
 .about-text p {
-margin-bottom: 18px;
-color: #555;
+margin-bottom: 20px;
+color: #dddddd;
 }
 
-/* =========================
-MINISTÉRIO
-========================= */
-
-.ministry {
-background: #111;
-color: #fff;
-}
-
-.ministry .section-title p {
-color: #ccc;
-}
-
-.ministry-grid {
-display: grid;
-grid-template-columns:
-repeat(3, 1fr);
-gap: 25px;
-}
-
-.ministry-card {
-padding: 35px 25px;
-border: 1px solid #55471c;
-border-radius: 15px;
+.brasao {
 text-align: center;
-background: #181818;
 }
 
-.ministry-card h3 {
-color: #d4af37;
-margin-bottom: 15px;
-}
-
-.ministry-card p {
-color: #ccc;
+.brasao img {
+width: 100%;
+max-width: 430px;
+border-radius: 8px;
 }
 
 /* =========================
@@ -277,96 +250,111 @@ LIVRO
 ========================= */
 
 .book {
-background: #ece8dc;
+background: #080808;
 }
 
 .book-grid {
 display: grid;
-grid-template-columns: 420px 1fr;
+grid-template-columns: 380px 1fr;
 gap: 60px;
 align-items: center;
 }
 
 .book-cover {
+text-align: center;
+}
+
+.book-cover img {
 width: 100%;
-max-width: 420px;
-margin: auto;
+max-width: 360px;
 border-radius: 8px;
-box-shadow:
-0 20px 40px rgba(0, 0, 0, 0.35);
+box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
+}
+
+.book-text h2 {
+color: #d8b15a;
+font-size: 42px;
+margin-bottom: 20px;
 }
 
 .book-text h3 {
-font-size: 2.5rem;
-color: #8c6710;
-margin-bottom: 10px;
-}
-
-.book-text h4 {
-font-size: 1.3rem;
-margin-bottom: 25px;
+font-size: 24px;
+margin-bottom: 20px;
 }
 
 .book-text p {
-margin-bottom: 18px;
-color: #4d4d4d;
+color: #dddddd;
+margin-bottom: 20px;
 }
 
-.coming-soon {
-display: inline-block;
-padding: 9px 18px;
-border-radius: 25px;
-background: #171717;
-color: #d4af37;
+.coming {
+color: #d8b15a;
 font-weight: bold;
-margin-top: 10px;
+font-size: 19px;
 }
 
 /* =========================
-ESTUDOS E REFLEXÕES
+ESTUDOS
 ========================= */
 
 .studies {
-background: #fff;
+background: #101010;
 }
 
-.studies-grid {
-display: grid;
-grid-template-columns:
-repeat(2, 1fr);
-gap: 25px;
-}
-
-.study-card {
-border-left: 5px solid #d4af37;
-background: #f8f7f2;
-padding: 30px;
-border-radius: 0 12px 12px 0;
-box-shadow:
-0 5px 18px rgba(0, 0, 0, 0.07);
+.study {
+background: #151515;
+border: 1px solid #3c3020;
+border-radius: 10px;
+padding: 40px;
+margin-bottom: 45px;
 }
 
 .study-number {
-color: #b08b19;
-font-size: 0.9rem;
+color: #b88a32;
+font-size: 17px;
 font-weight: bold;
+margin-bottom: 8px;
 text-transform: uppercase;
 letter-spacing: 2px;
 }
 
-.study-card h3 {
-margin: 8px 0 12px;
-font-size: 1.45rem;
+.study h3 {
+color: #d8b15a;
+font-size: 32px;
+margin-bottom: 20px;
 }
 
-.study-card p {
-color: #5b5b5b;
+.study h4 {
+color: #ffffff;
+font-size: 22px;
+margin-top: 30px;
+margin-bottom: 10px;
 }
 
-.study-verse {
-margin-top: 18px;
+.study p {
+color: #dddddd;
+margin-bottom: 18px;
+font-size: 17px;
+}
+
+.verse {
+border-left: 4px solid #b88a32;
+padding: 18px 25px;
+margin: 25px 0;
+background: #0c0c0c;
+color: #e9d19a;
 font-style: italic;
-color: #8a6918;
+}
+
+.reflection {
+background: #0b0b0b;
+border-radius: 8px;
+padding: 25px;
+margin-top: 25px;
+}
+
+.reflection strong {
+color: #d8b15a;
 }
 
 /* =========================
@@ -374,32 +362,30 @@ REDES SOCIAIS
 ========================= */
 
 .social {
-background: #f1eee5;
+background: #080808;
 text-align: center;
 }
 
 .social-buttons {
 display: flex;
 justify-content: center;
+gap: 18px;
 flex-wrap: wrap;
-gap: 15px;
 margin-top: 30px;
 }
 
 .social-button {
-display: inline-block;
-padding: 13px 25px;
-border-radius: 30px;
-background: #111;
-color: #fff;
+padding: 14px 25px;
+border: 1px solid #b88a32;
+color: #ffffff;
+border-radius: 5px;
 font-weight: bold;
 transition: 0.3s;
 }
 
 .social-button:hover {
-background: #d4af37;
-color: #111;
-transform: translateY(-3px);
+background: #b88a32;
+color: #000000;
 }
 
 /* =========================
@@ -407,18 +393,13 @@ CONTATO
 ========================= */
 
 .contact {
-background: #fff;
+background: #101010;
 text-align: center;
 }
 
-.contact-box {
-max-width: 750px;
-margin: auto;
-}
-
-.contact-box p {
-color: #555;
-margin-bottom: 15px;
+.contact p {
+color: #dddddd;
+margin-bottom: 25px;
 }
 
 /* =========================
@@ -426,14 +407,21 @@ RODAPÉ
 ========================= */
 
 footer {
-background: #101010;
-color: #ccc;
+background: #050505;
+border-top: 1px solid #3c3020;
 text-align: center;
-padding: 35px 20px;
+padding: 45px 20px;
 }
 
-footer strong {
-color: #d4af37;
+.footer-brand {
+color: #d8b15a;
+font-size: 25px;
+font-weight: bold;
+margin-bottom: 10px;
+}
+
+footer p {
+color: #999999;
 }
 
 /* =========================
@@ -442,97 +430,93 @@ RESPONSIVO
 
 @media (max-width: 850px) {
 
-.nav {
-flex-direction: column;
-padding: 18px 0;
+.hero-inner {
+grid-template-columns: 1fr;
+text-align: center;
 }
 
-.nav-links {
-gap: 12px;
+.hero-text h1 {
+font-size: 43px;
 }
 
-.about-grid,
+.buttons {
+justify-content: center;
+}
+
+.about-grid {
+grid-template-columns: 1fr;
+}
+
 .book-grid {
 grid-template-columns: 1fr;
 }
 
-.ministry-grid,
-.studies-grid {
-grid-template-columns: 1fr;
+.book-cover {
+order: 1;
 }
 
-.hero {
-min-height: 600px;
+.book-text {
+order: 2;
 }
 
+nav ul {
+justify-content: center;
 }
 
-@media (max-width: 500px) {
-
-section {
-padding: 65px 0;
-}
-
-.hero h1 {
-font-size: 2.5rem;
-}
-
-.hero h2 {
-font-size: 1.3rem;
-}
-
-.nav-links a {
-font-size: 0.9rem;
+.nav {
+flex-direction: column;
+padding: 20px 0;
 }
 
 }
 
 </style>
-</head>
 
+</head>
 
 <body>
 
 <!-- =========================
-MENU
+CABEÇALHO
 ========================= -->
 
 <header>
 
 <div class="container nav">
 
-<a
-href="#inicio"
-class="brand"
->
+<a class="brand" href="#inicio">
 Pastor Anderson Viana
 </a>
 
-<nav class="nav-links">
+<nav>
 
-<a href="#inicio">
-Início
-</a>
+<ul>
 
-<a href="#sobre">
-Sobre
-</a>
+<li>
+<a href="#inicio">Início</a>
+</li>
 
-<a href="#ministerio">
-Ministério
-</a>
+<li>
+<a href="#sobre">Sobre</a>
+</li>
 
-<a href="#livro">
-Livro
-</a>
+<li>
+<a href="#livro">Livro</a>
+</li>
 
-<a href="#reflexoes">
-Estudos
-</a>
+<li>
+<a href="#estudos">Estudos</a>
+</li>
 
-<a href="#contato">
-Contato
-</a>
+<li>
+<a href="#redes">Redes Sociais</a>
+</li>
+
+<li>
+<a href="#contato">Contato</a>
+</li>
+
+</ul>
 
 </nav>
 
@@ -543,34 +527,34 @@ Contato
 
 <main>
 
-
 <!-- =========================
 INÍCIO
 ========================= -->
 
-<section
-class="hero"
-id="inicio"
->
+<section class="hero" id="inicio">
 
-<div class="container hero-content">
+<div class="container hero-inner">
+
+<div class="hero-photo">
 
 <img
-src="brasao.png"
-alt="Brasão do Ministério Pastor Anderson Viana"
-class="brasao"
+src="foto-pastor.png"
+alt="Pastor Anderson Viana"
 >
 
-<div class="eyebrow">
-MINISTÉRIO • PALAVRA • FÉ
 </div>
+
+<div class="hero-text">
 
 <h1>
 Pastor Anderson Viana
 </h1>
 
 <h2>
-Uma voz anunciando o Evangelho de Cristo
+Uma voz anunciando o
+<span class="gold">
+Evangelho de Cristo
+</span>
 </h2>
 
 <p>
@@ -578,12 +562,25 @@ Uma mensagem de fé, esperança e transformação
 para aqueles que desejam caminhar mais perto de Deus.
 </p>
 
+<div class="buttons">
+
 <a
-href="#sobre"
-class="button"
+class="btn btn-gold"
+href="#estudos"
 >
-Conheça o Ministério
+Estudos e Reflexões
 </a>
+
+<a
+class="btn btn-dark"
+href="#livro"
+>
+Conheça o livro
+</a>
+
+</div>
+
+</div>
 
 </div>
 
@@ -594,152 +591,60 @@ Conheça o Ministério
 SOBRE
 ========================= -->
 
-<section
-class="about"
-id="sobre"
->
+<section class="about" id="sobre">
 
 <div class="container">
 
 <div class="section-title">
 
-<span>
-Chamado
-</span>
-
 <h2>
-Uma vida dedicada ao Evangelho
+Ministério, Palavra e Fé
 </h2>
 
 <p>
-Um ministério dedicado à Palavra de Deus
-e à proclamação do Evangelho de Cristo.
+Uma vida dedicada ao Evangelho e à formação de discípulos.
 </p>
 
 </div>
 
-
 <div class="about-grid">
-
-<div>
-
-<img
-src="foto-pastor.png"
-alt="Pastor Anderson Viana"
-class="pastor-photo"
->
-
-</div>
-
 
 <div class="about-text">
 
 <h3>
-Chamado para anunciar
+Quem sou
 </h3>
 
 <p>
-Sou o Pastor Anderson Viana, pregador do
-Evangelho, chamado a anunciar a Palavra de Deus
-e levar uma mensagem de fé, esperança e
-transformação.
+Sou o Pastor Anderson Viana, servo de Jesus Cristo,
+dedicado à proclamação do Evangelho, ao ensino das
+Escrituras e ao discipulado.
 </p>
 
 <p>
-Este espaço foi criado para compartilhar
-estudos, reflexões, mensagens e conteúdos que
-possam fortalecer a caminhada daqueles que
-desejam conhecer mais profundamente a Deus.
+Este espaço nasceu para compartilhar mensagens,
+estudos bíblicos, reflexões e conteúdos que possam
+fortalecer a fé e conduzir pessoas a uma caminhada
+mais profunda com Deus.
 </p>
 
 <p>
-Que cada palavra publicada aqui possa apontar
-para Cristo e despertar novamente a fome pela
-presença de Deus.
+Meu desejo é que cada palavra publicada aqui não seja
+apenas lida, mas vivida. Que cada estudo desperte fome
+pela Palavra, amor por Cristo e compromisso com uma
+vida de santidade.
 </p>
 
 </div>
 
-</div>
+<div class="brasao">
 
-</div>
-
-</section>
-
-
-<!-- =========================
-MINISTÉRIO
-========================= -->
-
-<section
-class="ministry"
-id="ministerio"
+<img
+src="brasao.png"
+alt="Brasão do Ministério Pastor Anderson Viana"
 >
 
-<div class="container">
-
-<div class="section-title">
-
-<span>
-Ministério
-</span>
-
-<h2>
-Palavra • Fé • Missão
-</h2>
-
-<p>
-Servindo a Cristo através da proclamação
-do Evangelho e do ensino das Escrituras.
-</p>
-
 </div>
-
-
-<div class="ministry-grid">
-
-
-<article class="ministry-card">
-
-<h3>
-Palavra
-</h3>
-
-<p>
-Ensino das Escrituras com Cristo
-no centro da mensagem.
-</p>
-
-</article>
-
-
-<article class="ministry-card">
-
-<h3>
-Avivamento
-</h3>
-
-<p>
-Uma busca por uma vida novamente
-acesa pela presença de Deus.
-</p>
-
-</article>
-
-
-<article class="ministry-card">
-
-<h3>
-Missão
-</h3>
-
-<p>
-Anunciar o Evangelho e levar
-esperança através de Cristo.
-</p>
-
-</article>
-
 
 </div>
 
@@ -752,77 +657,79 @@ esperança através de Cristo.
 LIVRO
 ========================= -->
 
-<section
-class="book"
-id="livro"
->
+<section class="book" id="livro">
 
 <div class="container">
 
 <div class="section-title">
-
-<span>
-Em breve
-</span>
 
 <h2>
 Altares em Cinzas
 </h2>
 
 <p>
-Uma obra sobre o caminho de volta ao fogo
-da presença de Deus.
+Uma mensagem sobre restauração, presença e retorno ao fogo.
 </p>
 
 </div>
 
-
 <div class="book-grid">
 
-<div>
+<div class="book-cover">
 
 <img
 src="altares-em-cinzas.jpg"
 alt="Capa do livro Altares em Cinzas"
-class="book-cover"
 >
 
 </div>
 
-
 <div class="book-text">
 
-<h3>
+<h2>
 Altares em Cinzas
-</h3>
+</h2>
 
-<h4>
-O caminho de volta ao fogo
-da presença de Deus.
-</h4>
+<h3>
+O caminho de volta ao fogo da presença de Deus.
+</h3>
 
 <p>
 Nem todo altar destruído está perdido.
-Alguns ainda guardam brasas.
+Algumas brasas ainda permanecem.
 </p>
 
 <p>
-Esta obra nasceu de uma reflexão sobre
-o altar, a presença de Deus, a consagração
-e a necessidade de retornar ao lugar onde
-o fogo volta a arder.
+Este livro nasce de uma inquietação profunda:
+o que acontece quando o altar que um dia queimava
+diante de Deus começa a perder o fogo?
 </p>
 
 <p>
-O livro ainda será lançado. Por enquanto,
-esta página apresenta apenas um pequeno
-vislumbre da mensagem que estará presente
-na obra.
+Em meio a uma geração cercada por tantas vozes,
+atividades e distrações, existe um chamado para
+voltar ao lugar da presença, da entrega, da oração
+e da comunhão com Deus.
 </p>
 
-<span class="coming-soon">
-LANÇAMENTO EM BREVE
-</span>
+<p>
+<strong>
+Altares em Cinzas
+</strong>
+conduz o leitor por uma reflexão sobre o altar
+interior, a santidade, a presença de Deus, a
+restauração e o verdadeiro avivamento.
+</p>
+
+<p class="coming">
+📖 LIVRO EM BREVE
+</p>
+
+<p>
+O livro ainda será lançado.
+Por enquanto, este site apresenta apenas um
+pequeno gostinho daquilo que está sendo preparado.
+</p>
 
 </div>
 
@@ -837,294 +744,438 @@ LANÇAMENTO EM BREVE
 ESTUDOS E REFLEXÕES
 ========================= -->
 
-<section
-class="studies"
-id="reflexoes"
->
+<section class="studies" id="estudos">
 
 <div class="container">
 
 <div class="section-title">
 
-<span>
-Estudos e Reflexões
-</span>
-
 <h2>
-Palavra, ensinamento e princípios
+Estudos e Reflexões
 </h2>
 
 <p>
-Estudos bíblicos e reflexões para fortalecer
-sua caminhada com Deus.
+Estudos para fortalecer a fé e aprofundar a caminhada com Deus.
 </p>
 
 </div>
 
 
-<div class="studies-grid">
+<!-- ESTUDO 1 -->
 
-
-<!-- ESTUDO 01 -->
-
-<article class="study-card">
+<article class="study">
 
 <div class="study-number">
 Estudo 01
 </div>
 
 <h3>
-Quando o altar perde o fogo
+Santidade: uma vida separada para Deus
 </h3>
 
 <p>
-Antes de procurar o fogo, precisamos
-perguntar como está o altar. Deus continua
-chamando corações para uma vida de
-consagração.
+A santidade não é simplesmente uma lista de coisas que
+podemos ou não podemos fazer. Santidade é uma resposta
+ao Deus que nos chamou para pertencermos a Ele.
 </p>
 
-<div class="study-verse">
-"O fogo arderá continuamente sobre o altar."
-— Levítico 6:13
+<div class="verse">
+“Sede santos, porque eu sou santo.”
+<br>
+1 Pedro 1:16
 </div>
+
+<h4>
+O chamado para uma vida diferente
+</h4>
+
+<p>
+Quando a Bíblia fala sobre santidade, ela nos apresenta
+um chamado para uma vida separada. Não significa viver
+distante das pessoas, mas viver de maneira diferente
+dentro de uma sociedade que muitas vezes apresenta
+valores contrários à vontade de Deus.
+</p>
+
+<p>
+O cristão não foi chamado somente para frequentar uma
+igreja, ouvir mensagens ou conhecer textos bíblicos.
+Fomos chamados para permitir que Cristo transforme
+nossa maneira de pensar, falar, agir e escolher.
+</p>
+
+<p>
+A verdadeira santidade começa no interior. Antes de
+aparecer nas atitudes, ela nasce no coração. É ali que
+decisões são tomadas, desejos são alimentados e
+prioridades são estabelecidas.
+</p>
+
+<h4>
+Santidade exige renúncia
+</h4>
+
+<p>
+Não existe uma vida profunda com Deus sem renúncia.
+Seguir Cristo significa reconhecer que nem tudo aquilo
+que desejamos deve ocupar espaço em nossa vida.
+</p>
+
+<p>
+Algumas coisas precisam ser colocadas diante do Senhor.
+Alguns hábitos precisam ser abandonados. Algumas
+amizades precisam ser avaliadas. Algumas atitudes que
+pareciam normais precisam ser confrontadas pela Palavra.
+</p>
+
+<p>
+A santidade não significa perfeição humana.
+Significa pertencimento. É viver todos os dias com o
+desejo de agradar a Deus e permitir que Ele trate aquilo
+que ainda precisa ser transformado.
+</p>
+
+<h4>
+O altar da santidade
+</h4>
+
+<p>
+Existe um altar dentro de cada pessoa. Esse altar
+representa aquilo que ocupa o primeiro lugar em nossa
+vida. Quando Deus está no centro, nossas escolhas
+começam a ser orientadas por Ele.
+</p>
+
+<p>
+Quando outras coisas assumem o lugar de Deus, o altar
+perde sua prioridade. Por isso, santidade também é uma
+questão de governo: quem está governando minhas escolhas?
+Quem determina meus valores? Quem define o caminho que
+estou seguindo?
+</p>
+
+<div class="reflection">
+
+<strong>
+Para refletir:
+</strong>
+
+<p>
+Existe alguma área da minha vida que ainda não entreguei
+completamente a Deus? Meu altar continua sendo um lugar
+de entrega ou se tornou apenas uma lembrança de uma
+vida que um dia foi mais profunda?
+</p>
+
+</div>
+
+<h4>
+Conclusão
+</h4>
+
+<p>
+Deus continua chamando pessoas para uma vida santa.
+Não porque queira tirar nossa alegria, mas porque deseja
+nos conduzir a uma vida verdadeira diante dEle.
+</p>
+
+<p>
+Santidade é voltar diariamente para o altar e dizer:
+“Senhor, minha vida pertence a Ti.”
+</p>
 
 </article>
 
 
-<!-- ESTUDO 02 -->
+<!-- ESTUDO 2 -->
 
-<article class="study-card">
+<article class="study">
 
 <div class="study-number">
 Estudo 02
 </div>
 
 <h3>
-O preço de uma vida consagrada
+Vida com Deus: quando a presença deixa de ser apenas um momento
 </h3>
 
 <p>
-Consagração não é apenas uma palavra.
-É uma decisão diária de colocar a vontade
-de Deus acima da nossa própria vontade.
+Existe uma grande diferença entre conhecer coisas sobre
+Deus e caminhar diariamente com Deus.
 </p>
 
-<div class="study-verse">
-"Apresenteis os vossos corpos como sacrifício vivo."
-— Romanos 12:1
+<div class="verse">
+“Enoque andou com Deus.”
+<br>
+Gênesis 5:24
 </div>
+
+<h4>
+Mais do que momentos
+</h4>
+
+<p>
+Muitas pessoas procuram Deus apenas nos momentos de
+necessidade. Quando surge uma crise, uma enfermidade,
+uma dificuldade financeira ou uma decisão importante,
+então procuram a presença de Deus.
+</p>
+
+<p>
+Mas a vida cristã foi criada para ser muito mais do que
+isso. Deus não deseja ser procurado somente quando
+precisamos de alguma coisa. Ele deseja relacionamento.
+</p>
+
+<p>
+Caminhar com Deus significa incluí-lo nas pequenas e
+grandes decisões. Significa aprender a ouvi-lo na
+Palavra, buscá-lo em oração e reconhecer sua presença
+também nos dias comuns.
+</p>
+
+<h4>
+O valor da comunhão
+</h4>
+
+<p>
+Comunhão é construída com tempo. Nenhum relacionamento
+profundo cresce sem convivência. Da mesma maneira,
+nossa intimidade com Deus não cresce apenas porque
+frequentamos reuniões ou ouvimos pregações.
+</p>
+
+<p>
+É necessário separar tempo para a Palavra, para a oração,
+para o silêncio e para a reflexão. Precisamos aprender
+novamente a desacelerar a alma e perceber que Deus está
+presente.
+</p>
+
+<p>
+Às vezes queremos grandes experiências espirituais, mas
+Deus está trabalhando em nós através da fidelidade
+silenciosa de cada dia.
+</p>
+
+<h4>
+Quando a presença se torna prioridade
+</h4>
+
+<p>
+Uma vida com Deus muda nossas prioridades. Aquilo que
+antes parecia indispensável pode perder seu poder sobre
+nós. A necessidade de aprovação diminui. O orgulho é
+confrontado. O coração aprende a depender mais do Senhor.
+</p>
+
+<p>
+A presença de Deus não deve ser apenas o ambiente de um
+culto. Ela precisa acompanhar o cristão para dentro de
+sua casa, seu trabalho, seus relacionamentos e suas
+decisões.
+</p>
+
+<h4>
+O altar diário
+</h4>
+
+<p>
+O altar precisa ser reconstruído diariamente.
+Não podemos viver apenas daquilo que Deus fez ontem.
+</p>
+
+<p>
+O testemunho do passado é importante, mas a comunhão
+precisa ser renovada. O fogo precisa continuar sendo
+alimentado.
+</p>
+
+<div class="reflection">
+
+<strong>
+Para refletir:
+</strong>
+
+<p>
+Minha relação com Deus acontece somente em momentos
+específicos ou Ele realmente participa da minha vida
+diária? Tenho separado tempo para estar com Ele sem
+buscar apenas aquilo que Ele pode me dar?
+</p>
+
+</div>
+
+<h4>
+Conclusão
+</h4>
+
+<p>
+Vida com Deus não é uma visita ocasional à presença.
+É uma caminhada.
+</p>
+
+<p>
+Deus não está procurando apenas pessoas que saibam falar
+sobre Sua presença. Ele procura pessoas que desejem
+permanecer nela.
+</p>
 
 </article>
 
 
-<!-- ESTUDO 03 -->
+<!-- ESTUDO 3 -->
 
-<article class="study-card">
+<article class="study">
 
 <div class="study-number">
 Estudo 03
 </div>
 
 <h3>
-Avivamento começa no altar
+Oração: o lugar onde a alma aprende a depender de Deus
 </h3>
 
 <p>
-O verdadeiro avivamento não começa nas
-multidões. Ele começa quando um coração
-decide voltar completamente para Deus.
+A oração é uma das maiores expressões de dependência
+espiritual. Quando oramos, reconhecemos que não somos
+suficientes em nós mesmos e que precisamos do Senhor.
 </p>
 
-<div class="study-verse">
-"Convertei-vos a mim de todo o vosso coração."
-— Joel 2:12
+<div class="verse">
+“Orai sem cessar.”
+<br>
+1 Tessalonicenses 5:17
 </div>
+
+<h4>
+Orar não é apenas pedir
+</h4>
+
+<p>
+Muitas vezes reduzimos a oração a uma lista de pedidos.
+Pedimos por trabalho, família, saúde, portas abertas,
+respostas e bênçãos.
+</p>
+
+<p>
+Deus se importa com nossas necessidades, mas oração é
+muito maior do que apresentar pedidos. Oração também é
+adoração, confissão, gratidão, silêncio, entrega e
+relacionamento.
+</p>
+
+<p>
+Quando aprendemos a permanecer diante de Deus mesmo
+quando não temos pedidos urgentes, começamos a descobrir
+uma dimensão mais profunda da comunhão.
+</p>
+
+<h4>
+O lugar secreto
+</h4>
+
+<p>
+Jesus ensinou sobre a importância de entrar no lugar
+secreto. É ali onde não existe necessidade de impressionar
+ninguém. Não existe público. Não existe aparência.
+Existe apenas o coração diante de Deus.
+</p>
+
+<p>
+No secreto, Deus trata motivações. Trata orgulho.
+Trata feridas. Corrige caminhos. Fortalece a fé.
+</p>
+
+<p>
+Algumas das maiores transformações espirituais não
+acontecem diante de multidões, mas quando uma pessoa
+está sozinha de joelhos diante do Senhor.
+</p>
+
+<h4>
+Quando não sentimos nada
+</h4>
+
+<p>
+Existem momentos em que oramos e não sentimos uma
+resposta imediata. Isso não significa necessariamente
+que Deus esteja distante.
+</p>
+
+<p>
+A fé também aprende a permanecer quando os sentimentos
+não acompanham a caminhada. Continuamos orando porque
+confiamos no caráter de Deus, não apenas porque estamos
+experimentando uma emoção.
+</p>
+
+<p>
+A perseverança na oração amadurece o cristão.
+Ela nos ensina a esperar, confiar e entregar o controle.
+</p>
+
+<h4>
+Oração e fogo espiritual
+</h4>
+
+<p>
+Uma vida de oração mantém o coração sensível.
+Quando deixamos de orar, lentamente podemos perder a
+percepção daquilo que Deus está fazendo em nós.
+</p>
+
+<p>
+O altar precisa de fogo, e o coração precisa de
+comunhão. A oração nos leva novamente ao lugar onde
+reconhecemos que tudo começa e termina em Deus.
+</p>
+
+<div class="reflection">
+
+<strong>
+Para refletir:
+</strong>
+
+<p>
+Minha oração é somente uma lista de pedidos ou
+realmente tenho buscado relacionamento com Deus?
+Tenho um lugar e um tempo separados para estar
+diante dEle?
+</p>
+
+</div>
+
+<h4>
+Conclusão
+</h4>
+
+<p>
+Talvez o maior milagre da oração não seja apenas aquilo
+que Deus muda ao nosso redor, mas aquilo que Ele muda
+dentro de nós enquanto esperamos.
+</p>
+
+<p>
+Ore. Permaneça. Entregue. Espere.
+O altar continua sendo lugar de encontro com Deus.
+</p>
 
 </article>
 
 
-<!-- ESTUDO 04 -->
+<!-- ESPAÇO PARA NOVOS ESTUDOS -->
 
-<article class="study-card">
+<div class="reflection">
 
-<div class="study-number">
-Estudo 04
-</div>
-
-<h3>
-Quando Deus chama pelo nome
-</h3>
+<strong>
+Novos estudos serão acrescentados em breve.
+</strong>
 
 <p>
-O chamado de Deus alcança pessoas comuns
-e as conduz para propósitos maiores.
-O importante é ouvir e responder.
+Este espaço será atualizado com novos estudos bíblicos,
+mensagens e reflexões para edificação da Igreja.
 </p>
-
-<div class="study-verse">
-"Eis-me aqui, envia-me a mim."
-— Isaías 6:8
-</div>
-
-</article>
-
-
-<!-- ESTUDO 05 -->
-
-<article class="study-card">
-
-<div class="study-number">
-Estudo 05
-</div>
-
-<h3>
-Santidade em tempos de frieza espiritual
-</h3>
-
-<p>
-Em tempos de frieza, a santidade continua
-sendo um chamado. Deus deseja um povo que
-permaneça separado para Ele.
-</p>
-
-<div class="study-verse">
-"Sede santos, porque eu sou santo."
-— 1 Pedro 1:16
-</div>
-
-</article>
-
-
-<!-- ESTUDO 06 -->
-
-<article class="study-card">
-
-<div class="study-number">
-Estudo 06
-</div>
-
-<h3>
-O coração que voltou a queimar
-</h3>
-
-<p>
-Há momentos em que precisamos reconhecer
-que perdemos a intensidade espiritual e
-retornar novamente à presença de Deus.
-</p>
-
-<div class="study-verse">
-"Não ardia em nós o nosso coração?"
-— Lucas 24:32
-</div>
-
-</article>
-
-
-<!-- ESTUDO 07 -->
-
-<article class="study-card">
-
-<div class="study-number">
-Estudo 07
-</div>
-
-<h3>
-O poder de uma vida de oração
-</h3>
-
-<p>
-A oração nos aproxima de Deus, fortalece
-nossa fé e nos ensina a depender daquele
-que sustenta todas as coisas.
-</p>
-
-<div class="study-verse">
-"Orai sem cessar."
-— 1 Tessalonicenses 5:17
-</div>
-
-</article>
-
-
-<!-- ESTUDO 08 -->
-
-<article class="study-card">
-
-<div class="study-number">
-Estudo 08
-</div>
-
-<h3>
-O chamado para anunciar o Evangelho
-</h3>
-
-<p>
-O Evangelho não foi entregue para ser
-escondido. Todo discípulo é chamado a
-testemunhar aquilo que Cristo fez.
-</p>
-
-<div class="study-verse">
-"Ide por todo o mundo e pregai o evangelho."
-— Marcos 16:15
-</div>
-
-</article>
-
-
-<!-- ESTUDO 09 -->
-
-<article class="study-card">
-
-<div class="study-number">
-Estudo 09
-</div>
-
-<h3>
-Quando as cinzas ainda guardam brasas
-</h3>
-
-<p>
-Mesmo quando tudo parece apagado, Deus
-pode reacender aquilo que parecia perdido.
-O retorno começa com uma decisão.
-</p>
-
-<div class="study-verse">
-"Desperta, tu que dormes."
-— Efésios 5:14
-</div>
-
-</article>
-
-
-<!-- ESTUDO 10 -->
-
-<article class="study-card">
-
-<div class="study-number">
-Estudo 10
-</div>
-
-<h3>
-De volta à presença de Deus
-</h3>
-
-<p>
-A maior necessidade da Igreja não é apenas
-atividade, mas presença. Precisamos voltar
-ao lugar onde Deus ocupa o primeiro lugar.
-</p>
-
-<div class="study-verse">
-"Buscai-me e vivei."
-— Amós 5:4
-</div>
-
-</article>
-
 
 </div>
 
@@ -1137,57 +1188,51 @@ ao lugar onde Deus ocupa o primeiro lugar.
 REDES SOCIAIS
 ========================= -->
 
-<section class="social">
+<section class="social" id="redes">
 
 <div class="container">
 
 <div class="section-title">
-
-<span>
-Redes Sociais
-</span>
 
 <h2>
 Vamos caminhar juntos
 </h2>
 
 <p>
-Acompanhe mensagens, estudos, pregações
-e conteúdos do ministério pelas redes sociais.
+Acompanhe mensagens, reflexões, pregações e conteúdos
+do ministério pelas redes sociais.
 </p>
 
 </div>
 
-
 <div class="social-buttons">
 
-
 <a
+class="social-button"
 href="https://www.instagram.com/pastorandersonviana/"
 target="_blank"
-class="social-button"
+rel="noopener"
 >
 Instagram
 </a>
 
-
 <a
+class="social-button"
 href="https://www.tiktok.com/@pastorandersonviana"
 target="_blank"
-class="social-button"
+rel="noopener"
 >
 TikTok
 </a>
 
-
 <a
+class="social-button"
 href="https://youtube.com/@pastorandersonviana"
 target="_blank"
-class="social-button"
+rel="noopener"
 >
 YouTube
 </a>
-
 
 </div>
 
@@ -1200,48 +1245,30 @@ YouTube
 CONTATO
 ========================= -->
 
-<section
-class="contact"
-id="contato"
->
+<section class="contact" id="contato">
 
 <div class="container">
 
 <div class="section-title">
 
-<span>
-Contato
-</span>
-
 <h2>
 Entre em contato
 </h2>
 
-</div>
-
-
-<div class="contact-box">
-
 <p>
-Para convites, ministrações, mensagens
-e assuntos relacionados ao ministério,
-entre em contato pelas redes sociais.
+Para convites, mensagens e informações sobre o ministério.
 </p>
 
-<a
-href="https://www.instagram.com/pastorandersonviana/"
-target="_blank"
-class="button"
->
-Falar pelo Instagram
-</a>
-
 </div>
+
+<p>
+Será uma alegria caminhar com você através da Palavra,
+da fé e da comunhão com Cristo.
+</p>
 
 </div>
 
 </section>
-
 
 </main>
 
@@ -1252,19 +1279,32 @@ RODAPÉ
 
 <footer>
 
-<p>
-© 2026
-<strong>
-Pastor Anderson Viana
-</strong>
-</p>
-
-<p>
-Todos os direitos reservados.
-</p>
+<div class="footer-brand">
+PASTOR ANDERSON VIANA
+</div>
 
 <p>
 Ministério • Palavra • Fé
+</p>
+
+<p>
+Avivamento • Discipulado • Missão
+</p>
+
+<p>
+“Ensina-me os teus caminhos, ó Senhor;
+quero andar na tua verdade.”
+</p>
+
+<p>
+Salmos 86:11
+</p>
+
+<br>
+
+<p>
+© 2026 Pastor Anderson Viana.
+Todos os direitos reservados.
 </p>
 
 </footer>
