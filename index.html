@@ -6,12 +6,10 @@
 
 <title>Pastor Anderson Viana | Ministério, Palavra e Fé</title>
 
-<meta
-nome="descrição"
-content="Site oficial do Pastor Anderson Viana. Ministério, Palavra e Fé."
->
+<meta name="description" content="Site oficial do Pastor Anderson Viana. Ministério, Palavra e Fé, mensagens, estudos bíblicos, reflexões e conteúdos para fortalecer a caminhada com Deus.">
 
 <style>
+
 * {
 margem: 0;
 preenchimento: 0;
@@ -24,409 +22,591 @@ Comportamento de rolagem: suave;
 
 corpo {
 família de fontes: Arial, Helvetica, sem serifa;
-fundo: #f5f7fa;
-cor: #263238;
-altura da linha: 1,7;
+altura da linha: 1,6;
+cor: #222;
+fundo: #f5f5f5;
 }
 
 cabeçalho {
-fundo: gradiente-linear(135deg, #0b1f3a, #123f6d);
+fundo: gradiente-linear(135deg, #111827, #1f2937);
 cor: branca;
-alinhamento do texto: centralizado;
-preenchimento: 35px 20px;
-box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+preenchimento: 20px;
+posição: pegajosa;
+topo: 0;
+Índice z: 1000;
+box-shadow: 0 3px 15px rgba(0,0,0,0.25);
 }
 
-cabeçalho h1 {
-margem: 0;
-tamanho da fonte: 32px;
+.header-container {
+largura máxima: 1150px;
+margem: automática;
+Exibir: flexível;
+justify-content: espaço-entre;
+alinhamento-itens: centro;
+espaço: 20px;
 }
 
-cabeçalho p {
-margem superior: 8px;
-tamanho da fonte: 17px;
-opacidade: 0,9;
+.logo {
+tamanho da fonte: 24px;
+peso da fonte: negrito;
+}
+
+.logo span {
+cor: #d4af37;
 }
 
 nav {
-margem superior: 22px;
+Exibir: flexível;
+flex-wrap: envolver;
+justificar-conteúdo: centralizado;
+espaço: 8px;
 }
 
 nav a {
 cor: branca;
 decoração de texto: nenhuma;
-margem: 0 10px;
+preenchimento: 9px 13px;
+raio-da-borda: 6px;
 peso da fonte: negrito;
 Transição: 0,3s;
 }
 
 nav a:hover {
-cor: #d4af37;
-}
-
-principal {
-largura máxima: 1100px;
-margem: 0 automático;
-preenchimento: 40px 20px;
-}
-
-seção {
-fundo: branco;
-margem-inferior: 30px;
-preenchimento: 40px 30px;
-raio da borda: 16px;
-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+fundo: #d4af37;
+cor: #111827;
 }
 
 .herói {
-fundo: gradiente-linear(
-135 graus,
-#0b1f3a,
-#123f6d
-);
-cor: branca;
+altura mínima: 650px;
+Exibir: flexível;
+alinhamento-itens: centro;
+justificar-conteúdo: centralizado;
 alinhamento do texto: centralizado;
-preenchimento: 70px 30px;
+cor: branca;
+preenchimento: 80px 20px;
+fundo:
+gradiente-linear(rgba(0,0,0,0.62), rgba(0,0,0,0.68)),
+url(" https://images.unsplash.com/photo-1507692049790-de58290a4334?auto=format&fit=crop&w=1800&q=85 ")
+centro/capa sem repetição;
 }
 
-.herói h2 {
-tamanho da fonte: 36px;
+.hero-content {
+largura máxima: 850px;
+}
+
+.herói h1 {
+tamanho da fonte: 56px;
 margem-inferior: 15px;
 }
 
+.herói h2 {
+tamanho da fonte: 28px;
+peso da fonte: normal;
+margem-inferior: 20px;
+cor: #d4af37;
+}
+
 .herói p {
-tamanho da fonte: 19px;
-largura máxima: 750px;
-margem: 0 auto 25px;
+tamanho da fonte: 20px;
+margem-inferior: 30px;
 }
 
 .btn {
 exibição: inline-block;
 fundo: #d4af37;
-cor: #0b1f3a;
-preenchimento: 12px 24px;
-raio da borda: 30px;
+cor: #111827;
 decoração de texto: nenhuma;
+preenchimento: 14px 25px;
+raio da borda: 30px;
 peso da fonte: negrito;
-fronteira: nenhuma;
-cursor: ponteiro;
+margem: 5px;
 Transição: 0,3s;
 }
 
 .btn:hover {
-transformar: translateY(-2px);
-opacidade: 0,9;
+transformar: translateY(-3px);
+box-shadow: 0 8px 20px rgba(0,0,0,0.3);
 }
 
-.versículo {
-alinhamento do texto: centralizado;
-fundo: #eef3f8;
-borda esquerda: 5px sólida #d4af37;
+.btn-dark {
+fundo: #111827;
+cor: branca;
 }
 
-.versículo h2 {
-cor: #0b1f3a;
-margem-inferior: 15px;
+seção {
+preenchimento: 75px 20px;
 }
 
-.versículo p {
-tamanho da fonte: 21px;
-estilo-da-fonte: itálico;
-margem-inferior: 10px;
-}
-
-.versículo span {
-peso da fonte: negrito;
-cor: #123f6d;
+.container {
+largura máxima: 1100px;
+margem: automática;
 }
 
 .section-title {
 alinhamento do texto: centralizado;
-margem-inferior: 30px;
+margem-inferior: 45px;
 }
 
 .section-title h2 {
-cor: #0b1f3a;
-tamanho da fonte: 30px;
+tamanho da fonte: 38px;
+cor: #111827;
+margem-inferior: 10px;
 }
 
-.section-title span {
-cor: #d4af37;
+.section-title p {
+cor: #666;
+tamanho da fonte: 18px;
+}
+
+.sobre {
+fundo: branco;
+}
+
+.about-grid {
+Exibição: grade;
+grid-template-columns: 1fr 1.3fr;
+espaço: 45px;
+alinhamento-itens: centro;
+}
+
+.about-image img {
+largura: 100%;
+raio da borda: 15px;
+box-shadow: 0 10px 30px rgba(0,0,0,0.18);
+}
+
+.about-text h3 {
+tamanho da fonte: 30px;
+cor: #111827;
+margem-inferior: 20px;
+}
+
+.about-text p {
+margem-inferior: 18px;
+tamanho da fonte: 17px;
+}
+
+.cards-section {
+fundo: #f1f3f5;
 }
 
 .cards {
 Exibição: grade;
 grid-template-columns: repeat(3, 1fr);
-espaço: 20px;
+espaçamento: 25px;
 }
 
 .card {
-fundo: #f5f7fa;
-preenchimento: 25px;
-raio da borda: 14px;
+fundo: branco;
+preenchimento: 30px;
+raio da borda: 15px;
 alinhamento do texto: centralizado;
-borda superior: 4px sólida #d4af37;
+box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+Transição: 0,3s;
+}
+
+.card:hover {
+transformar: translateY(-7px);
+box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
+
+.card-icon {
+tamanho da fonte: 45px;
+margem-inferior: 15px;
 }
 
 .card h3 {
-cor: #0b1f3a;
+tamanho da fonte: 23px;
+cor: #111827;
 margem-inferior: 12px;
 }
 
 .card p {
-cor: #4b5563;
+cor: #666;
 }
 
-.social {
+.citar {
+fundo:
+gradiente-linear(rgba(17,24,39,0.88), rgba(17,24,39,0.88)),
+url(" https://images.unsplash.com/photo-1438032005730-c779502df39b?auto=format&fit=crop&w=1800&q=85 ")
+centro/capa sem repetição;
+cor: branca;
 alinhamento do texto: centralizado;
 }
 
-.social a {
+.quote blockquote {
+largura máxima: 850px;
+margem: automática;
+tamanho da fonte: 30px;
+estilo-da-fonte: itálico;
+altura da linha: 1,5;
+}
+
+.quote citar {
+exibir: bloco;
+margem superior: 20px;
+cor: #d4af37;
+estilo-da-fonte: normal;
+peso da fonte: negrito;
+}
+
+.social {
+fundo: branco;
+alinhamento do texto: centralizado;
+}
+
+.social-buttons {
+Exibir: flexível;
+flex-wrap: envolver;
+justificar-conteúdo: centralizado;
+espaçamento: 15px;
+margem superior: 30px;
+}
+
+.social-button {
 exibição: inline-block;
-margem: 8px;
-fundo: #0b1f3a;
-cor: branca;
-decoração de texto: nenhuma;
-preenchimento: 12px 22px;
+preenchimento: 14px 25px;
 raio da borda: 30px;
+decoração de texto: nenhuma;
+cor: branca;
 peso da fonte: negrito;
 Transição: 0,3s;
 }
 
-.social a:hover {
-fundo: #d4af37;
-cor: #0b1f3a;
-transformar: translateY(-2px);
+.social-button:hover {
+transformar: translateY(-3px);
+}
+
+.instagram {
+fundo: #c13584;
+}
+
+.tiktok {
+fundo: #111;
 }
 
 .contato {
+fundo: #f1f3f5;
 alinhamento do texto: centralizado;
 }
 
-.contato p {
-largura máxima: 700px;
-margem: 0 auto 25px;
+.contact-box {
+largura máxima: 750px;
+margem: automática;
+fundo: branco;
+preenchimento: 45px;
+raio da borda: 15px;
+box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.contact-box h2 {
+tamanho da fonte: 34px;
+margem-inferior: 15px;
 }
 
 rodapé {
-fundo: #08182d;
+fundo: #111827;
 cor: branca;
 alinhamento do texto: centralizado;
-preenchimento: 30px 20px;
-}
-
-rodapé p {
-margem: 5px 0;
+preenchimento: 35px 20px;
 }
 
 rodapé forte {
 cor: #d4af37;
 }
 
+rodapé p {
+margem: 8px 0;
+}
+
 @media (max-width: 800px) {
-cabeçalho h1 {
-tamanho da fonte: 26px;
+
+.header-container {
+flex-direction: coluna;
+}
+
+.herói h1 {
+tamanho da fonte: 40px;
 }
 
 .herói h2 {
-tamanho da fonte: 30px;
-}
-
-.cards {
-grid-template-columns: 1fr;
-}
-
-nav a {
-exibição: inline-block;
-margem: 5px 7px;
-}
-
-seção {
-preenchimento: 30px 20px;
-}
-}
-
-@media (max-width: 500px) {
-.herói {
-preenchimento: 50px 20px;
-}
-
-.herói h2 {
-tamanho da fonte: 26px;
+tamanho da fonte: 23px;
 }
 
 .herói p {
 tamanho da fonte: 17px;
 }
 
-.versículo p {
-tamanho da fonte: 18px;
+.about-grid {
+grid-template-columns: 1fr;
+}
+
+.cards {
+grid-template-columns: 1fr;
+}
+
+.quote blockquote {
+tamanho da fonte: 23px;
+}
+
+nav a {
+tamanho da fonte: 14px;
+preenchimento: 7px 9px;
 }
 }
+
 </style>
 </head>
 
 <body>
 
 <header>
-<h1>Pastor Anderson Viana</h1>
-<p>Ministério • Palavra • Fé</p>
+
+<div class="header-container">
+
+<div class="logo">
+Pastor Anderson <span>Viana</span>
+</div>
 
 <nav>
 <a href="#inicio">Início</a>
+<a href="#sobre">sobre</a>
 <a href="#ministerio">Ministério</a>
-<a href="#reflexao">Reflexão</a>
+<a href="#mensagem">Mensagem</a>
+<a href="#redes">Redes</a>
 <a href="#contato">Contato</a>
 </nav>
-</header>
 
-<principal>
-
-<section id="inicio" class="hero">
-<h2>Seja bem-vindo</h2>
-
-<p>
-Um espaço dedicado à Palavra de Deus,
-à fé cristã e à mensagem do Evangelho.
-</p>
-
-<a class="btn" href="#ministerio">
-Conheça meu man
-</a>
-</section>
-
-<section class="versiculo">
-<div class="section-title">
-<h2>Uma Palavra de <span>Fé</span></h2>
 </div>
 
+</header>
+
+
+<section class="hero" id="inicio">
+
+<div class="hero-content">
+
+<h1>Pastor Anderson Viana</h1>
+
+<h2>Ministério • Palavra • Fé</h2>
+
 <p>
-“Pois não me envergonho do evangelho de Cristo,
-porque é o poder de Deus para salvação de todo aquele
-que crê.”
+Uma voz anunciando o Evangelho de Cristo,
+levando uma mensagem de fé, esperança e transformação.
 </p>
 
-Romanos 1:16
+<a href="#ministerio" class="btn">
+Conheça o Ministério
+</a>
+
+<a href="#redes" class="btn btn-dark">
+Acompanhar nas Redes
+</a>
+
+</div>
+
 </section>
 
-<section id="ministerio">
+
+<section class="about" id="sobre">
+
+<div class="container">
 
 <div class="section-title">
-<h2>Meu <span>Ministério</span></h2>
+<h2> Olá Mim</h2>
+<p>Uma vida dedicada ao Evangelho de Cristo</p>
+</div>
+
+<div class="about-grid">
+
+<div class="about-image">
+
+<img
+src=" https://images.unsplash.com/photo-1481627834876-b7833e8f5570?auto=format&fit=crop&w=1000&q=85 "
+alt="Bíblia e livros">
+</div>
+
+<div class="about-text">
+
+<h3>Uma voz a serviço do Reino</h3>
+
+<p>
+Sou o Pastor Anderson Viana, pregador do Evangelho,
+dedicado a anunciar a Palavra de Deus e levar uma mensagem
+de fé, esperança e transformação.
+</p>
+
+<p>
+Este espaço foi criado para reunir mensagens,
+estudos bíblicos, reflexões e conteúdos que podem
+fortalecer a caminhada daqueles que desejam conhecer
+mais profundamente a Deus.
+</p>
+
+<p>
+Minha missão é proclamar Cristo, ensinando a Palavra
+e encorajar as pessoas a viverem uma fé verdadeira,
+profunda e transformadora.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section class="cards-section" id="ministerio">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>Meu Ministério</h2>
+
+<p>
+Palavra, ensino e compromisso com o Evangelho
+</p>
+
 </div>
 
 <div class="cards">
 
 <div class="card">
+
+<div class="card-icon">📖</div>
+
 <h3>Palavra de Deus</h3>
 
 <p>
-Pregação e ensino das Escrituras,
-buscando anunciar a verdade do Evangelho
-com fé, amor e compromisso.
+Mensagens fundamentadas nas Escrituras
+para edificar, ensinar e fortalecer a fé.
 </p>
+
 </div>
+
 
 <div class="card">
-<h3>Reflexões</h3>
+
+<div class="card-icon">🔥</div>
+
+<h3>Pregacao</h3>
 
 <p>
-Mensagens para fortalecer a fé,
-trazer esperança e aproximar pessoas
-de Deus.
+Uma mensagem centrada em Cristo,
+com paixão pelo Evangelho e pela transformação de vidas.
 </p>
+
 </div>
+
 
 <div class="card">
-<h3>Evangelho</h3>
+
+<div class="card-icon">🙏</div>
+
+<h3>Vida com Deus</h3>
 
 <p>
-Uma mensagem de salvação, transformação
-e esperança através de Jesus Cristo.
+Reflexões e ensinamentos para ajudar
+pessoas a desenvolverem uma caminhada mais profunda com Deus.
 </p>
+
 </div>
 
 </div>
-</section>
 
-<section id="reflexao">
-
-<div class="section-title">
-<h2>Palavra para <span>Hoje</span></h2>
 </div>
-
-<p>
-Deus continua trabalhando mesmo quando não
-conseguimos enxergar o que Ele está fazendo.
-Permaneça firme, continue confiando e não
-abandone a fé.
-</p>
-
-<br>
-
-<p>
-O silêncio de Deus não significa ausência.
-Muitas vezes, é no silêncio que Ele prepara
-aquilo que vemos no tempo certo.
-</p>
 
 </section>
 
-<section class="social">
 
-<div class="section-title">
-<h2>Minhas <span>Redes Sociais</span></h2>
+<section class="quote" id="mensagem">
+
+<div class="container">
+
+<blockquote>
+“Não fomos chamados apenas para falar sobre Cristo,
+mas para viver de tal maneira que as pessoas possam
+enxergar Cristo através de nós.”
+</blockquote>
+
+<cite>
+— Pastor Anderson Viana
+</cite>
+
 </div>
 
+</section>
+
+
+<section class="social" id="redes">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>Acompanhe o Ministério</h2>
+
 <p>
-Acompanhe mensagens, reflexões e conteúdos
-do ministério pelas redes sociais.
+Siga o trabalho e receba novas mensagens e conteúdos.
 </p>
 
-<br>
+</div>
+
+<div class="social-buttons">
 
 <a
+class="social-button instagram"
 href=" https://www.instagram.com/pastorandersonviana/ "
-alvo="_blank"
-rel="noopener noreferrer"
->
+alvo="_blank">
 Instagram
 </a>
 
 <a
+class="social-button tiktok"
 href=" https://www.tiktok.com/@pastorandersonviana "
-alvo="_blank"
-rel="noopener noreferrer"
->
+alvo="_blank">
 TikTok
 </a>
 
-</section>
-
-<seção id="contato" class="contato">
-
-<div class="section-title">
-<h2>Entre em <span>Contato</span></h2>
 </div>
 
-<p>
-Para convites, mensagens e informações sobre
-o ministério, entre em contato através das
-minhas redes sociais.
-</p>
-
-<a
-classe="btn"
-href=" https://www.instagram.com/pastorandersonviana/ "
-alvo="_blank"
-rel="noopener noreferrer"
->
-Falar comigo
-</a>
+</div>
 
 </section>
 
-</main>
+
+<section class="contact" id="contato">
+
+<div class="container">
+
+<div class="contact-box">
+
+<h2>Entre em Contato</h2>
+
+<p>
+Para convites, pregações, ministrações,
+parcerias e outras informações sobre o ministério,
+entre em contato através das redes sociais.
+</p>
+
+<br>
+
+<a
+href=" https://www.instagram.com/pastorandersonviana/ "
+alvo="_blank"
+class="btn">
+Falar pelo Instagram
+</a>
+
+</div>
+
+</div>
+
+</section>
+
 
 <rodapé>
 
