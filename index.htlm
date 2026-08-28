@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Pastor Anderson Viana</title>
+
+<style>
+* {
+box-sized: caixa com borda;
+margem: 0;
+preenchimento: 0;
+}
+
+corpo {
+família de fontes: Arial, sem serifa;
+fundo: #0b0f14;
+cor: #ffffff;
+altura da linha: 1,6;
+}
+
+cabeçalho {
+preenchimento: 70px 20px;
+alinhamento do texto: centralizado;
+fundo: gradiente-linear(135deg, #111827, #172554);
+}
+
+cabeçalho h1 {
+tamanho da fonte: 42px;
+margem-inferior: 15px;
+}
+
+cabeçalho p {
+tamanho da fonte: 20px;
+cor: #d1d5db;
+}
+
+seção {
+largura máxima: 900px;
+margem: automática;
+preenchimento: 55px 20px;
+alinhamento do texto: centralizado;
+}
+
+h2 {
+tamanho da fonte: 30px;
+margem-inferior: 20px;
+}
+
+.texto {
+tamanho da fonte: 18px;
+cor: #d1d5db;
+margem-inferior: 30px;
+}
+
+.versículo {
+margem: 30px automática;
+preenchimento: 25px;
+borda esquerda: 4px sólida #60a5fa;
+fundo: #111827;
+raio da borda: 10px;
+tamanho da fonte: 19px;
+estilo-da-fonte: itálico;
+}
+
+.cards {
+Exibição: grade;
+grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+espaço: 20px;
+margem superior: 30px;
+}
+
+.card {
+fundo: #111827;
+preenchimento: 30px 20px;
+raio da borda: 15px;
+borda: 1px sólida #263244;
+}
+
+.card h3 {
+margem-inferior: 10px;
+tamanho da fonte: 21px;
+}
+
+.card p {
+cor: #cbd5e1;
+}
+
+.botos {
+Exibir: flexível;
+justificar-conteúdo: centralizado;
+espaçamento: 15px;
+flex-wrap: envolver;
+margem superior: 30px;
+}
+
+.botao {
+exibição: inline-block;
+preenchimento: 14px 25px;
+raio da borda: 30px;
+fundo: #2563eb;
+cor: branca;
+decoração de texto: nenhuma;
+peso da fonte: negrito;
+}
+
+.botao:hover {
+fundo: #1d4ed8;
+}
+
+rodapé {
+alinhamento do texto: centralizado;
+preenchimento: 30px 20px;
+fundo: #070a0f;
+cor: #9ca3af;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Pastor Anderson Viana</h1>
+<p>Ministério, Palavra e Fé</p>
+</header>
+
+<section>
+<h2>Seja bem-vindo</h2>
+
+<p class="texto">
+Este é o meu espaço oficial na internet.
+Aqui você encontrará mensagens, estudos bíblicos,
+reflexões e conteúdos para fortalecer sua caminhada com Deus.
+</p>
+
+<div class="versiculo">
+“Porque não me envergonho do evangelho de Cristo,
+pois é o poder de Deus para salvação de todo aquele que crê.”
+<br><br>
+Romanos 1:16
+</div>
+</section>
+
+<section>
+<h2>Meu Ministério</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>📖 Palavra de Deus</h3>
+<p>
+Mensagens e ensinamentos fundamentados nas Escrituras.
+</p>
+</div>
+
+<div class="card">
+<h3>🔥 Reflexões</h3>
+<p>
+Reflexões para fortalecer a fé e aproximar você de Deus.
+</p>
+</div>
+
+<div class="card">
+<h3>🙏 Evangelho</h3>
+<p>
+Uma mensagem de fé, esperança e transformação através de Cristo.
+</p>
+</div>
+
+</div>
+</section>
+
+<section>
+<h2>Redes Sociais</h2>
+
+<p class="texto">
+Acompanhe meu ministério também pelas redes sociais.
+</p>
+
+<div class="botos">
+
+<a class="botao"
+href=" https://www.instagram.com/pastorandersonviana "
+alvo="_blank">
+Instagram
+</a>
+
+<a class="botao"
+href=" https://www.tiktok.com/@pastorandersonviana "
+alvo="_blank">
+TikTok
+</a>
+
+</div>
+</section>
+
+<rodapé>
+<p>© 2026 Pastor Anderson Viana</p>
+<p>Ministério, Palavra e Fé</p>
+</footer>
+
+</body>
+</html>
