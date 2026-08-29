@@ -5,7 +5,10 @@
 
 <meta charset="UTF-8">
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta
+name="viewport"
+content="width=device-width, initial-scale=1.0"
+>
 
 <title>Pastor Anderson Viana | Ministério, Palavra e Fé</title>
 
@@ -14,662 +17,716 @@ name="description"
 content="Site oficial do Pastor Anderson Viana. Ministério, Palavra, Fé, estudos bíblicos, mensagens e reflexões."
 >
 
-<meta name="author" content="Pastor Anderson Viana">
+<meta
+name="author"
+content="Pastor Anderson Viana"
+>
 
 <style>
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
+/* =========================
+RESET
+========================= */
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
 }
 
-html{
-scroll-behavior:smooth;
+html {
+scroll-behavior: smooth;
 }
 
-body{
-font-family:Georgia,"Times New Roman",serif;
-background:#080808;
-color:#f5f5f5;
-line-height:1.8;
+body {
+font-family: Georgia, "Times New Roman", serif;
+background: #080808;
+color: #f5f5f5;
+line-height: 1.8;
 }
 
-a{
-color:inherit;
-text-decoration:none;
+a {
+color: inherit;
+text-decoration: none;
 }
 
-img{
-max-width:100%;
-display:block;
+img {
+max-width: 100%;
+display: block;
 }
 
-.container{
-width:90%;
-max-width:1200px;
-margin:0 auto;
+.container {
+width: 90%;
+max-width: 1200px;
+margin: 0 auto;
 }
 
 /* =========================
 CABEÇALHO
 ========================= */
 
-header{
-position:sticky;
-top:0;
-z-index:1000;
-background:rgba(8,8,8,.97);
-border-bottom:1px solid #8d6b2f;
+header {
+position: sticky;
+top: 0;
+z-index: 1000;
+background: rgba(8, 8, 8, 0.98);
+border-bottom: 1px solid #8d6b2f;
 }
 
-.nav{
-min-height:80px;
-display:flex;
-align-items:center;
-justify-content:space-between;
-gap:25px;
+.nav {
+min-height: 80px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+gap: 25px;
 }
 
-.brand{
-color:#d6ae55;
-font-size:22px;
-font-weight:bold;
-letter-spacing:1px;
+.brand {
+color: #d6ae55;
+font-size: 21px;
+font-weight: bold;
+letter-spacing: 1px;
 }
 
-.menu{
-display:flex;
-align-items:center;
-justify-content:center;
-gap:20px;
-flex-wrap:wrap;
+.menu {
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 18px;
+flex-wrap: wrap;
 }
 
-.menu a{
-font-family:Arial,sans-serif;
-font-weight:bold;
-color:#fff;
-transition:.3s;
+.menu a {
+font-family: Arial, sans-serif;
+font-weight: bold;
+color: #ffffff;
+transition: 0.3s;
 }
 
-.menu a:hover{
-color:#d6ae55;
+.menu a:hover {
+color: #d6ae55;
 }
 
-.languages{
-display:flex;
-gap:8px;
-align-items:center;
+/* =========================
+IDIOMAS
+========================= */
+
+.languages {
+display: flex;
+align-items: center;
+gap: 7px;
+margin-left: 10px;
 }
 
-.lang-btn{
-border:1px solid #d6ae55;
-background:#111;
-color:#fff;
-padding:7px 9px;
-border-radius:5px;
-cursor:pointer;
-font-family:Arial,sans-serif;
-font-weight:bold;
-font-size:13px;
+.lang-btn {
+border: 1px solid #8d6b2f;
+background: #111111;
+color: #ffffff;
+padding: 8px 10px;
+border-radius: 5px;
+cursor: pointer;
+font-family: Arial, sans-serif;
+font-weight: bold;
+font-size: 13px;
+transition: 0.3s;
 }
 
 .lang-btn:hover,
-.lang-btn.active{
-background:#d6ae55;
-color:#080808;
+.lang-btn.active {
+background: #d6ae55;
+color: #080808;
 }
 
 /* =========================
 HERO
 ========================= */
 
-.hero{
-min-height:720px;
-display:flex;
-align-items:center;
-background:#080808;
+.hero {
+min-height: 720px;
+display: flex;
+align-items: center;
+background: #080808;
 }
 
-.hero-inner{
-display:grid;
-grid-template-columns:1.1fr .75fr;
-align-items:center;
-gap:50px;
-padding:65px 0;
+.hero-inner {
+display: grid;
+grid-template-columns: 1fr 0.75fr;
+align-items: center;
+gap: 60px;
+padding: 70px 0;
 }
 
-.hero-text{
-text-align:left;
+.hero-text {
+text-align: left;
 }
 
-.eyebrow{
-color:#d6ae55;
-font-family:Arial,sans-serif;
-font-weight:bold;
-letter-spacing:5px;
-margin-bottom:18px;
+.eyebrow {
+color: #d6ae55;
+font-family: Arial, sans-serif;
+font-weight: bold;
+letter-spacing: 5px;
+margin-bottom: 20px;
 }
 
-.hero h1{
-font-size:clamp(45px,7vw,80px);
-line-height:1.03;
-margin-bottom:25px;
+.hero h1 {
+font-size: clamp(45px, 7vw, 80px);
+line-height: 1.05;
+margin-bottom: 25px;
 }
 
-.hero h1 span{
-color:#d6ae55;
+.hero h1 span {
+color: #d6ae55;
 }
 
-.hero-subtitle{
-font-size:24px;
-color:#eee;
-margin-bottom:18px;
+.hero-subtitle {
+font-size: 25px;
+color: #eeeeee;
+margin-bottom: 20px;
 }
 
-.hero-description{
-font-size:18px;
-color:#ccc;
-margin-bottom:30px;
+.hero-description {
+font-size: 18px;
+color: #cccccc;
+margin-bottom: 30px;
 }
 
-.hero-buttons{
-display:flex;
-gap:15px;
-flex-wrap:wrap;
+.hero-buttons {
+display: flex;
+gap: 15px;
+flex-wrap: wrap;
 }
 
-.btn{
-display:inline-block;
-padding:12px 24px;
-border:1px solid #d6ae55;
-border-radius:5px;
-font-family:Arial,sans-serif;
-font-weight:bold;
-transition:.3s;
-cursor:pointer;
+.btn {
+display: inline-block;
+padding: 13px 25px;
+border: 1px solid #d6ae55;
+border-radius: 5px;
+font-family: Arial, sans-serif;
+font-weight: bold;
+transition: 0.3s;
+cursor: pointer;
 }
 
-.btn-gold{
-background:#d6ae55;
-color:#080808;
+.btn-gold {
+background: #d6ae55;
+color: #080808;
 }
 
-.btn-gold:hover{
-background:#fff;
-border-color:#fff;
+.btn-gold:hover {
+background: #ffffff;
+border-color: #ffffff;
 }
 
-.btn-outline:hover{
-background:#d6ae55;
-color:#080808;
+.btn-outline:hover {
+background: #d6ae55;
+color: #080808;
 }
 
-.pastor-photo{
-display:flex;
-justify-content:center;
-align-items:center;
+/* =========================
+FOTOS DO PASTOR
+========================= */
+
+.pastor-photo {
+display: flex;
+justify-content: center;
+align-items: center;
 }
 
-.pastor-photo img{
-width:78%;
-max-width:390px;
-border-radius:15px;
-border:2px solid #d6ae55;
-box-shadow:0 0 40px rgba(214,174,85,.20);
+.pastor-photo img {
+width: 100%;
+max-width: 360px;
+border-radius: 15px;
+border: 2px solid #d6ae55;
+box-shadow: 0 0 35px rgba(214, 174, 85, 0.20);
 }
 
 /* =========================
 SEÇÕES
 ========================= */
 
-section{
-padding:90px 0;
+section {
+padding: 90px 0;
 }
 
-.section-title{
-text-align:center;
-margin-bottom:50px;
+.section-title {
+text-align: center;
+margin-bottom: 50px;
 }
 
-.section-title .small{
-color:#d6ae55;
-font-family:Arial,sans-serif;
-font-weight:bold;
-letter-spacing:4px;
-text-transform:uppercase;
+.section-title .small {
+color: #d6ae55;
+font-family: Arial, sans-serif;
+font-weight: bold;
+letter-spacing: 4px;
+text-transform: uppercase;
 }
 
-.section-title h2{
-font-size:45px;
-margin:10px 0;
+.section-title h2 {
+font-size: 45px;
+margin: 10px 0;
 }
 
-.section-title p{
-color:#bbb;
-max-width:750px;
-margin:0 auto;
+.section-title p {
+color: #bbbbbb;
+max-width: 750px;
+margin: 0 auto;
 }
 
 /* =========================
 SOBRE
 ========================= */
 
-#sobre{
-background:#101010;
+#sobre {
+background: #101010;
 }
 
-.about-grid{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:50px;
-align-items:center;
+.about-grid {
+display: grid;
+grid-template-columns: 0.75fr 1fr;
+gap: 50px;
+align-items: center;
 }
 
-.about-image img{
-border-radius:12px;
-border:1px solid #8d6b2f;
+.about-image {
+display: flex;
+justify-content: center;
 }
 
-.about-text h3{
-color:#d6ae55;
-font-size:30px;
-margin-bottom:20px;
+.about-image img {
+width: 100%;
+max-width: 330px;
+border-radius: 12px;
+border: 1px solid #8d6b2f;
 }
 
-.about-text p{
-margin-bottom:18px;
-color:#ddd;
+.about-text h3 {
+color: #d6ae55;
+font-size: 30px;
+margin-bottom: 20px;
 }
 
-.credentials{
-margin-top:30px;
-padding:25px;
-background:#0b0b0b;
-border-left:4px solid #d6ae55;
-}
-
-.credentials h4{
-color:#d6ae55;
-font-size:22px;
-margin-bottom:12px;
-}
-
-.credentials p{
-margin-bottom:10px;
+.about-text p {
+margin-bottom: 18px;
+color: #dddddd;
 }
 
 /* =========================
-LIVRO
+FORMAÇÃO
 ========================= */
 
-#livro{
-background:#080808;
+.credentials {
+margin-top: 35px;
+padding: 30px;
+border: 1px solid #5f4925;
+border-radius: 12px;
+background: #0b0b0b;
 }
 
-.book-card{
-max-width:1000px;
-margin:auto;
-display:grid;
-grid-template-columns:.7fr 1.3fr;
-gap:45px;
-align-items:center;
-padding:45px;
-background:#111;
-border:1px solid #8d6b2f;
-border-radius:15px;
-box-shadow:0 10px 35px rgba(0,0,0,.4);
+.credentials h4 {
+color: #d6ae55;
+font-size: 24px;
+margin-bottom: 18px;
 }
 
-.book-image img{
-width:100%;
-max-width:350px;
-margin:auto;
-border-radius:10px;
-border:1px solid #5f4925;
+.credentials ul {
+padding-left: 22px;
 }
 
-.book-content h3{
-font-size:38px;
-color:#d6ae55;
-margin-bottom:18px;
-}
-
-.book-content h4{
-font-size:25px;
-margin-bottom:18px;
-}
-
-.book-content p{
-color:#ddd;
-margin-bottom:18px;
-}
-
-.coming{
-display:inline-block;
-margin:10px 0 20px;
-padding:8px 16px;
-border:1px solid #d6ae55;
-color:#d6ae55;
-font-family:Arial,sans-serif;
-font-weight:bold;
-letter-spacing:2px;
-border-radius:4px;
+.credentials li {
+color: #dddddd;
+margin-bottom: 10px;
 }
 
 /* =========================
 MINISTÉRIO
 ========================= */
 
-#ministerio{
-background:#101010;
+#ministerio {
+background: #080808;
 }
 
-.ministry-card{
-max-width:900px;
-margin:auto;
-text-align:center;
-padding:50px;
-border:1px solid #8d6b2f;
-border-radius:15px;
-background:#111;
+.ministry-card {
+max-width: 900px;
+margin: auto;
+text-align: center;
+padding: 50px;
+border: 1px solid #8d6b2f;
+border-radius: 15px;
+background: #111111;
 }
 
-.ministry-card img{
-width:220px;
-margin:0 auto 30px;
+.ministry-card img {
+width: 180px;
+max-width: 100%;
+margin: 0 auto 30px;
 }
 
-.ministry-card h3{
-font-size:35px;
-color:#d6ae55;
-margin-bottom:20px;
+.ministry-card h3 {
+font-size: 35px;
+color: #d6ae55;
+margin-bottom: 20px;
 }
 
-.ministry-card p{
-color:#ddd;
-margin-bottom:15px;
+.ministry-card p {
+color: #dddddd;
+}
+
+/* =========================
+LIVRO
+========================= */
+
+#livro {
+background: #101010;
+}
+
+.book-card {
+display: grid;
+grid-template-columns: 0.7fr 1fr;
+gap: 50px;
+align-items: center;
+max-width: 1000px;
+margin: auto;
+padding: 45px;
+background: #111111;
+border: 1px solid #8d6b2f;
+border-radius: 15px;
+}
+
+.book-image {
+display: flex;
+justify-content: center;
+}
+
+.book-image img {
+width: 100%;
+max-width: 300px;
+border-radius: 10px;
+box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+}
+
+.book-content h3 {
+font-size: 38px;
+color: #d6ae55;
+margin-bottom: 15px;
+}
+
+.book-content h4 {
+font-size: 23px;
+color: #ffffff;
+margin-bottom: 20px;
+}
+
+.book-content p {
+color: #dddddd;
+margin-bottom: 18px;
+}
+
+.coming-soon {
+display: inline-block;
+margin-top: 10px;
+padding: 10px 18px;
+border: 1px solid #d6ae55;
+color: #d6ae55;
+border-radius: 5px;
+font-family: Arial, sans-serif;
+font-weight: bold;
+}
+
+/* =========================
+ALTARES EM CINZAS
+========================= */
+
+.altar {
+background: #080808;
+text-align: center;
+min-height: 420px;
+display: flex;
+align-items: center;
+}
+
+.altar-content {
+max-width: 900px;
+margin: auto;
+}
+
+.altar h2 {
+font-size: clamp(40px, 7vw, 75px);
+color: #d6ae55;
+line-height: 1.1;
+margin-bottom: 25px;
+}
+
+.altar p {
+font-size: 23px;
+color: #ffffff;
+margin-bottom: 12px;
 }
 
 /* =========================
 ESTUDOS
 ========================= */
 
-#estudos{
-background:#101010;
+#estudos {
+background: #101010;
 }
 
-.study{
-background:#151515;
-border:1px solid #5f4925;
-border-radius:15px;
-padding:45px;
-margin-bottom:40px;
-box-shadow:0 10px 30px rgba(0,0,0,.35);
+.study {
+background: #151515;
+border: 1px solid #5f4925;
+border-radius: 15px;
+padding: 45px;
+margin-bottom: 40px;
+box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
 }
 
-.study-number{
-color:#d6ae55;
-font-family:Arial,sans-serif;
-font-size:14px;
-font-weight:bold;
-letter-spacing:3px;
-text-transform:uppercase;
+.study-number {
+color: #d6ae55;
+font-family: Arial, sans-serif;
+font-size: 14px;
+font-weight: bold;
+letter-spacing: 3px;
+text-transform: uppercase;
 }
 
-.study h3{
-color:#fff;
-font-size:35px;
-margin:8px 0 20px;
+.study h3 {
+color: #ffffff;
+font-size: 35px;
+margin: 8px 0 20px;
 }
 
-.study h4{
-color:#d6ae55;
-font-size:23px;
-margin-top:30px;
-margin-bottom:12px;
+.study h4 {
+color: #d6ae55;
+font-size: 23px;
+margin-top: 30px;
+margin-bottom: 12px;
 }
 
-.study p{
-color:#ddd;
-margin-bottom:16px;
-font-size:17px;
+.study p {
+color: #dddddd;
+margin-bottom: 16px;
+font-size: 17px;
 }
 
-.bible{
-padding:20px;
-margin:25px 0;
-border-left:4px solid #d6ae55;
-background:#0c0c0c;
-color:#eee;
-font-style:italic;
-}
-
-/* =========================
-ALTARES
-========================= */
-
-.altar{
-background:#080808;
-text-align:center;
-min-height:480px;
-display:flex;
-align-items:center;
-border-top:1px solid #302514;
-border-bottom:1px solid #302514;
-}
-
-.altar-content{
-max-width:900px;
-margin:auto;
-}
-
-.altar h2{
-font-size:clamp(40px,7vw,75px);
-color:#d6ae55;
-line-height:1.1;
-margin-bottom:25px;
-}
-
-.altar p{
-font-size:23px;
-color:#fff;
-margin-bottom:12px;
+.bible {
+padding: 20px;
+margin: 25px 0;
+border-left: 4px solid #d6ae55;
+background: #0c0c0c;
+color: #eeeeee;
+font-style: italic;
 }
 
 /* =========================
 MENSAGENS
 ========================= */
 
-#mensagens{
-background:#080808;
+#mensagens {
+background: #080808;
 }
 
-.messages-grid{
-display:grid;
-grid-template-columns:repeat(2,1fr);
-gap:25px;
+.messages-grid {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+gap: 25px;
 }
 
-.message{
-padding:30px;
-background:#111;
-border:1px solid #40331b;
-border-radius:12px;
+.message {
+padding: 30px;
+background: #111111;
+border: 1px solid #40331b;
+border-radius: 12px;
 }
 
-.message h3{
-color:#d6ae55;
-margin-bottom:12px;
+.message h3 {
+color: #d6ae55;
+margin-bottom: 12px;
 }
 
-.message p{
-color:#ddd;
+.message p {
+color: #dddddd;
 }
 
 /* =========================
 GALERIA
 ========================= */
 
-#galeria{
-background:#101010;
+#galeria {
+background: #101010;
 }
 
-.gallery-grid{
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:25px;
-align-items:start;
+.gallery-grid {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 25px;
+align-items: start;
 }
 
-.gallery-item{
-background:#111;
-border:1px solid #5f4925;
-border-radius:12px;
-padding:15px;
+.gallery-item {
+background: #111111;
+border: 1px solid #40331b;
+border-radius: 12px;
+padding: 15px;
 }
 
-.gallery-item img{
-width:100%;
-height:400px;
-object-fit:contain;
-border-radius:8px;
-background:#080808;
+.gallery-item img {
+width: 100%;
+max-width: 280px;
+max-height: 380px;
+object-fit: contain;
+margin: 0 auto;
+border-radius: 10px;
+}
+
+.gallery-caption {
+text-align: center;
+color: #d6ae55;
+font-family: Arial, sans-serif;
+font-weight: bold;
+margin-top: 12px;
 }
 
 /* =========================
-CONTATO
+REDES SOCIAIS
 ========================= */
 
-#contato{
-background:#101010;
+#contato {
+background: #080808;
 }
 
-.social-grid{
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:25px;
+.social-grid {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 25px;
 }
 
-.social-card{
-text-align:center;
-padding:35px 20px;
-background:#151515;
-border:1px solid #5f4925;
-border-radius:12px;
-transition:.3s;
+.social-card {
+text-align: center;
+padding: 35px 20px;
+background: #151515;
+border: 1px solid #5f4925;
+border-radius: 12px;
+transition: 0.3s;
 }
 
-.social-card:hover{
-transform:translateY(-5px);
-border-color:#d6ae55;
+.social-card:hover {
+transform: translateY(-5px);
+border-color: #d6ae55;
 }
 
-.social-card h3{
-color:#d6ae55;
-font-size:25px;
-margin-bottom:10px;
+.social-card h3 {
+color: #d6ae55;
+font-size: 25px;
+margin-bottom: 10px;
 }
 
-.social-card p{
-color:#bbb;
-margin-bottom:20px;
+.social-card p {
+color: #bbbbbb;
+margin-bottom: 20px;
 }
 
 /* =========================
 RODAPÉ
 ========================= */
 
-footer{
-background:#050505;
-border-top:1px solid #5f4925;
-padding:45px 0;
-text-align:center;
+footer {
+background: #050505;
+border-top: 1px solid #5f4925;
+padding: 45px 0;
+text-align: center;
 }
 
-.footer-brand{
-color:#d6ae55;
-font-size:24px;
-font-weight:bold;
-margin-bottom:10px;
+.footer-brand {
+color: #d6ae55;
+font-size: 24px;
+font-weight: bold;
+margin-bottom: 10px;
 }
 
-footer p{
-color:#999;
+footer p {
+color: #999999;
 }
 
-.verse{
-margin-top:15px;
-color:#d6ae55;
-font-style:italic;
+.verse {
+margin-top: 15px;
+color: #d6ae55;
+font-style: italic;
 }
 
 /* =========================
 RESPONSIVO
 ========================= */
 
-@media(max-width:900px){
+@media (max-width: 900px) {
 
-.nav{
-flex-direction:column;
-padding:18px 0;
+.nav {
+flex-direction: column;
+padding: 20px 0;
 }
 
-.menu{
-gap:13px;
+.menu {
+justify-content: center;
 }
 
-.hero{
-min-height:auto;
+.hero {
+min-height: auto;
 }
 
-.hero-inner{
-grid-template-columns:1fr;
-text-align:center;
+.hero-inner {
+grid-template-columns: 1fr;
+text-align: center;
 }
 
-.hero-text{
-text-align:center;
+.hero-text {
+text-align: center;
 }
 
-.hero-buttons{
-justify-content:center;
+.hero-buttons {
+justify-content: center;
 }
 
-.pastor-photo img{
-width:60%;
-max-width:300px;
+.pastor-photo img {
+max-width: 300px;
 }
 
-.about-grid{
-grid-template-columns:1fr;
+.about-grid {
+grid-template-columns: 1fr;
 }
 
-.book-card{
-grid-template-columns:1fr;
-padding:30px 22px;
+.about-image img {
+max-width: 280px;
 }
 
-.gallery-grid{
-grid-template-columns:1fr;
+.book-card {
+grid-template-columns: 1fr;
+text-align: center;
 }
 
-.gallery-item img{
-height:auto;
-max-height:600px;
+.book-image img {
+max-width: 260px;
 }
 
-.messages-grid{
-grid-template-columns:1fr;
+.messages-grid {
+grid-template-columns: 1fr;
 }
 
-.social-grid{
-grid-template-columns:1fr;
+.gallery-grid {
+grid-template-columns: 1fr;
 }
 
-.study{
-padding:30px 22px;
+.social-grid {
+grid-template-columns: 1fr;
+}
+
+.study {
+padding: 30px 22px;
+}
+
+.ministry-card {
+padding: 35px 20px;
+}
+
+.languages {
+margin-left: 0;
 }
 
 }
@@ -678,7 +735,9 @@ padding:30px 22px;
 
 </head>
 
+
 <body>
+
 
 <!-- =========================
 CABEÇALHO
@@ -688,33 +747,54 @@ CABEÇALHO
 
 <div class="container nav">
 
-<a href="#inicio" class="brand">
+<a
+href="#inicio"
+class="brand"
+data-i18n="brand"
+>
 PASTOR ANDERSON VIANA
 </a>
 
+
 <nav class="menu">
 
-<a href="#inicio" data-i18n="nav_inicio">Início</a>
-<a href="#sobre" data-i18n="nav_sobre">Sobre</a>
-<a href="#ministerio" data-i18n="nav_ministerio">Ministério</a>
-<a href="#livro" data-i18n="nav_livro">Livro</a>
-<a href="#estudos" data-i18n="nav_estudos">Estudos</a>
-<a href="#mensagens" data-i18n="nav_mensagens">Mensagens</a>
-<a href="#contato" data-i18n="nav_contato">Contato</a>
+<a href="#inicio" data-i18n="nav_home">Início</a>
+
+<a href="#sobre" data-i18n="nav_about">Sobre</a>
+
+<a href="#ministerio" data-i18n="nav_ministry">Ministério</a>
+
+<a href="#livro" data-i18n="nav_book">Livro</a>
+
+<a href="#estudos" data-i18n="nav_studies">Estudos</a>
+
+<a href="#mensagens" data-i18n="nav_messages">Mensagens</a>
+
+<a href="#contato" data-i18n="nav_contact">Contato</a>
 
 </nav>
 
+
 <div class="languages">
 
-<button class="lang-btn active" onclick="changeLanguage('pt')">
+<button
+class="lang-btn active"
+onclick="changeLanguage('pt')"
+>
 🇧🇷 PT
 </button>
 
-<button class="lang-btn" onclick="changeLanguage('it')">
+<button
+class="lang-btn"
+onclick="changeLanguage('it')"
+>
 🇮🇹 IT
 </button>
 
-<button class="lang-btn" onclick="changeLanguage('en')">
+<button
+class="lang-btn"
+onclick="changeLanguage('en')"
+>
 🇬🇧 EN
 </button>
 
@@ -727,13 +807,18 @@ PASTOR ANDERSON VIANA
 
 <main>
 
+
 <!-- =========================
 INÍCIO
 ========================= -->
 
-<section class="hero" id="inicio">
+<section
+class="hero"
+id="inicio"
+>
 
 <div class="container hero-inner">
+
 
 <div class="hero-text">
 
@@ -741,28 +826,47 @@ INÍCIO
 MINISTÉRIO • PALAVRA • FÉ
 </div>
 
+
 <h1>
-<span data-i18n="pastor">Pastor</span><br>
-<span data-i18n="nome">Anderson Viana</span>
+<span data-i18n="hero_pastor">Pastor</span>
+<br>
+<span data-i18n="hero_name">Anderson Viana</span>
 </h1>
 
-<p class="hero-subtitle" data-i18n="hero_subtitle">
+
+<p
+class="hero-subtitle"
+data-i18n="hero_subtitle"
+>
 Uma voz anunciando o Evangelho de Cristo.
 </p>
 
-<p class="hero-description" data-i18n="hero_description">
+
+<p
+class="hero-description"
+data-i18n="hero_description"
+>
 Uma mensagem de fé, esperança e transformação
 para aqueles que desejam caminhar mais perto
 de Deus.
 </p>
 
+
 <div class="hero-buttons">
 
-<a href="#estudos" class="btn btn-gold" data-i18n="btn_estudos">
+<a
+href="#estudos"
+class="btn btn-gold"
+data-i18n="btn_studies"
+>
 Estudos Bíblicos
 </a>
 
-<a href="#mensagens" class="btn btn-outline" data-i18n="btn_mensagens">
+<a
+href="#mensagens"
+class="btn btn-outline"
+data-i18n="btn_messages"
+>
 Mensagens
 </a>
 
@@ -780,6 +884,7 @@ alt="Pastor Anderson Viana"
 
 </div>
 
+
 </div>
 
 </section>
@@ -795,20 +900,24 @@ SOBRE
 
 <div class="section-title">
 
-<div class="small" data-i18n="sobre_small">Sobre</div>
+<div class="small" data-i18n="about_small">
+Sobre
+</div>
 
-<h2 data-i18n="sobre_title">
+<h2 data-i18n="about_title">
 Uma vida dedicada ao Evangelho
 </h2>
 
-<p data-i18n="sobre_intro">
-Conheça um pouco da caminhada, da visão e do propósito do ministério.
+<p data-i18n="about_intro">
+Conheça um pouco da caminhada,
+da visão e do propósito do ministério.
 </p>
 
 </div>
 
 
 <div class="about-grid">
+
 
 <div class="about-image">
 
@@ -822,124 +931,66 @@ alt="Pastor Anderson Viana"
 
 <div class="about-text">
 
-<h3 data-i18n="sobre_h3">
+<h3 data-i18n="about_heading">
 Chamado, Palavra e Propósito
 </h3>
 
-<p data-i18n="sobre_p1">
-O ministério cristão não é apenas uma posição ou um título.
-É uma responsabilidade diante de Deus e uma oportunidade
-de servir pessoas através da Palavra de Cristo.
+
+<p data-i18n="about_p1">
+O ministério cristão não é apenas uma
+posição ou um título. É uma responsabilidade
+diante de Deus e uma oportunidade de servir
+pessoas através da Palavra de Cristo.
 </p>
 
-<p data-i18n="sobre_p2">
-Este espaço foi criado para compartilhar estudos bíblicos,
-mensagens, reflexões, ensinamentos e conteúdos que possam
-fortalecer a fé e aproximar pessoas da presença de Deus.
+
+<p data-i18n="about_p2">
+Este espaço foi criado para compartilhar
+estudos bíblicos, mensagens, reflexões,
+ensinamentos e conteúdos que possam
+fortalecer a fé e aproximar pessoas
+da presença de Deus.
 </p>
 
-<p data-i18n="sobre_p3">
-O propósito é manter Cristo no centro, valorizando as
-Escrituras e buscando uma vida de fé, santidade, oração
-e compromisso com o Evangelho.
+
+<p data-i18n="about_p3">
+O propósito é manter Cristo no centro,
+valorizando as Escrituras e buscando uma
+vida de fé, santidade, oração e compromisso
+com o Evangelho.
 </p>
 
+
+<!-- CREDENCIAIS -->
 
 <div class="credentials">
 
-<h4 data-i18n="cred_title">
+<h4 data-i18n="credentials_title">
 Formação e Credenciais
 </h4>
 
-<p data-i18n="cred_1">
-• Formação pela ETED — JOCUM / Universidade das Nações.
-</p>
+<ul>
 
-<p data-i18n="cred_2">
-• Formação trilíngue no ensino fundamental e médio.
-</p>
+<li data-i18n="credential_1">
+Formação pela ETADIOC
+</li>
 
-<p data-i18n="cred_3">
-• Bacharel pela Academia de Pregadores.
-</p>
+<li data-i18n="credential_2">
+Ensino Fundamental em Teologia
+</li>
 
-</div>
+<li data-i18n="credential_3">
+Ensino Médio em Teologia
+</li>
 
-</div>
+<li data-i18n="credential_4">
+Bacharel pela Academia de Pregadores
+</li>
 
-</div>
-
-</div>
-
-</section>
-
-
-<!-- =========================
-LIVRO
-========================= -->
-
-<section id="livro">
-
-<div class="container">
-
-<div class="section-title">
-
-<div class="small" data-i18n="livro_small">
-Lançamento
-</div>
-
-<h2 data-i18n="livro_title">
-Altares em Cinzas
-</h2>
-
-<p data-i18n="livro_intro">
-Um chamado para voltar ao fogo da presença de Deus.
-</p>
+</ul>
 
 </div>
 
-
-<div class="book-card">
-
-<div class="book-image">
-
-<img
-src="IMG_0955.png"
-alt="Livro Altares em Cinzas"
->
-
-</div>
-
-
-<div class="book-content">
-
-<div class="coming" data-i18n="coming">
-LANÇAMENTO EM BREVE
-</div>
-
-<h3>
-ALTARES EM CINZAS
-</h3>
-
-<h4 data-i18n="book_subtitle">
-O caminho de volta ao fogo da presença de Deus.
-</h4>
-
-<p data-i18n="book_p1">
-Nem todo altar destruído está perdido.
-Alguns ainda guardam brasas.
-</p>
-
-<p data-i18n="book_p2">
-Altares em Cinzas é um chamado à restauração,
-à oração, à santidade e a uma vida novamente
-acesa pela presença de Deus.
-</p>
-
-<p data-i18n="book_p3">
-Em breve, o livro estará disponível para aqueles
-que desejam percorrer esse caminho de volta ao altar.
-</p>
 
 </div>
 
@@ -960,11 +1011,11 @@ MINISTÉRIO
 
 <div class="section-title">
 
-<div class="small" data-i18n="ministerio_small">
+<div class="small" data-i18n="ministry_small">
 Ministério
 </div>
 
-<h2 data-i18n="ministerio_title">
+<h2 data-i18n="ministry_title">
 Palavra que conduz à presença de Deus
 </h2>
 
@@ -973,24 +1024,30 @@ Palavra que conduz à presença de Deus
 
 <div class="ministry-card">
 
+
 <img
 src="114160BC-C915-4639-97D6-81EBF2D9FE0C.png"
-alt="Brasão do Ministério Pastor Anderson Viana"
+alt="Ministério Pastor Anderson Viana"
 >
+
 
 <h3>
 Ministério Pastor Anderson Viana
 </h3>
 
-<p>
+
+<p data-i18n="ministry_motto">
 Avivamento • Discipulado • Missão
 </p>
 
-<p data-i18n="ministerio_p">
-O propósito deste ministério é anunciar Jesus Cristo,
-ensinar as Escrituras, fortalecer discípulos e despertar
-a Igreja para uma vida de comunhão profunda com Deus.
+
+<p data-i18n="ministry_text">
+O propósito deste ministério é anunciar
+Jesus Cristo, ensinar as Escrituras,
+fortalecer discípulos e despertar a Igreja
+para uma vida de comunhão profunda com Deus.
 </p>
+
 
 </div>
 
@@ -1000,7 +1057,94 @@ a Igreja para uma vida de comunhão profunda com Deus.
 
 
 <!-- =========================
+LIVRO
+========================= -->
+
+<section id="livro">
+
+<div class="container">
+
+<div class="section-title">
+
+<div class="small" data-i18n="book_small">
+Livro
+</div>
+
+<h2 data-i18n="book_title">
+Altares em Cinzas
+</h2>
+
+<p data-i18n="book_intro">
+Um chamado para voltar ao fogo da presença de Deus.
+</p>
+
+</div>
+
+
+<div class="book-card">
+
+
+<div class="book-image">
+
+<img
+src="IMG_0955.png"
+alt="Capa do livro Altares em Cinzas"
+>
+
+</div>
+
+
+<div class="book-content">
+
+<h3>
 ALTARES EM CINZAS
+</h3>
+
+
+<h4 data-i18n="book_subtitle">
+O caminho de volta ao fogo da presença de Deus.
+</h4>
+
+
+<p data-i18n="book_p1">
+Nem todo altar destruído está perdido.
+Alguns ainda guardam brasas.
+</p>
+
+
+<p data-i18n="book_p2">
+Altares em Cinzas é uma mensagem de
+restauração, retorno e busca pela presença
+de Deus. Uma reflexão sobre aquilo que
+precisa ser reconstruído dentro de nós.
+</p>
+
+
+<p data-i18n="book_p3">
+O lançamento do livro será anunciado em breve.
+Acompanhe o ministério para receber as novidades.
+</p>
+
+
+<div
+class="coming-soon"
+data-i18n="book_coming"
+>
+LANÇAMENTO EM BREVE
+</div>
+
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+ALTARES
 ========================= -->
 
 <section class="altar">
@@ -1017,7 +1161,8 @@ Alguns ainda guardam brasas.
 </p>
 
 <p data-i18n="altar_p2">
-O caminho de volta ao fogo da presença de Deus.
+O caminho de volta ao fogo
+da presença de Deus.
 </p>
 
 </div>
@@ -1033,19 +1178,21 @@ ESTUDOS
 
 <div class="container">
 
+
 <div class="section-title">
 
-<div class="small" data-i18n="estudos_small">
+<div class="small" data-i18n="studies_small">
 Estudos
 </div>
 
-<h2 data-i18n="estudos_title">
+<h2 data-i18n="studies_title">
 Estudos Bíblicos
 </h2>
 
-<p data-i18n="estudos_intro">
-Estudos para aprofundar a fé, compreender as Escrituras
-e desenvolver uma vida mais próxima de Deus.
+<p data-i18n="studies_intro">
+Estudos para aprofundar a fé,
+compreender as Escrituras e desenvolver
+uma vida mais próxima de Deus.
 </p>
 
 </div>
@@ -1055,7 +1202,7 @@ e desenvolver uma vida mais próxima de Deus.
 
 <article class="study">
 
-<div class="study-number" data-i18n="estudo01">
+<div class="study-number" data-i18n="study01">
 Estudo 01
 </div>
 
@@ -1063,81 +1210,104 @@ Estudo 01
 Fé — Quando confiar em Deus se torna uma escolha
 </h3>
 
+
 <div class="bible">
 "Ora, a fé é a certeza daquilo que esperamos
 e a prova das coisas que não vemos."
 — Hebreus 11:1
 </div>
 
+
 <p data-i18n="study1_p1">
-A fé bíblica não é simplesmente acreditar que Deus existe.
-A fé envolve confiança, relacionamento e disposição para
-obedecer mesmo quando ainda não conseguimos enxergar
+A fé bíblica não é simplesmente acreditar
+que Deus existe. A fé envolve confiança,
+relacionamento e disposição para obedecer
+mesmo quando ainda não conseguimos enxergar
 o resultado.
 </p>
 
+
 <p data-i18n="study1_p2">
-Muitas vezes queremos primeiro ver para depois acreditar.
-Porém, a caminhada com Deus frequentemente acontece na
-direção contrária. Deus chama, a pessoa confia, obedece
-e então começa a perceber aquilo que Ele estava realizando.
+Muitas vezes queremos primeiro ver para
+depois acreditar. Porém, a caminhada com
+Deus frequentemente acontece na direção
+contrária. Deus chama, a pessoa confia,
+obedece e então começa a perceber aquilo
+que Ele estava realizando.
 </p>
+
 
 <h4 data-i18n="study1_h1">
 A fé não depende das circunstâncias
 </h4>
 
+
 <p data-i18n="study1_p3">
-Existem momentos em que as circunstâncias parecem
-contradizer as promessas de Deus. É justamente nesses
-períodos que a fé precisa deixar de ser apenas uma palavra
-pronunciada e tornar-se uma realidade dentro do coração.
+Existem momentos em que as circunstâncias
+parecem contradizer as promessas de Deus.
+É justamente nesses períodos que a fé
+precisa deixar de ser apenas uma palavra
+pronunciada e tornar-se uma realidade
+dentro do coração.
 </p>
 
+
 <p data-i18n="study1_p4">
-A fé madura não significa ausência de dificuldades.
-Significa permanecer confiando em Deus mesmo enquanto
-as dificuldades existem.
+A fé madura não significa ausência de
+dificuldades. Significa permanecer confiando
+em Deus mesmo enquanto as dificuldades
+existem.
 </p>
+
 
 <h4 data-i18n="study1_h2">
 Fé que produz obediência
 </h4>
 
+
 <p data-i18n="study1_p5">
-A verdadeira fé conduz a atitudes. Quando alguém realmente
-confia em Deus, começa a organizar sua vida de acordo com
-aquilo que Deus ensina.
+A verdadeira fé conduz a atitudes.
+Quando alguém realmente confia em Deus,
+começa a organizar sua vida de acordo
+com aquilo que Deus ensina.
 </p>
 
+
 <p data-i18n="study1_p6">
-Por isso, fé e obediência caminham juntas. Não basta dizer
-que confiamos no Senhor; precisamos permitir que essa
-confiança transforme nossas decisões, prioridades,
+Por isso, fé e obediência caminham juntas.
+Não basta dizer que confiamos no Senhor;
+precisamos permitir que essa confiança
+transforme nossas decisões, prioridades,
 relacionamentos e maneira de viver.
 </p>
+
 
 <h4 data-i18n="study1_h3">
 Aplicação para a vida
 </h4>
 
+
 <p data-i18n="study1_p7">
-Talvez você esteja atravessando uma fase em que não
-consegue compreender o que Deus está fazendo.
-Não confunda silêncio com abandono. Continue buscando,
-continue orando e continue caminhando.
+Talvez você esteja atravessando uma fase
+em que não consegue compreender o que Deus
+está fazendo. Não confunda silêncio com
+abandono. Continue buscando, continue
+orando e continue caminhando.
 </p>
 
+
 <p data-i18n="study1_p8">
-A fé olha para Deus antes de olhar para as circunstâncias.
-Quando os olhos permanecem em Cristo, o coração encontra
-força para continuar.
+A fé olha para Deus antes de olhar para
+as circunstâncias. Quando os olhos permanecem
+em Cristo, o coração encontra força para
+continuar.
 </p>
+
 
 <div class="bible" data-i18n="study1_question">
 Pergunta para reflexão:
-Em qual área da minha vida Deus está me chamando
-para confiar mais nEle?
+Em qual área da minha vida Deus está me
+chamando para confiar mais nEle?
 </div>
 
 </article>
@@ -1147,7 +1317,7 @@ para confiar mais nEle?
 
 <article class="study">
 
-<div class="study-number" data-i18n="estudo02">
+<div class="study-number" data-i18n="study02">
 Estudo 02
 </div>
 
@@ -1155,92 +1325,118 @@ Estudo 02
 Santidade — Uma vida separada para Deus
 </h3>
 
+
 <div class="bible">
 "Sede santos, porque eu sou santo."
 — 1 Pedro 1:16
 </div>
 
+
 <p data-i18n="study2_p1">
-Santidade não significa simplesmente apresentar uma
-aparência religiosa diante das pessoas. Santidade começa
-no interior e se manifesta nas escolhas que fazemos
+Santidade não significa simplesmente
+apresentar uma aparência religiosa diante
+das pessoas. Santidade começa no interior
+e se manifesta nas escolhas que fazemos
 quando ninguém está olhando.
 </p>
 
+
 <p data-i18n="study2_p2">
-Deus não chama seu povo apenas para frequentar lugares
-religiosos. Ele chama homens e mulheres para pertencerem
-a Ele. A santidade nasce dessa compreensão: minha vida
-não pertence somente a mim; ela foi entregue ao Senhor.
+Deus não chama seu povo apenas para frequentar
+lugares religiosos. Ele chama homens e mulheres
+para pertencerem a Ele. A santidade nasce
+dessa compreensão: minha vida não pertence
+somente a mim; ela foi entregue ao Senhor.
 </p>
+
 
 <h4 data-i18n="study2_h1">
 Santidade é relacionamento com Deus
 </h4>
 
+
 <p data-i18n="study2_p3">
-A santidade cristã não deve ser compreendida apenas como
-uma lista de coisas que não podemos fazer. Ela é, acima de
-tudo, uma vida que deseja agradar a Deus.
+A santidade cristã não deve ser compreendida
+apenas como uma lista de coisas que não podemos
+fazer. Ela é, acima de tudo, uma vida que deseja
+agradar a Deus.
 </p>
 
+
 <p data-i18n="study2_p4">
-Quanto mais conhecemos o caráter de Deus, mais compreendemos
-aquilo que precisa ser transformado em nós.
+Quanto mais conhecemos o caráter de Deus,
+mais compreendemos aquilo que precisa ser
+transformado em nós.
 </p>
+
 
 <h4 data-i18n="study2_h2">
 O coração precisa ser tratado
 </h4>
 
+
 <p data-i18n="study2_p5">
-Podemos mudar comportamentos externamente e ainda carregar
-dentro de nós orgulho, inveja, amargura, falta de perdão
-ou desejos que nos afastam da vontade de Deus.
+Podemos mudar comportamentos externamente
+e ainda carregar dentro de nós orgulho,
+inveja, amargura, falta de perdão ou desejos
+que nos afastam da vontade de Deus.
 </p>
 
+
 <p data-i18n="study2_p6">
-Por isso, a santidade começa no coração. Deus trabalha
-profundamente no interior para que a transformação exterior
-seja consequência de uma obra verdadeira.
+Por isso, a santidade começa no coração.
+Deus trabalha profundamente no interior
+para que a transformação exterior seja
+consequência de uma obra verdadeira.
 </p>
+
 
 <h4 data-i18n="study2_h3">
 Santidade exige decisões
 </h4>
 
+
 <p data-i18n="study2_p7">
-Existem ambientes que precisamos abandonar, conversas que
-precisamos interromper, hábitos que precisamos vencer e
-caminhos que precisamos deixar para trás.
+Existem ambientes que precisamos abandonar,
+conversas que precisamos interromper,
+hábitos que precisamos vencer e caminhos
+que precisamos deixar para trás.
 </p>
 
+
 <p data-i18n="study2_p8">
-Não porque queremos parecer melhores que outras pessoas,
-mas porque decidimos viver de maneira coerente com aquele
-que confessamos como Senhor.
+Não porque queremos parecer melhores que
+outras pessoas, mas porque decidimos viver
+de maneira coerente com aquele que confessamos
+como Senhor.
 </p>
+
 
 <h4 data-i18n="study2_h4">
 Santidade e graça
 </h4>
 
+
 <p data-i18n="study2_p9">
-A santidade não é uma tentativa de comprar o amor de Deus.
-Somos salvos pela graça. Entretanto, a graça que nos alcança
-também nos transforma.
+A santidade não é uma tentativa de comprar
+o amor de Deus. Somos salvos pela graça.
+Entretanto, a graça que nos alcança também
+nos transforma.
 </p>
 
+
 <p data-i18n="study2_p10">
-Quem experimenta a graça de Cristo não deseja permanecer
-preso aos mesmos caminhos. Começa a nascer dentro do coração
-um desejo de agradar ao Senhor.
+Quem experimenta a graça de Cristo não deseja
+permanecer preso aos mesmos caminhos.
+Começa a nascer dentro do coração um desejo
+de agradar ao Senhor.
 </p>
+
 
 <div class="bible" data-i18n="study2_question">
 Pergunta para reflexão:
-Existe alguma área da minha vida que preciso entregar
-completamente a Deus?
+Existe alguma área da minha vida que preciso
+entregar completamente a Deus?
 </div>
 
 </article>
@@ -1250,7 +1446,7 @@ completamente a Deus?
 
 <article class="study">
 
-<div class="study-number" data-i18n="estudo03">
+<div class="study-number" data-i18n="study03">
 Estudo 03
 </div>
 
@@ -1258,106 +1454,136 @@ Estudo 03
 Vida com Deus — Permanecer antes de produzir
 </h3>
 
+
 <div class="bible">
 "Permanecei em mim, e eu permanecerei em vós."
 — João 15:4
 </div>
 
+
 <p data-i18n="study3_p1">
-Existe uma diferença entre trabalhar para Deus e caminhar
-com Deus. Podemos realizar muitas atividades religiosas
-e, ainda assim, permitir que nossa comunhão com o Senhor
-fique em segundo plano.
+Existe uma diferença entre trabalhar para Deus
+e caminhar com Deus. Podemos realizar muitas
+atividades religiosas e, ainda assim, permitir
+que nossa comunhão com o Senhor fique em segundo
+plano.
 </p>
 
+
 <p data-i18n="study3_p2">
-Jesus nos ensina sobre permanência. Antes de falar sobre
-aquilo que produzimos, Ele fala sobre permanecer nEle.
-Isso nos mostra que o fruto verdadeiro nasce de um
-relacionamento verdadeiro.
+Jesus nos ensina sobre permanência. Antes de
+falar sobre aquilo que produzimos, Ele fala
+sobre permanecer nEle. Isso nos mostra que
+o fruto verdadeiro nasce de um relacionamento
+verdadeiro.
 </p>
+
 
 <h4 data-i18n="study3_h1">
 O secreto sustenta o público
 </h4>
 
+
 <p data-i18n="study3_p3">
-Uma vida pública forte precisa de uma vida privada com Deus.
-O que acontece diante das pessoas nunca deveria ser maior
-do que aquilo que acontece quando estamos sozinhos diante
+Uma vida pública forte precisa de uma vida
+privada com Deus. O que acontece diante das
+pessoas nunca deveria ser maior do que aquilo
+que acontece quando estamos sozinhos diante
 do Senhor.
 </p>
 
+
 <p data-i18n="study3_p4">
-O tempo de oração, a leitura das Escrituras, a meditação,
-o arrependimento e a busca pela presença de Deus formam
-raízes que sustentam a vida espiritual.
+O tempo de oração, a leitura das Escrituras,
+a meditação, o arrependimento e a busca pela
+presença de Deus formam raízes que sustentam
+a vida espiritual.
 </p>
+
 
 <h4 data-i18n="study3_h2">
 Orar não é apenas pedir
 </h4>
 
+
 <p data-i18n="study3_p5">
-A oração é relacionamento. Podemos apresentar nossas
-necessidades a Deus, mas também precisamos aprender a
-permanecer em silêncio, ouvir, agradecer, confessar e
-simplesmente desfrutar da presença do Senhor.
+A oração é relacionamento. Podemos apresentar
+nossas necessidades a Deus, mas também precisamos
+aprender a permanecer em silêncio, ouvir,
+agradecer, confessar e simplesmente desfrutar
+da presença do Senhor.
 </p>
 
+
 <p data-i18n="study3_p6">
-Uma vida de oração muda nossa maneira de enfrentar problemas
-porque começamos a levar nossas cargas para Deus antes de
-tentar carregá-las sozinhos.
+Uma vida de oração muda nossa maneira de
+enfrentar problemas porque começamos a levar
+nossas cargas para Deus antes de tentar
+carregá-las sozinhos.
 </p>
+
 
 <h4 data-i18n="study3_h3">
 A Palavra alimenta a vida espiritual
 </h4>
 
+
 <p data-i18n="study3_p7">
-Não devemos tratar a Bíblia apenas como uma fonte de frases
-para mensagens. A Escritura precisa confrontar, ensinar,
-corrigir, consolar e transformar nossa vida.
+Não devemos tratar a Bíblia apenas como uma
+fonte de frases para mensagens. A Escritura
+precisa confrontar, ensinar, corrigir,
+consolar e transformar nossa vida.
 </p>
 
+
 <p data-i18n="study3_p8">
-Ler a Palavra significa permitir que Deus fale conosco
-através dela. O objetivo não é apenas terminar capítulos,
-mas permitir que aquilo que lemos entre no coração e alcance
+Ler a Palavra significa permitir que Deus
+fale conosco através dela. O objetivo não é
+apenas terminar capítulos, mas permitir que
+aquilo que lemos entre no coração e alcance
 nossas atitudes.
 </p>
+
 
 <h4 data-i18n="study3_h4">
 Permanecer quando não sentimos nada
 </h4>
 
+
 <p data-i18n="study3_p9">
-Existem dias em que sentimos intensamente a presença de Deus
-e existem dias em que não sentimos nada extraordinário.
+Existem dias em que sentimos intensamente
+a presença de Deus e existem dias em que
+não sentimos nada extraordinário.
 </p>
+
 
 <p data-i18n="study3_p10">
-Nossa fidelidade não pode depender apenas de sentimentos.
-Continuamos buscando porque Deus continua sendo Deus, mesmo
-quando nossas emoções mudam.
+Nossa fidelidade não pode depender apenas
+de sentimentos. Continuamos buscando porque
+Deus continua sendo Deus, mesmo quando nossas
+emoções mudam.
 </p>
 
+
 <p data-i18n="study3_p11">
-A vida com Deus é construída na constância. Um dia de oração
-pode parecer pequeno, uma página da Bíblia pode parecer simples
-e uma escolha correta pode parecer insignificante. Mas, ao
-longo do tempo, essas pequenas decisões constroem uma vida
-profundamente enraizada em Cristo.
+A vida com Deus é construída na constância.
+Um dia de oração pode parecer pequeno, uma
+página da Bíblia pode parecer simples e uma
+escolha correta pode parecer insignificante.
+Mas, ao longo do tempo, essas pequenas
+decisões constroem uma vida profundamente
+enraizada em Cristo.
 </p>
+
 
 <div class="bible" data-i18n="study3_question">
 Pergunta para reflexão:
-Minha vida com Deus está sendo construída somente no público
-ou também no secreto?
+Minha vida com Deus está sendo construída
+somente no público ou também no secreto?
 </div>
 
 </article>
+
 
 </div>
 
@@ -1372,77 +1598,123 @@ MENSAGENS
 
 <div class="container">
 
+
 <div class="section-title">
 
-<div class="small" data-i18n="mensagens_small">
+<div class="small" data-i18n="messages_small">
 Mensagens
 </div>
 
-<h2 data-i18n="mensagens_title">
+<h2 data-i18n="messages_title">
 Palavras para o coração
 </h2>
 
-<p data-i18n="mensagens_intro">
-Reflexões para meditar na Palavra de Deus durante
-a caminhada cristã.
+<p data-i18n="messages_intro">
+Reflexões para meditar na Palavra de Deus
+durante a caminhada cristã.
 </p>
 
 </div>
 
+
 <div class="messages-grid">
 
+
 <article class="message">
-<h3 data-i18n="msg1_title">Deus ainda está trabalhando</h3>
-<p data-i18n="msg1_p">
-Nem tudo aquilo que Deus está fazendo pode ser visto
-imediatamente. Existem processos que acontecem no silêncio.
+
+<h3 data-i18n="msg1_title">
+Deus ainda está trabalhando
+</h3>
+
+<p data-i18n="msg1_text">
+Nem tudo aquilo que Deus está fazendo
+pode ser visto imediatamente. Existem
+processos que acontecem no silêncio.
 Continue confiando.
 </p>
+
 </article>
 
+
 <article class="message">
-<h3 data-i18n="msg2_title">Não abandone o altar</h3>
-<p data-i18n="msg2_p">
-O altar representa entrega. Quando voltamos ao lugar de oração,
-entregamos novamente nossa vontade e permitimos que Deus reacenda
-aquilo que parecia estar se apagando.
+
+<h3 data-i18n="msg2_title">
+Não abandone o altar
+</h3>
+
+<p data-i18n="msg2_text">
+O altar representa entrega. Quando
+voltamos ao lugar de oração, entregamos
+novamente nossa vontade e permitimos
+que Deus reacenda aquilo que parecia
+estar se apagando.
 </p>
+
 </article>
 
+
 <article class="message">
-<h3 data-i18n="msg3_title">A presença vale mais</h3>
-<p data-i18n="msg3_p">
-Não permita que atividades para Deus substituam a presença de Deus.
-Antes de fazer alguma coisa para o Senhor, aprenda a permanecer
-diante dEle.
+
+<h3 data-i18n="msg3_title">
+A presença vale mais
+</h3>
+
+<p data-i18n="msg3_text">
+Não permita que atividades para Deus
+substituam a presença de Deus.
+Antes de fazer alguma coisa para o Senhor,
+aprenda a permanecer diante dEle.
 </p>
+
 </article>
 
+
 <article class="message">
-<h3 data-i18n="msg4_title">Continue caminhando</h3>
-<p data-i18n="msg4_p">
-Há dias em que caminhar parece difícil. Mesmo assim, não pare.
-A fidelidade construída nos dias difíceis também faz parte da
-obra que Deus está realizando.
+
+<h3 data-i18n="msg4_title">
+Continue caminhando
+</h3>
+
+<p data-i18n="msg4_text">
+Há dias em que caminhar parece difícil.
+Mesmo assim, não pare. A fidelidade
+construída nos dias difíceis também
+faz parte da obra que Deus está realizando.
 </p>
+
 </article>
 
+
 <article class="message">
-<h3 data-i18n="msg5_title">O fogo precisa de lenha</h3>
-<p data-i18n="msg5_p">
-Uma vida espiritual saudável precisa de alimento. Palavra,
-oração, comunhão, arrependimento e obediência alimentam
+
+<h3 data-i18n="msg5_title">
+O fogo precisa de lenha
+</h3>
+
+<p data-i18n="msg5_text">
+Uma vida espiritual saudável precisa
+de alimento. Palavra, oração, comunhão,
+arrependimento e obediência alimentam
 continuamente a vida com Deus.
 </p>
+
 </article>
 
+
 <article class="message">
-<h3 data-i18n="msg6_title">Cristo no centro</h3>
-<p data-i18n="msg6_p">
-Quando Cristo está no centro, o ministério deixa de ser
-sobre nossa imagem e passa a ser sobre Sua glória.
+
+<h3 data-i18n="msg6_title">
+Cristo no centro
+</h3>
+
+<p data-i18n="msg6_text">
+Quando Cristo está no centro, o ministério
+deixa de ser sobre nossa imagem e passa
+a ser sobre Sua glória.
 </p>
+
 </article>
+
 
 </div>
 
@@ -1461,42 +1733,75 @@ GALERIA
 
 <div class="section-title">
 
-<div class="small" data-i18n="galeria_small">
+<div class="small" data-i18n="gallery_small">
 Galeria
 </div>
 
-<h2 data-i18n="galeria_title">
+<h2 data-i18n="gallery_title">
 Imagens do Ministério
 </h2>
 
-<p data-i18n="galeria_intro">
-Conheça algumas imagens relacionadas ao ministério e ao livro.
+<p data-i18n="gallery_intro">
+Algumas imagens relacionadas ao ministério,
+ao pastor e ao livro Altares em Cinzas.
 </p>
 
 </div>
 
+
 <div class="gallery-grid">
 
+
 <div class="gallery-item">
+
 <img
 src="IMG_0955.png"
 alt="Capa do livro Altares em Cinzas"
 >
+
+<div
+class="gallery-caption"
+data-i18n="gallery_book"
+>
+Altares em Cinzas
 </div>
 
+</div>
+
+
 <div class="gallery-item">
+
 <img
 src="A39D430C-FC73-43D5-A830-57A37706DBCB.png"
 alt="Pastor Anderson Viana"
 >
+
+<div
+class="gallery-caption"
+data-i18n="gallery_pastor"
+>
+Pastor Anderson Viana
 </div>
 
+</div>
+
+
 <div class="gallery-item">
+
 <img
 src="114160BC-C915-4639-97D6-81EBF2D9FE0C.png"
 alt="Ministério Pastor Anderson Viana"
 >
+
+<div
+class="gallery-caption"
+data-i18n="gallery_ministry"
+>
+Ministério Pastor Anderson Viana
 </div>
+
+</div>
+
 
 </div>
 
@@ -1513,30 +1818,33 @@ CONTATO
 
 <div class="container">
 
+
 <div class="section-title">
 
-<div class="small" data-i18n="contato_small">
+<div class="small" data-i18n="contact_small">
 Redes sociais
 </div>
 
-<h2 data-i18n="contato_title">
+<h2 data-i18n="contact_title">
 Acompanhe o Ministério
 </h2>
 
-<p data-i18n="contato_intro">
-Continue acompanhando mensagens, estudos e conteúdos
-do ministério.
+<p data-i18n="contact_intro">
+Continue acompanhando mensagens,
+estudos e conteúdos do ministério.
 </p>
 
 </div>
 
+
 <div class="social-grid">
+
 
 <div class="social-card">
 
 <h3>Instagram</h3>
 
-<p data-i18n="instagram_p">
+<p data-i18n="instagram_text">
 Mensagens e reflexões
 </p>
 
@@ -1544,9 +1852,9 @@ Mensagens e reflexões
 class="btn btn-gold"
 href="https://www.instagram.com/pastorandersonviana/"
 target="_blank"
-data-i18n="access"
+data-i18n="instagram_button"
 >
-Acessar
+Acessar Instagram
 </a>
 
 </div>
@@ -1556,7 +1864,7 @@ Acessar
 
 <h3>YouTube</h3>
 
-<p data-i18n="youtube_p">
+<p data-i18n="youtube_text">
 Pregações e estudos completos
 </p>
 
@@ -1564,9 +1872,9 @@ Pregações e estudos completos
 class="btn btn-gold"
 href="https://youtube.com/@pastorandersonviana?si=xMix5bnVL3-c7CP_"
 target="_blank"
-data-i18n="access"
+data-i18n="youtube_button"
 >
-Acessar
+Acessar YouTube
 </a>
 
 </div>
@@ -1576,7 +1884,7 @@ Acessar
 
 <h3>TikTok</h3>
 
-<p data-i18n="tiktok_p">
+<p data-i18n="tiktok_text">
 Mensagens rápidas e palavras de fé
 </p>
 
@@ -1584,18 +1892,20 @@ Mensagens rápidas e palavras de fé
 class="btn btn-gold"
 href="https://www.tiktok.com/@pastorandersonviana?_r=1&_t=ZN-99GrFkDSVLK"
 target="_blank"
-data-i18n="access"
+data-i18n="tiktok_button"
 >
-Acessar
+Acessar TikTok
 </a>
 
 </div>
+
 
 </div>
 
 </div>
 
 </section>
+
 
 </main>
 
@@ -1616,8 +1926,12 @@ PASTOR ANDERSON VIANA
 Ministério • Palavra • Fé
 </p>
 
-<p class="verse" data-i18n="footer_verse">
-"Ensina-me os teus caminhos, ó Senhor; quero andar na tua verdade."
+<p
+class="verse"
+data-i18n="footer_verse"
+>
+"Ensina-me os teus caminhos, ó Senhor;
+quero andar na tua verdade."
 </p>
 
 <p>
@@ -1639,199 +1953,164 @@ const translations = {
 
 pt: {
 
-nav_inicio:"Início",
-nav_sobre:"Sobre",
-nav_ministerio:"Ministério",
-nav_livro:"Livro",
-nav_estudos:"Estudos",
-nav_mensagens:"Mensagens",
-nav_contato:"Contato",
+brand: "PASTOR ANDERSON VIANA",
 
-eyebrow:"MINISTÉRIO • PALAVRA • FÉ",
-pastor:"Pastor",
-nome:"Anderson Viana",
-hero_subtitle:"Uma voz anunciando o Evangelho de Cristo.",
-hero_description:"Uma mensagem de fé, esperança e transformação para aqueles que desejam caminhar mais perto de Deus.",
-btn_estudos:"Estudos Bíblicos",
-btn_mensagens:"Mensagens",
+nav_home: "Início",
+nav_about: "Sobre",
+nav_ministry: "Ministério",
+nav_book: "Livro",
+nav_studies: "Estudos",
+nav_messages: "Mensagens",
+nav_contact: "Contato",
 
-sobre_small:"Sobre",
-sobre_title:"Uma vida dedicada ao Evangelho",
-sobre_intro:"Conheça um pouco da caminhada, da visão e do propósito do ministério.",
-sobre_h3:"Chamado, Palavra e Propósito",
-sobre_p1:"O ministério cristão não é apenas uma posição ou um título. É uma responsabilidade diante de Deus e uma oportunidade de servir pessoas através da Palavra de Cristo.",
-sobre_p2:"Este espaço foi criado para compartilhar estudos bíblicos, mensagens, reflexões, ensinamentos e conteúdos que possam fortalecer a fé e aproximar pessoas da presença de Deus.",
-sobre_p3:"O propósito é manter Cristo no centro, valorizando as Escrituras e buscando uma vida de fé, santidade, oração e compromisso com o Evangelho.",
+eyebrow: "MINISTÉRIO • PALAVRA • FÉ",
 
-cred_title:"Formação e Credenciais",
-cred_1:"• Formação pela ETED — JOCUM / Universidade das Nações.",
-cred_2:"• Formação trilíngue no ensino fundamental e médio.",
-cred_3:"• Bacharel pela Academia de Pregadores.",
+hero_pastor: "Pastor",
+hero_name: "Anderson Viana",
 
-livro_small:"Lançamento",
-livro_title:"Altares em Cinzas",
-livro_intro:"Um chamado para voltar ao fogo da presença de Deus.",
-coming:"LANÇAMENTO EM BREVE",
-book_subtitle:"O caminho de volta ao fogo da presença de Deus.",
-book_p1:"Nem todo altar destruído está perdido. Alguns ainda guardam brasas.",
-book_p2:"Altares em Cinzas é um chamado à restauração, à oração, à santidade e a uma vida novamente acesa pela presença de Deus.",
-book_p3:"Em breve, o livro estará disponível para aqueles que desejam percorrer esse caminho de volta ao altar.",
+hero_subtitle:
+"Uma voz anunciando o Evangelho de Cristo.",
 
-ministerio_small:"Ministério",
-ministerio_title:"Palavra que conduz à presença de Deus",
-ministerio_p:"O propósito deste ministério é anunciar Jesus Cristo, ensinar as Escrituras, fortalecer discípulos e despertar a Igreja para uma vida de comunhão profunda com Deus.",
+hero_description:
+"Uma mensagem de fé, esperança e transformação para aqueles que desejam caminhar mais perto de Deus.",
 
-altar_p1:"Nem todo altar destruído está perdido. Alguns ainda guardam brasas.",
-altar_p2:"O caminho de volta ao fogo da presença de Deus.",
+btn_studies: "Estudos Bíblicos",
+btn_messages: "Mensagens",
 
-estudos_small:"Estudos",
-estudos_title:"Estudos Bíblicos",
-estudos_intro:"Estudos para aprofundar a fé, compreender as Escrituras e desenvolver uma vida mais próxima de Deus.",
-estudo01:"Estudo 01",
-estudo02:"Estudo 02",
-estudo03:"Estudo 03",
+about_small: "Sobre",
 
-study1_title:"Fé — Quando confiar em Deus se torna uma escolha",
-study1_p1:"A fé bíblica não é simplesmente acreditar que Deus existe. A fé envolve confiança, relacionamento e disposição para obedecer mesmo quando ainda não conseguimos enxergar o resultado.",
-study1_p2:"Muitas vezes queremos primeiro ver para depois acreditar. Porém, a caminhada com Deus frequentemente acontece na direção contrária. Deus chama, a pessoa confia, obedece e então começa a perceber aquilo que Ele estava realizando.",
-study1_h1:"A fé não depende das circunstâncias",
-study1_p3:"Existem momentos em que as circunstâncias parecem contradizer as promessas de Deus. É justamente nesses períodos que a fé precisa deixar de ser apenas uma palavra pronunciada e tornar-se uma realidade dentro do coração.",
-study1_p4:"A fé madura não significa ausência de dificuldades. Significa permanecer confiando em Deus mesmo enquanto as dificuldades existem.",
-study1_h2:"Fé que produz obediência",
-study1_p5:"A verdadeira fé conduz a atitudes. Quando alguém realmente confia em Deus, começa a organizar sua vida de acordo com aquilo que Deus ensina.",
-study1_p6:"Por isso, fé e obediência caminham juntas. Não basta dizer que confiamos no Senhor; precisamos permitir que essa confiança transforme nossas decisões, prioridades, relacionamentos e maneira de viver.",
-study1_h3:"Aplicação para a vida",
-study1_p7:"Talvez você esteja atravessando uma fase em que não consegue compreender o que Deus está fazendo. Não confunda silêncio com abandono. Continue buscando, continue orando e continue caminhando.",
-study1_p8:"A fé olha para Deus antes de olhar para as circunstâncias. Quando os olhos permanecem em Cristo, o coração encontra força para continuar.",
-study1_question:"Pergunta para reflexão: Em qual área da minha vida Deus está me chamando para confiar mais nEle?",
+about_title:
+"Uma vida dedicada ao Evangelho",
 
-study2_title:"Santidade — Uma vida separada para Deus",
-study2_p1:"Santidade não significa simplesmente apresentar uma aparência religiosa diante das pessoas. Santidade começa no interior e se manifesta nas escolhas que fazemos quando ninguém está olhando.",
-study2_p2:"Deus não chama seu povo apenas para frequentar lugares religiosos. Ele chama homens e mulheres para pertencerem a Ele. A santidade nasce dessa compreensão: minha vida não pertence somente a mim; ela foi entregue ao Senhor.",
-study2_h1:"Santidade é relacionamento com Deus",
-study2_p3:"A santidade cristã não deve ser compreendida apenas como uma lista de coisas que não podemos fazer. Ela é, acima de tudo, uma vida que deseja agradar a Deus.",
-study2_p4:"Quanto mais conhecemos o caráter de Deus, mais compreendemos aquilo que precisa ser transformado em nós.",
-study2_h2:"O coração precisa ser tratado",
-study2_p5:"Podemos mudar comportamentos externamente e ainda carregar dentro de nós orgulho, inveja, amargura, falta de perdão ou desejos que nos afastam da vontade de Deus.",
-study2_p6:"Por isso, a santidade começa no coração. Deus trabalha profundamente no interior para que a transformação exterior seja consequência de uma obra verdadeira.",
-study2_h3:"Santidade exige decisões",
-study2_p7:"Existem ambientes que precisamos abandonar, conversas que precisamos interromper, hábitos que precisamos vencer e caminhos que precisamos deixar para trás.",
-study2_p8:"Não porque queremos parecer melhores que outras pessoas, mas porque decidimos viver de maneira coerente com aquele que confessamos como Senhor.",
-study2_h4:"Santidade e graça",
-study2_p9:"A santidade não é uma tentativa de comprar o amor de Deus. Somos salvos pela graça. Entretanto, a graça que nos alcança também nos transforma.",
-study2_p10:"Quem experimenta a graça de Cristo não deseja permanecer preso aos mesmos caminhos. Começa a nascer dentro do coração um desejo de agradar ao Senhor.",
-study2_question:"Pergunta para reflexão: Existe alguma área da minha vida que preciso entregar completamente a Deus?",
+about_intro:
+"Conheça um pouco da caminhada, da visão e do propósito do ministério.",
 
-study3_title:"Vida com Deus — Permanecer antes de produzir",
-study3_p1:"Existe uma diferença entre trabalhar para Deus e caminhar com Deus. Podemos realizar muitas atividades religiosas e, ainda assim, permitir que nossa comunhão com o Senhor fique em segundo plano.",
-study3_p2:"Jesus nos ensina sobre permanência. Antes de falar sobre aquilo que produzimos, Ele fala sobre permanecer nEle. Isso nos mostra que o fruto verdadeiro nasce de um relacionamento verdadeiro.",
-study3_h1:"O secreto sustenta o público",
-study3_p3:"Uma vida pública forte precisa de uma vida privada com Deus. O que acontece diante das pessoas nunca deveria ser maior do que aquilo que acontece quando estamos sozinhos diante do Senhor.",
-study3_p4:"O tempo de oração, a leitura das Escrituras, a meditação, o arrependimento e a busca pela presença de Deus formam raízes que sustentam a vida espiritual.",
-study3_h2:"Orar não é apenas pedir",
-study3_p5:"A oração é relacionamento. Podemos apresentar nossas necessidades a Deus, mas também precisamos aprender a permanecer em silêncio, ouvir, agradecer, confessar e simplesmente desfrutar da presença do Senhor.",
-study3_p6:"Uma vida de oração muda nossa maneira de enfrentar problemas porque começamos a levar nossas cargas para Deus antes de tentar carregá-las sozinhos.",
-study3_h3:"A Palavra alimenta a vida espiritual",
-study3_p7:"Não devemos tratar a Bíblia apenas como uma fonte de frases para mensagens. A Escritura precisa confrontar, ensinar, corrigir, consolar e transformar nossa vida.",
-study3_p8:"Ler a Palavra significa permitir que Deus fale conosco através dela. O objetivo não é apenas terminar capítulos, mas permitir que aquilo que lemos entre no coração e alcance nossas atitudes.",
-study3_h4:"Permanecer quando não sentimos nada",
-study3_p9:"Existem dias em que sentimos intensamente a presença de Deus e existem dias em que não sentimos nada extraordinário.",
-study3_p10:"Nossa fidelidade não pode depender apenas de sentimentos. Continuamos buscando porque Deus continua sendo Deus, mesmo quando nossas emoções mudam.",
-study3_p11:"A vida com Deus é construída na constância. Um dia de oração pode parecer pequeno, uma página da Bíblia pode parecer simples e uma escolha correta pode parecer insignificante. Mas, ao longo do tempo, essas pequenas decisões constroem uma vida profundamente enraizada em Cristo.",
-study3_question:"Pergunta para reflexão: Minha vida com Deus está sendo construída somente no público ou também no secreto?",
+about_heading:
+"Chamado, Palavra e Propósito",
 
-mensagens_small:"Mensagens",
-mensagens_title:"Palavras para o coração",
-mensagens_intro:"Reflexões para meditar na Palavra de Deus durante a caminhada cristã.",
-msg1_title:"Deus ainda está trabalhando",
-msg1_p:"Nem tudo aquilo que Deus está fazendo pode ser visto imediatamente. Existem processos que acontecem no silêncio. Continue confiando.",
-msg2_title:"Não abandone o altar",
-msg2_p:"O altar representa entrega. Quando voltamos ao lugar de oração, entregamos novamente nossa vontade e permitimos que Deus reacenda aquilo que parecia estar se apagando.",
-msg3_title:"A presença vale mais",
-msg3_p:"Não permita que atividades para Deus substituam a presença de Deus. Antes de fazer alguma coisa para o Senhor, aprenda a permanecer diante dEle.",
-msg4_title:"Continue caminhando",
-msg4_p:"Há dias em que caminhar parece difícil. Mesmo assim, não pare. A fidelidade construída nos dias difíceis também faz parte da obra que Deus está realizando.",
-msg5_title:"O fogo precisa de lenha",
-msg5_p:"Uma vida espiritual saudável precisa de alimento. Palavra, oração, comunhão, arrependimento e obediência alimentam continuamente a vida com Deus.",
-msg6_title:"Cristo no centro",
-msg6_p:"Quando Cristo está no centro, o ministério deixa de ser sobre nossa imagem e passa a ser sobre Sua glória.",
+about_p1:
+"O ministério cristão não é apenas uma posição ou um título. É uma responsabilidade diante de Deus e uma oportunidade de servir pessoas através da Palavra de Cristo.",
 
-galeria_small:"Galeria",
-galeria_title:"Imagens do Ministério",
-galeria_intro:"Conheça algumas imagens relacionadas ao ministério e ao livro.",
+about_p2:
+"Este espaço foi criado para compartilhar estudos bíblicos, mensagens, reflexões, ensinamentos e conteúdos que possam fortalecer a fé e aproximar pessoas da presença de Deus.",
 
-contato_small:"Redes sociais",
-contato_title:"Acompanhe o Ministério",
-contato_intro:"Continue acompanhando mensagens, estudos e conteúdos do ministério.",
-instagram_p:"Mensagens e reflexões",
-youtube_p:"Pregações e estudos completos",
-tiktok_p:"Mensagens rápidas e palavras de fé",
-access:"Acessar",
+about_p3:
+"O propósito é manter Cristo no centro, valorizando as Escrituras e buscando uma vida de fé, santidade, oração e compromisso com o Evangelho.",
 
-footer_ministry:"Ministério • Palavra • Fé",
-footer_verse:"\"Ensina-me os teus caminhos, ó Senhor; quero andar na tua verdade.\""
+credentials_title:
+"Formação e Credenciais",
 
-},
+credential_1:
+"Formação pela ETADIOC",
 
-it: {
+credential_2:
+"Ensino Fundamental em Teologia",
 
-nav_inicio:"Inizio",
-nav_sobre:"Chi sono",
-nav_ministerio:"Ministero",
-nav_livro:"Libro",
-nav_estudos:"Studi",
-nav_mensagens:"Messaggi",
-nav_contato:"Contatti",
+credential_3:
+"Ensino Médio em Teologia",
 
-eyebrow:"MINISTERO • PAROLA • FEDE",
-pastor:"Pastore",
-nome:"Anderson Viana",
-hero_subtitle:"Una voce che annuncia il Vangelo di Cristo.",
-hero_description:"Un messaggio di fede, speranza e trasformazione per coloro che desiderano camminare più vicino a Dio.",
-btn_estudos:"Studi Biblici",
-btn_mensagens:"Messaggi",
+credential_4:
+"Bacharel pela Academia de Pregadores",
 
-sobre_small:"Chi sono",
-sobre_title:"Una vita dedicata al Vangelo",
-sobre_intro:"Conosci il cammino, la visione e lo scopo del ministero.",
-sobre_h3:"Chiamata, Parola e Proposito",
-sobre_p1:"Il ministero cristiano non è soltanto una posizione o un titolo. È una responsabilità davanti a Dio e un'opportunità di servire le persone attraverso la Parola di Cristo.",
-sobre_p2:"Questo spazio è stato creato per condividere studi biblici, messaggi, riflessioni, insegnamenti e contenuti che possano rafforzare la fede e avvicinare le persone alla presenza di Dio.",
-sobre_p3:"Lo scopo è mantenere Cristo al centro, valorizzando le Scritture e cercando una vita di fede, santità, preghiera e impegno con il Vangelo.",
+ministry_small: "Ministério",
 
-cred_title:"Formazione e Credenziali",
-cred_1:"• Formazione presso ETED — JOCUM / Università delle Nazioni.",
-cred_2:"• Formazione trilingue nella scuola primaria e secondaria.",
-cred_3:"• Laurea presso l'Accademia dei Predicatori.",
+ministry_title:
+"Palavra que conduz à presença de Deus",
 
-livro_small:"Lancio",
-livro_title:"Altari nelle Ceneri",
-livro_intro:"Un invito a tornare al fuoco della presenza di Dio.",
-coming:"IN USCITA PROSSIMAMENTE",
-book_subtitle:"Il cammino di ritorno al fuoco della presenza di Dio.",
-book_p1:"Non ogni altare distrutto è perduto. Alcuni conservano ancora delle braci.",
-book_p2:"Altari nelle Ceneri è un invito alla restaurazione, alla preghiera, alla santità e a una vita nuovamente accesa dalla presenza di Dio.",
-book_p3:"Presto il libro sarà disponibile per coloro che desiderano percorrere questo cammino di ritorno all'altare.",
+ministry_motto:
+"Avivamento • Discipulado • Missão",
 
-ministerio_small:"Ministero",
-ministerio_title:"Una Parola che conduce alla presenza di Dio",
-ministerio_p:"Lo scopo di questo ministero è annunciare Gesù Cristo, insegnare le Scritture, rafforzare i discepoli e risvegliare la Chiesa a una vita di profonda comunione con Dio.",
+ministry_text:
+"O propósito deste ministério é anunciar Jesus Cristo, ensinar as Escrituras, fortalecer discípulos e despertar a Igreja para uma vida de comunhão profunda com Deus.",
 
-altar_p1:"Non ogni altare distrutto è perduto. Alcuni conservano ancora delle braci.",
-altar_p2:"Il cammino di ritorno al fuoco della presenza di Dio.",
+book_small: "Livro",
 
-estudos_small:"Studi",
-estudos_title:"Studi Biblici",
-estudos_intro:"Studi per approfondire la fede, comprendere le Scritture e sviluppare una vita più vicina a Dio.",
-estudo01:"Studio 01",
-estudo02:"Studio 02",
-estudo03:"Studio 03",
+book_title:
+"Altares em Cinzas",
 
-study1_title:"Fede — Quando confidare in Dio diventa una scelta",
-study1_p1:"La fede biblica non consiste semplicemente nel credere che Dio esiste. La fede comprende fiducia, relazione e disponibilità a obbedire anche quando non riusciamo ancora a vedere il risultato.",
-study1_p2:"Spesso vogliamo prima vedere e poi credere. Tuttavia, il cammino con Dio avviene spesso nella direzione opposta. Dio chiama, la persona si fida, obbedisce e poi comincia a vedere ciò che Egli stava realizzando.",
-study1_h1:"La fede non dipende dalle circostanze",
-study1_p3:"Ci sono momenti in cui le circostanze sembrano co
+book_intro:
+"Um chamado para voltar ao fogo da presença de Deus.",
+
+book_subtitle:
+"O caminho de volta ao fogo da presença de Deus.",
+
+book_p1:
+"Nem todo altar destruído está perdido. Alguns ainda guardam brasas.",
+
+book_p2:
+"Altares em Cinzas é uma mensagem de restauração, retorno e busca pela presença de Deus. Uma reflexão sobre aquilo que precisa ser reconstruído dentro de nós.",
+
+book_p3:
+"O lançamento do livro será anunciado em breve. Acompanhe o ministério para receber as novidades.",
+
+book_coming:
+"LANÇAMENTO EM BREVE",
+
+altar_p1:
+"Nem todo altar destruído está perdido. Alguns ainda guardam brasas.",
+
+altar_p2:
+"O caminho de volta ao fogo da presença de Deus.",
+
+studies_small: "Estudos",
+
+studies_title:
+"Estudos Bíblicos",
+
+studies_intro:
+"Estudos para aprofundar a fé, compreender as Escrituras e desenvolver uma vida mais próxima de Deus.",
+
+study01: "Estudo 01",
+study02: "Estudo 02",
+study03: "Estudo 03",
+
+study1_title:
+"Fé — Quando confiar em Deus se torna uma escolha",
+
+study1_p1:
+"A fé bíblica não é simplesmente acreditar que Deus existe. A fé envolve confiança, relacionamento e disposição para obedecer mesmo quando ainda não conseguimos enxergar o resultado.",
+
+study1_p2:
+"Muitas vezes queremos primeiro ver para depois acreditar. Porém, a caminhada com Deus frequentemente acontece na direção contrária. Deus chama, a pessoa confia, obedece e então começa a perceber aquilo que Ele estava realizando.",
+
+study1_h1:
+"A fé não depende das circunstâncias",
+
+study1_p3:
+"Existem momentos em que as circunstâncias parecem contradizer as promessas de Deus. É justamente nesses períodos que a fé precisa deixar de ser apenas uma palavra pronunciada e tornar-se uma realidade dentro do coração.",
+
+study1_p4:
+"A fé madura não significa ausência de dificuldades. Significa permanecer confiando em Deus mesmo enquanto as dificuldades existem.",
+
+study1_h2:
+"Fé que produz obediência",
+
+study1_p5:
+"A verdadeira fé conduz a atitudes. Quando alguém realmente confia em Deus, começa a organizar sua vida de acordo com aquilo que Deus ensina.",
+
+study1_p6:
+"Por isso, fé e obediência caminham juntas. Não basta dizer que confiamos no Senhor; precisamos permitir que essa confiança transforme nossas decisões, prioridades, relacionamentos e maneira de viver.",
+
+study1_h3:
+"Aplicação para a vida",
+
+study1_p7:
+"Talvez você esteja atravessando uma fase em que não consegue compreender o que Deus está fazendo. Não confunda silêncio com abandono. Continue buscando, continue orando e continue caminhando.",
+
+study1_p8:
+"A fé olha para Deus antes de olhar para as circunstâncias. Quando os olhos permanecem em Cristo, o coração encontra força para continuar.",
+
+study1_question:
+"Pergunta para reflexão: Em qual área da minha vida Deus está me chamando para confiar mais nEle?",
+
+study2_title:
+"Santidade — Uma vida separada para Deus",
+
+study2_p1:
+"Santidade não significa simplesmente apresentar uma aparência religiosa diante das pessoas. Santidade começa no interior e se manifesta nas escolhas que fazemos quando ninguém está olhando.",
+
+study2_p2:
+"Deus não chama seu povo apenas para frequentar lugares religiosos. Ele chama homens e mulheres para pertencerem a Ele. A santidade nasce dessa compreensão: minha vida não pertence somente a mim; ela foi entregue ao Senhor.",
 ...
 
 [Mensagem cortada]  Exibir toda a mensagem
