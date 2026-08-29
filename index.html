@@ -108,35 +108,6 @@ color: #d6ae55;
 }
 
 /* =========================
-IDIOMAS
-========================= */
-
-.languages {
-display: flex;
-gap: 7px;
-align-items: center;
-}
-
-.lang-btn {
-border: 1px solid #8d6b2f;
-background: #111111;
-color: #ffffff;
-padding: 8px 10px;
-border-radius: 6px;
-cursor: pointer;
-font-family: Arial, sans-serif;
-font-weight: bold;
-font-size: 13px;
-transition: 0.3s;
-}
-
-.lang-btn:hover,
-.lang-btn.active {
-background: #d6ae55;
-color: #050505;
-}
-
-/* =========================
 HERO
 ========================= */
 
@@ -144,8 +115,6 @@ HERO
 min-height: 720px;
 display: flex;
 align-items: center;
-
-/* FUNDO PRETO — SEM IMAGEM */
 background: #050505;
 }
 
@@ -672,10 +641,6 @@ padding: 20px 0;
 justify-content: center;
 }
 
-.languages {
-justify-content: center;
-}
-
 .hero {
 min-height: auto;
 }
@@ -742,14 +707,15 @@ padding: 25px 18px;
 font-size: 34px;
 }
 
+.menu {
+gap: 12px;
+font-size: 14px;
 }
 
-/* =========================
-TEXTO OCULTO PARA TRADUÇÃO
-========================= */
+.brand {
+text-align: center;
+}
 
-[lang] {
-transition: opacity 0.15s ease;
 }
 
 </style>
@@ -772,37 +738,23 @@ PASTOR ANDERSON VIANA
 
 <nav class="menu">
 
-<a href="#inicio" data-i18n="nav_inicio">Início</a>
+<a href="#inicio">Início</a>
 
-<a href="#sobre" data-i18n="nav_sobre">Sobre</a>
+<a href="#sobre">Sobre</a>
 
-<a href="#ministerio" data-i18n="nav_ministerio">Ministério</a>
+<a href="#ministerio">Ministério</a>
 
-<a href="#livro" data-i18n="nav_livro">Livro</a>
+<a href="#livro">Livro</a>
 
-<a href="#estudos" data-i18n="nav_estudos">Estudos</a>
+<a href="#estudos">Estudos</a>
 
-<a href="#mensagens" data-i18n="nav_mensagens">Mensagens</a>
+<a href="#mensagens">Mensagens</a>
 
-<a href="#contato" data-i18n="nav_contato">Contato</a>
+<a href="#galeria">Galeria</a>
+
+<a href="#contato">Contato</a>
 
 </nav>
-
-<div class="languages">
-
-<button type="button" class="lang-btn active" data-language="pt">
-🇧🇷 PT
-</button>
-
-<button type="button" class="lang-btn" data-language="it">
-🇮🇹 IT
-</button>
-
-<button type="button" class="lang-btn" data-language="en">
-🇬🇧 EN
-</button>
-
-</div>
 
 </div>
 
@@ -821,20 +773,20 @@ INÍCIO
 
 <div class="hero-text">
 
-<div class="eyebrow" data-i18n="eyebrow">
+<div class="eyebrow">
 MINISTÉRIO • PALAVRA • FÉ
 </div>
 
 <h1>
-<span data-i18n="pastor">Pastor</span><br>
-<span data-i18n="nome">Anderson Viana</span>
+Pastor<br>
+<span>Anderson Viana</span>
 </h1>
 
-<p class="hero-subtitle" data-i18n="hero_subtitle">
+<p class="hero-subtitle">
 Uma voz anunciando o Evangelho de Cristo.
 </p>
 
-<p class="hero-description" data-i18n="hero_description">
+<p class="hero-description">
 Uma mensagem de fé, esperança e transformação
 para aqueles que desejam caminhar mais perto
 de Deus.
@@ -842,11 +794,11 @@ de Deus.
 
 <div class="hero-buttons">
 
-<a href="#estudos" class="btn btn-gold" data-i18n="btn_estudos">
+<a href="#estudos" class="btn btn-gold">
 Estudos Bíblicos
 </a>
 
-<a href="#mensagens" class="btn btn-outline" data-i18n="btn_mensagens">
+<a href="#mensagens" class="btn btn-outline">
 Mensagens
 </a>
 
@@ -878,15 +830,15 @@ SOBRE
 
 <div class="section-title">
 
-<div class="small" data-i18n="sobre_small">
+<div class="small">
 Sobre
 </div>
 
-<h2 data-i18n="sobre_title">
+<h2>
 Uma vida dedicada ao Evangelho
 </h2>
 
-<p data-i18n="sobre_intro">
+<p>
 Conheça um pouco da caminhada,
 da visão e do propósito do ministério.
 </p>
@@ -906,53 +858,52 @@ alt="Pastor Anderson Viana"
 
 <div class="about-text">
 
-<h3 data-i18n="sobre_h3">
+<h3>
 Chamado, Palavra e Propósito
 </h3>
 
-<p data-i18n="sobre_p1">
+<p>
 O ministério cristão não é apenas uma posição
 ou um título. É uma responsabilidade diante
 de Deus e uma oportunidade de servir pessoas
 através da Palavra de Cristo.
 </p>
 
-<p data-i18n="sobre_p2">
+<p>
 Este espaço foi criado para compartilhar
 estudos bíblicos, mensagens, reflexões,
 ensinamentos e conteúdos que possam fortalecer
 a fé e aproximar pessoas da presença de Deus.
 </p>
 
-<p data-i18n="sobre_p3">
+<p>
 O propósito é manter Cristo no centro,
 valorizando as Escrituras e buscando uma vida
 de fé, santidade, oração e compromisso
 com o Evangelho.
 </p>
 
-
 <div class="credentials">
 
-<h4 data-i18n="cred_title">
+<h4>
 Formação e Credenciais
 </h4>
 
 <ul>
 
-<li data-i18n="cred1">
+<li>
 Formação pela JOCUM — ETED — Universidade das Nações
 </li>
 
-<li data-i18n="cred2">
+<li>
 Ensino Fundamental
 </li>
 
-<li data-i18n="cred3">
+<li>
 Ensino Médio em Teologia
 </li>
 
-<li data-i18n="cred4">
+<li>
 Bacharel pela Academia de Pregadores
 </li>
 
@@ -979,11 +930,11 @@ MINISTÉRIO
 
 <div class="section-title">
 
-<div class="small" data-i18n="ministerio_small">
+<div class="small">
 Ministério
 </div>
 
-<h2 data-i18n="ministerio_title">
+<h2>
 Palavra que conduz à presença de Deus
 </h2>
 
@@ -1000,11 +951,11 @@ alt="Ministério Pastor Anderson Viana"
 Ministério Pastor Anderson Viana
 </h3>
 
-<p data-i18n="ministerio_tag">
+<p>
 Avivamento • Discipulado • Missão
 </p>
 
-<p data-i18n="ministerio_text">
+<p>
 O propósito deste ministério é anunciar
 Jesus Cristo, ensinar as Escrituras,
 fortalecer discípulos e despertar a Igreja
@@ -1028,15 +979,15 @@ LIVRO
 
 <div class="section-title">
 
-<div class="small" data-i18n="livro_small">
+<div class="small">
 Livro
 </div>
 
-<h2 data-i18n="livro_title">
+<h2>
 Uma mensagem que está chegando
 </h2>
 
-<p data-i18n="livro_intro">
+<p>
 Em breve, uma nova obra para despertar
 a Igreja e conduzir o coração de volta
 à presença de Deus.
@@ -1058,7 +1009,7 @@ alt="Capa do livro Altares em Cinzas"
 
 <div class="book-text">
 
-<div class="book-label" data-i18n="book_label">
+<div class="book-label">
 Lançamento em breve
 </div>
 
@@ -1067,18 +1018,18 @@ ALTARES<br>
 <span>EM CINZAS</span>
 </h3>
 
-<p data-i18n="book_p1">
+<p>
 Nem todo altar destruído está perdido.
 Alguns ainda guardam brasas.
 </p>
 
-<p data-i18n="book_p2">
+<p>
 Uma reflexão profunda sobre o caminho
 de volta ao fogo da presença de Deus,
 à oração, à entrega e à comunhão com Cristo.
 </p>
 
-<div class="launch" data-i18n="book_launch">
+<div class="launch">
 EM BREVE
 </div>
 
@@ -1103,12 +1054,12 @@ ALTARES EM CINZAS
 ALTARES EM CINZAS
 </h2>
 
-<p data-i18n="altar_p1">
+<p>
 Nem todo altar destruído está perdido.
 Alguns ainda guardam brasas.
 </p>
 
-<p data-i18n="altar_p2">
+<p>
 O caminho de volta ao fogo da presença de Deus.
 </p>
 
@@ -1127,15 +1078,15 @@ ESTUDOS
 
 <div class="section-title">
 
-<div class="small" data-i18n="estudos_small">
+<div class="small">
 Estudos
 </div>
 
-<h2 data-i18n="estudos_title">
+<h2>
 Estudos Bíblicos
 </h2>
 
-<p data-i18n="estudos_intro">
+<p>
 Estudos para aprofundar a fé, compreender
 as Escrituras e desenvolver uma vida
 mais próxima de Deus.
@@ -1152,19 +1103,17 @@ mais próxima de Deus.
 Estudo 01
 </div>
 
-<h3 data-i18n="study1_title">
+<h3>
 Fé — Quando confiar em Deus se torna uma escolha
 </h3>
 
 <div class="bible">
-<span data-i18n="study1_bible">
 "Ora, a fé é a certeza daquilo que esperamos
 e a prova das coisas que não vemos."
 — Hebreus 11:1
-</span>
 </div>
 
-<p data-i18n="study1_p1">
+<p>
 A fé bíblica não é simplesmente acreditar
 que Deus existe. A fé envolve confiança,
 relacionamento e disposição para obedecer
@@ -1172,7 +1121,7 @@ mesmo quando ainda não conseguimos enxergar
 o resultado.
 </p>
 
-<p data-i18n="study1_p2">
+<p>
 Muitas vezes queremos primeiro ver para
 depois acreditar. Porém, a caminhada com
 Deus frequentemente acontece na direção
@@ -1181,11 +1130,11 @@ obedece e então começa a perceber aquilo
 que Ele estava realizando.
 </p>
 
-<h4 data-i18n="study1_h1">
+<h4>
 A fé não depende das circunstâncias
 </h4>
 
-<p data-i18n="study1_p3">
+<p>
 Existem momentos em que as circunstâncias
 parecem contradizer as promessas de Deus.
 É justamente nesses períodos que a fé
@@ -1194,25 +1143,25 @@ pronunciada e tornar-se uma realidade
 dentro do coração.
 </p>
 
-<p data-i18n="study1_p4">
+<p>
 A fé madura não significa ausência de
 dificuldades. Significa permanecer confiando
 em Deus mesmo enquanto as dificuldades
 existem.
 </p>
 
-<h4 data-i18n="study1_h2">
+<h4>
 Fé que produz obediência
 </h4>
 
-<p data-i18n="study1_p5">
+<p>
 A verdadeira fé conduz a atitudes.
 Quando alguém realmente confia em Deus,
 começa a organizar sua vida de acordo
 com aquilo que Deus ensina.
 </p>
 
-<p data-i18n="study1_p6">
+<p>
 Por isso, fé e obediência caminham juntas.
 Não basta dizer que confiamos no Senhor;
 precisamos permitir que essa confiança
@@ -1220,11 +1169,11 @@ transforme nossas decisões, prioridades,
 relacionamentos e maneira de viver.
 </p>
 
-<h4 data-i18n="study1_h3">
+<h4>
 Aplicação para a vida
 </h4>
 
-<p data-i18n="study1_p7">
+<p>
 Talvez você esteja atravessando uma fase
 em que não consegue compreender o que Deus
 está fazendo. Não confunda silêncio com
@@ -1232,14 +1181,14 @@ abandono. Continue buscando, continue
 orando e continue caminhando.
 </p>
 
-<p data-i18n="study1_p8">
+<p>
 A fé olha para Deus antes de olhar para
 as circunstâncias. Quando os olhos permanecem
 em Cristo, o coração encontra força para
 continuar.
 </p>
 
-<div class="bible" data-i18n="study1_question">
+<div class="bible">
 Pergunta para reflexão:
 Em qual área da minha vida Deus está me
 chamando para confiar mais nEle?
@@ -1256,16 +1205,16 @@ chamando para confiar mais nEle?
 Estudo 02
 </div>
 
-<h3 data-i18n="study2_title">
+<h3>
 Santidade — Uma vida separada para Deus
 </h3>
 
-<div class="bible" data-i18n="study2_bible">
+<div class="bible">
 "Sede santos, porque eu sou santo."
 — 1 Pedro 1:16
 </div>
 
-<p data-i18n="study2_p1">
+<p>
 Santidade não significa simplesmente
 apresentar uma aparência religiosa diante
 das pessoas. Santidade começa no interior
@@ -1273,7 +1222,7 @@ e se manifesta nas escolhas que fazemos
 quando ninguém está olhando.
 </p>
 
-<p data-i18n="study2_p2">
+<p>
 Deus não chama seu povo apenas para frequentar
 lugares religiosos. Ele chama homens e mulheres
 para pertencerem a Ele. A santidade nasce
@@ -1281,78 +1230,78 @@ dessa compreensão: minha vida não pertence
 somente a mim; ela foi entregue ao Senhor.
 </p>
 
-<h4 data-i18n="study2_h1">
+<h4>
 Santidade é relacionamento com Deus
 </h4>
 
-<p data-i18n="study2_p3">
+<p>
 A santidade cristã não deve ser compreendida
 apenas como uma lista de coisas que não podemos
 fazer. Ela é, acima de tudo, uma vida que deseja
 agradar a Deus.
 </p>
 
-<p data-i18n="study2_p4">
+<p>
 Quanto mais conhecemos o caráter de Deus,
 mais compreendemos aquilo que precisa ser
 transformado em nós.
 </p>
 
-<h4 data-i18n="study2_h2">
+<h4>
 O coração precisa ser tratado
 </h4>
 
-<p data-i18n="study2_p5">
+<p>
 Podemos mudar comportamentos externamente
 e ainda carregar dentro de nós orgulho,
 inveja, amargura, falta de perdão ou desejos
 que nos afastam da vontade de Deus.
 </p>
 
-<p data-i18n="study2_p6">
+<p>
 Por isso, a santidade começa no coração.
 Deus trabalha profundamente no interior
 para que a transformação exterior seja
 consequência de uma obra verdadeira.
 </p>
 
-<h4 data-i18n="study2_h3">
+<h4>
 Santidade exige decisões
 </h4>
 
-<p data-i18n="study2_p7">
+<p>
 Existem ambientes que precisamos abandonar,
 conversas que precisamos interromper,
 hábitos que precisamos vencer e caminhos
 que precisamos deixar para trás.
 </p>
 
-<p data-i18n="study2_p8">
+<p>
 Não porque queremos parecer melhores que
 outras pessoas, mas porque decidimos viver
 de maneira coerente com aquele que confessamos
 como Senhor.
 </p>
 
-<h4 data-i18n="study2_h4">
+<h4>
 Santidade e graça
 </h4>
 
-<p data-i18n="study2_p9">
+<p>
 A santidade não é uma tentativa de comprar
 o amor de Deus. Somos salvos pela graça.
 Entretanto, a graça que nos alcança também
 nos transforma.
 </p>
 
-<p data-i18n="study2_p10">
+<p>
 Quem experimenta a graça de Cristo não deseja
 permanecer preso aos mesmos caminhos.
 Começa a nascer dentro do coração um desejo
 de agradar ao Senhor.
 </p>
 
-<div class="bible" data-i18n="study2_question">
+<div class="bible">
 Pergunta para reflexão:
 Existe alguma área da minha vida que preciso
 entregar completamente a Deus?
@@ -1369,16 +1318,16 @@ entregar completamente a Deus?
 Estudo 03
 </div>
 
-<h3 data-i18n="study3_title">
+<h3>
 Vida com Deus — Permanecer antes de produzir
 </h3>
 
-<div class="bible" data-i18n="study3_bible">
+<div class="bible">
 "Permanecei em mim, e eu permanecerei em vós."
 — João 15:4
 </div>
 
-<p data-i18n="study3_p1">
+<p>
 Existe uma diferença entre trabalhar para Deus
 e caminhar com Deus. Podemos realizar muitas
 atividades religiosas e, ainda assim, permitir
@@ -1386,7 +1335,7 @@ que nossa comunhão com o Senhor fique em segundo
 plano.
 </p>
 
-<p data-i18n="study3_p2">
+<p>
 Jesus nos ensina sobre permanência. Antes de
 falar sobre aquilo que produzimos, Ele fala
 sobre permanecer nEle. Isso nos mostra que
@@ -1394,11 +1343,11 @@ o fruto verdadeiro nasce de um relacionamento
 verdadeiro.
 </p>
 
-<h4 data-i18n="study3_h1">
+<h4>
 O secreto sustenta o público
 </h4>
 
-<p data-i18n="study3_p3">
+<p>
 Uma vida pública forte precisa de uma vida
 privada com Deus. O que acontece diante das
 pessoas nunca deveria ser maior do que aquilo
@@ -1406,18 +1355,18 @@ que acontece quando estamos sozinhos diante
 do Senhor.
 </p>
 
-<p data-i18n="study3_p4">
+<p>
 O tempo de oração, a leitura das Escrituras,
 a meditação, o arrependimento e a busca pela
 presença de Deus formam raízes que sustentam
 a vida espiritual.
 </p>
 
-<h4 data-i18n="study3_h2">
+<h4>
 Orar não é apenas pedir
 </h4>
 
-<p data-i18n="study3_p5">
+<p>
 A oração é relacionamento. Podemos apresentar
 nossas necessidades a Deus, mas também precisamos
 aprender a permanecer em silêncio, ouvir,
@@ -1425,25 +1374,25 @@ agradecer, confessar e simplesmente desfrutar
 da presença do Senhor.
 </p>
 
-<p data-i18n="study3_p6">
+<p>
 Uma vida de oração muda nossa maneira de
 enfrentar problemas porque começamos a levar
 nossas cargas para Deus antes de tentar
 carregá-las sozinhos.
 </p>
 
-<h4 data-i18n="study3_h3">
+<h4>
 A Palavra alimenta a vida espiritual
 </h4>
 
-<p data-i18n="study3_p7">
+<p>
 Não devemos tratar a Bíblia apenas como uma
 fonte de frases para mensagens. A Escritura
 precisa confrontar, ensinar, corrigir,
 consolar e transformar nossa vida.
 </p>
 
-<p data-i18n="study3_p8">
+<p>
 Ler a Palavra significa permitir que Deus
 fale conosco através dela. O objetivo não é
 apenas terminar capítulos, mas permitir que
@@ -1451,24 +1400,24 @@ aquilo que lemos entre no coração e alcance
 nossas atitudes.
 </p>
 
-<h4 data-i18n="study3_h4">
+<h4>
 Permanecer quando não sentimos nada
 </h4>
 
-<p data-i18n="study3_p9">
+<p>
 Existem dias em que sentimos intensamente
 a presença de Deus e existem dias em que
 não sentimos nada extraordinário.
 </p>
 
-<p data-i18n="study3_p10">
+<p>
 Nossa fidelidade não pode depender apenas
 de sentimentos. Continuamos buscando porque
 Deus continua sendo Deus, mesmo quando nossas
 emoções mudam.
 </p>
 
-<p data-i18n="study3_p11">
+<p>
 A vida com Deus é construída na constância.
 Um dia de oração pode parecer pequeno, uma
 página da Bíblia pode parecer simples e uma
@@ -1478,7 +1427,7 @@ decisões constroem uma vida profundamente
 enraizada em Cristo.
 </p>
 
-<div class="bible" data-i18n="study3_question">
+<div class="bible">
 Pergunta para reflexão:
 Minha vida com Deus está sendo construída
 somente no público ou também no secreto?
@@ -1501,15 +1450,15 @@ MENSAGENS
 
 <div class="section-title">
 
-<div class="small" data-i18n="mensagens_small">
+<div class="small">
 Mensagens
 </div>
 
-<h2 data-i18n="mensagens_title">
+<h2>
 Palavras para o coração
 </h2>
 
-<p data-i18n="mensagens_intro">
+<p>
 Reflexões para meditar na Palavra de Deus
 durante a caminhada cristã.
 </p>
@@ -1520,11 +1469,11 @@ durante a caminhada cristã.
 
 <article class="message">
 
-<h3 data-i18n="msg1_title">
+<h3>
 Deus ainda está trabalhando
 </h3>
 
-<p data-i18n="msg1_text">
+<p>
 Nem tudo aquilo que Deus está fazendo
 pode ser visto imediatamente. Existem
 processos que acontecem no silêncio.
@@ -1536,11 +1485,11 @@ Continue confiando.
 
 <article class="message">
 
-<h3 data-i18n="msg2_title">
+<h3>
 Não abandone o altar
 </h3>
 
-<p data-i18n="msg2_text">
+<p>
 O altar representa entrega. Quando
 voltamos ao lugar de oração, entregamos
 novamente nossa vontade e permitimos
@@ -1553,11 +1502,11 @@ estar se apagando.
 
 <article class="message">
 
-<h3 data-i18n="msg3_title">
+<h3>
 A presença vale mais
 </h3>
 
-<p data-i18n="msg3_text">
+<p>
 Não permita que atividades para Deus
 substituam a presença de Deus.
 Antes de fazer alguma coisa para o Senhor,
@@ -1569,11 +1518,11 @@ aprenda a permanecer diante dEle.
 
 <article class="message">
 
-<h3 data-i18n="msg4_title">
+<h3>
 Continue caminhando
 </h3>
 
-<p data-i18n="msg4_text">
+<p>
 Há dias em que caminhar parece difícil.
 Mesmo assim, não pare. A fidelidade
 construída nos dias difíceis também
@@ -1585,11 +1534,11 @@ faz parte da obra que Deus está realizando.
 
 <article class="message">
 
-<h3 data-i18n="msg5_title">
+<h3>
 O fogo precisa de lenha
 </h3>
 
-<p data-i18n="msg5_text">
+<p>
 Uma vida espiritual saudável precisa
 de alimento. Palavra, oração, comunhão,
 arrependimento e obediência alimentam
@@ -1601,11 +1550,11 @@ continuamente a vida com Deus.
 
 <article class="message">
 
-<h3 data-i18n="msg6_title">
+<h3>
 Cristo no centro
 </h3>
 
-<p data-i18n="msg6_text">
+<p>
 Quando Cristo está no centro, o ministério
 deixa de ser sobre nossa imagem e passa
 a ser sobre Sua glória.
@@ -1630,15 +1579,15 @@ GALERIA
 
 <div class="section-title">
 
-<div class="small" data-i18n="galeria_small">
+<div class="small">
 Galeria
 </div>
 
-<h2 data-i18n="galeria_title">
+<h2>
 Imagens do Ministério
 </h2>
 
-<p data-i18n="galeria_intro">
+<p>
 Alguns registros e imagens do ministério.
 </p>
 
@@ -1690,15 +1639,15 @@ CONTATO
 
 <div class="section-title">
 
-<div class="small" data-i18n="contato_small">
+<div class="small">
 Redes sociais
 </div>
 
-<h2 data-i18n="contato_title">
+<h2>
 Acompanhe o Ministério
 </h2>
 
-<p data-i18n="contato_intro">
+<p>
 Continue acompanhando mensagens,
 estudos e conteúdos do ministério.
 </p>
@@ -1715,7 +1664,7 @@ estudos e conteúdos do ministério.
 Instagram
 </h3>
 
-<p data-i18n="instagram_text">
+<p>
 Mensagens e reflexões
 </p>
 
@@ -1724,7 +1673,6 @@ class="btn btn-gold"
 href="https://www.instagram.com/pastorandersonviana/"
 target="_blank"
 rel="noopener"
-data-i18n="instagram_btn"
 >
 Acessar Instagram
 </a>
@@ -1738,7 +1686,7 @@ Acessar Instagram
 YouTube
 </h3>
 
-<p data-i18n="youtube_text">
+<p>
 Pregações e estudos completos
 </p>
 
@@ -1747,7 +1695,6 @@ class="btn btn-gold"
 href="https://youtube.com/@pastorandersonviana?si=xMix5bnVL3-c7CP_"
 target="_blank"
 rel="noopener"
-data-i18n="youtube_btn"
 >
 Acessar YouTube
 </a>
@@ -1761,7 +1708,7 @@ Acessar YouTube
 TikTok
 </h3>
 
-<p data-i18n="tiktok_text">
+<p>
 Mensagens rápidas e palavras de fé
 </p>
 
@@ -1770,7 +1717,6 @@ class="btn btn-gold"
 href="https://www.tiktok.com/@pastorandersonviana?_r=1&_t=ZN-99GrFkDSVLK"
 target="_blank"
 rel="noopener"
-data-i18n="tiktok_btn"
 >
 Acessar TikTok
 </a>
@@ -1798,16 +1744,16 @@ RODAPÉ
 PASTOR ANDERSON VIANA
 </div>
 
-<p data-i18n="footer_ministry">
+<p>
 Ministério • Palavra • Fé
 </p>
 
-<p class="verse" data-i18n="footer_verse">
+<p class="verse">
 "Ensina-me os teus caminhos, ó Senhor;
 quero andar na tua verdade."
 </p>
 
-<p data-i18n="footer_reference">
+<p>
 Salmos 86:11
 </p>
 
@@ -1815,230 +1761,6 @@ Salmos 86:11
 
 </footer>
 
+</body>
 
-<!-- =====================================================
-SISTEMA DE IDIOMAS
-
-IMPORTANTE:
-Este JavaScript é o responsável por fazer os
-botões PT / IT / EN realmente funcionarem.
-===================================================== -->
-
-<script>
-
-const translations = {
-
-pt: {
-
-nav_inicio: "Início",
-nav_sobre: "Sobre",
-nav_ministerio: "Ministério",
-nav_livro: "Livro",
-nav_estudos: "Estudos",
-nav_mensagens: "Mensagens",
-nav_contato: "Contato",
-
-eyebrow: "MINISTÉRIO • PALAVRA • FÉ",
-pastor: "Pastor",
-nome: "Anderson Viana",
-
-hero_subtitle:
-"Uma voz anunciando o Evangelho de Cristo.",
-
-hero_description:
-"Uma mensagem de fé, esperança e transformação para aqueles que desejam caminhar mais perto de Deus.",
-
-btn_estudos:
-"Estudos Bíblicos",
-
-btn_mensagens:
-"Mensagens",
-
-sobre_small:
-"Sobre",
-
-sobre_title:
-"Uma vida dedicada ao Evangelho",
-
-sobre_intro:
-"Conheça um pouco da caminhada, da visão e do propósito do ministério.",
-
-sobre_h3:
-"Chamado, Palavra e Propósito",
-
-sobre_p1:
-"O ministério cristão não é apenas uma posição ou um título. É uma responsabilidade diante de Deus e uma oportunidade de servir pessoas através da Palavra de Cristo.",
-
-sobre_p2:
-"Este espaço foi criado para compartilhar estudos bíblicos, mensagens, reflexões, ensinamentos e conteúdos que possam fortalecer a fé e aproximar pessoas da presença de Deus.",
-
-sobre_p3:
-"O propósito é manter Cristo no centro, valorizando as Escrituras e buscando uma vida de fé, santidade, oração e compromisso com o Evangelho.",
-
-cred_title:
-"Formação e Credenciais",
-
-cred1:
-"Formação pela JOCUM — ETED — Universidade das Nações",
-
-cred2:
-"Ensino Fundamental",
-
-cred3:
-"Ensino Médio em Teologia",
-
-cred4:
-"Bacharel pela Academia de Pregadores",
-
-ministerio_small:
-"Ministério",
-
-ministerio_title:
-"Palavra que conduz à presença de Deus",
-
-ministerio_tag:
-"Avivamento • Discipulado • Missão",
-
-ministerio_text:
-"O propósito deste ministério é anunciar Jesus Cristo, ensinar as Escrituras, fortalecer discípulos e despertar a Igreja para uma vida de comunhão profunda com Deus.",
-
-livro_small:
-"Livro",
-
-livro_title:
-"Uma mensagem que está chegando",
-
-livro_intro:
-"Em breve, uma nova obra para despertar a Igreja e conduzir o coração de volta à presença de Deus.",
-
-book_label:
-"Lançamento em breve",
-
-book_p1:
-"Nem todo altar destruído está perdido. Alguns ainda guardam brasas.",
-
-book_p2:
-"Uma reflexão profunda sobre o caminho de volta ao fogo da presença de Deus, à oração, à entrega e à comunhão com Cristo.",
-
-book_launch:
-"EM BREVE",
-
-altar_p1:
-"Nem todo altar destruído está perdido. Alguns ainda guardam brasas.",
-
-altar_p2:
-"O caminho de volta ao fogo da presença de Deus.",
-
-estudos_small:
-"Estudos",
-
-estudos_title:
-"Estudos Bíblicos",
-
-estudos_intro:
-"Estudos para aprofundar a fé, compreender as Escrituras e desenvolver uma vida mais próxima de Deus.",
-
-study1_title:
-"Fé — Quando confiar em Deus se torna uma escolha",
-
-study1_bible:
-"\"Ora, a fé é a certeza daquilo que esperamos e a prova das coisas que não vemos.\" — Hebreus 11:1",
-
-study1_p1:
-"A fé bíblica não é simplesmente acreditar que Deus existe. A fé envolve confiança, relacionamento e disposição para obedecer mesmo quando ainda não conseguimos enxergar o resultado.",
-
-study1_p2:
-"Muitas vezes queremos primeiro ver para depois acreditar. Porém, a caminhada com Deus frequentemente acontece na direção contrária. Deus chama, a pessoa confia, obedece e então começa a perceber aquilo que Ele estava realizando.",
-
-study1_h1:
-"A fé não depende das circunstâncias",
-
-study1_p3:
-"Existem momentos em que as circunstâncias parecem contradizer as promessas de Deus. É justamente nesses períodos que a fé precisa deixar de ser apenas uma palavra pronunciada e tornar-se uma realidade dentro do coração.",
-
-study1_p4:
-"A fé madura não significa ausência de dificuldades. Significa permanecer confiando em Deus mesmo enquanto as dificuldades existem.",
-
-study1_h2:
-"Fé que produz obediência",
-
-study1_p5:
-"A verdadeira fé conduz a atitudes. Quando alguém realmente confia em Deus, começa a organizar sua vida de acordo com aquilo que Deus ensina.",
-
-study1_p6:
-"Por isso, fé e obediência caminham juntas. Não basta dizer que confiamos no Senhor; precisamos permitir que essa confiança transforme nossas decisões, prioridades, relacionamentos e maneira de viver.",
-
-study1_h3:
-"Aplicação para a vida",
-
-study1_p7:
-"Talvez você esteja atravessando uma fase em que não consegue compreender o que Deus está fazendo. Não confunda silêncio com abandono. Continue buscando, continue orando e continue caminhando.",
-
-study1_p8:
-"A fé olha para Deus antes de olhar para as circunstâncias. Quando os olhos permanecem em Cristo, o coração encontra força para continuar.",
-
-study1_question:
-"Pergunta para reflexão: Em qual área da minha vida Deus está me chamando para confiar mais nEle?",
-
-study2_title:
-"Santidade — Uma vida separada para Deus",
-
-study2_bible:
-"\"Sede santos, porque eu sou santo.\" — 1 Pedro 1:16",
-
-study2_p1:
-"Santidade não significa simplesmente apresentar uma aparência religiosa diante das pessoas. Santidade começa no interior e se manifesta nas escolhas que fazemos quando ninguém está olhando.",
-
-study2_p2:
-"Deus não chama seu povo apenas para frequentar lugares religiosos. Ele chama homens e mulheres para pertencerem a Ele. A santidade nasce dessa compreensão: minha vida não pertence somente a mim; ela foi entregue ao Senhor.",
-
-study2_h1:
-"Santidade é relacionamento com Deus",
-
-study2_p3:
-"A santidade cristã não deve ser compreendida apenas como uma lista de coisas que não podemos fazer. Ela é, acima de tudo, uma vida que deseja agradar a Deus.",
-
-study2_p4:
-"Quanto mais conhecemos o caráter de Deus, mais compreendemos aquilo que precisa ser transformado em nós.",
-
-study2_h2:
-"O coração precisa ser tratado",
-
-study2_p5:
-"Podemos mudar comportamentos externamente e ainda carregar dentro de nós orgulho, inveja, amargura, falta de perdão ou desejos que nos afastam da vontade de Deus.",
-
-study2_p6:
-"Por isso, a santidade começa no coração. Deus trabalha profundamente no interior para que a transformação exterior seja consequência de uma obra verdadeira.",
-
-study2_h3:
-"Santidade exige decisões",
-
-study2_p7:
-"Existem ambientes que precisamos abandonar, conversas que precisamos interromper, hábitos que precisamos vencer e caminhos que precisamos deixar para trás.",
-
-study2_p8:
-"Não porque queremos parecer melhores que outras pessoas, mas porque decidimos viver de maneira coerente com aquele que confessamos como Senhor.",
-
-study2_h4:
-"Santidade e graça",
-
-study2_p9:
-"A santidade não é uma tentativa de comprar o amor de Deus. Somos salvos pela graça. Entretanto, a graça que nos alcança também nos transforma.",
-
-study2_p10:
-"Quem experimenta a graça de Cristo não deseja permanecer preso aos mesmos caminhos. Começa a nascer dentro do coração um desejo de agradar ao Senhor.",
-
-study2_question:
-"Pergunta para reflexão: Existe alguma área da minha vida que preciso entregar completamente a Deus?",
-
-study3_title:
-"Vida com Deus — Permanecer antes de produzir",
-
-study3_bible:
-"\"Permanecei em mim, e eu permanecerei em vós.\" — João 15:4",
-
-study3_p1:
-"Existe uma diferença entre trabalhar para Deus e caminhar com Deus. Podemos realizar muitas atividades religiosas e, ainda assim, permitir que nossa comunhão com o Senhor fique em segundo plano.",
-...
-
-[Mensagem cortada]  Exibir toda a mensagem
+</html>
