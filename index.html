@@ -5,24 +5,16 @@
 
 <meta charset="UTF-8">
 
-<meta
-name="viewport"
-content="width=device-width, initial-scale=1.0"
->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>
-Pastor Anderson Viana | Ministério, Palavra e Fé
-</title>
+<title>Pastor Anderson Viana | Ministério, Palavra e Fé</title>
 
 <meta
 name="description"
 content="Site oficial do Pastor Anderson Viana. Ministério, Palavra, Fé, estudos bíblicos, mensagens e reflexões."
 >
 
-<meta
-name="author"
-content="Pastor Anderson Viana"
->
+<meta name="author" content="Pastor Anderson Viana">
 
 <style>
 
@@ -67,7 +59,7 @@ header {
 position: sticky;
 top: 0;
 z-index: 1000;
-background: rgba(8, 8, 8, 0.96);
+background: rgba(8,8,8,0.97);
 border-bottom: 1px solid #8d6b2f;
 }
 
@@ -89,7 +81,7 @@ letter-spacing: 1px;
 .menu {
 display: flex;
 align-items: center;
-gap: 25px;
+gap: 22px;
 flex-wrap: wrap;
 }
 
@@ -104,17 +96,42 @@ transition: 0.3s;
 color: #d6ae55;
 }
 
+/* IDIOMAS */
+
+.languages {
+display: flex;
+gap: 6px;
+align-items: center;
+}
+
+.lang-btn {
+background: transparent;
+border: 1px solid #8d6b2f;
+color: #ffffff;
+padding: 6px 9px;
+border-radius: 5px;
+cursor: pointer;
+font-weight: bold;
+}
+
+.lang-btn:hover,
+.lang-btn.active {
+background: #d6ae55;
+color: #080808;
+}
+
 /* =========================
 HERO
 ========================= */
 
 .hero {
 min-height: 780px;
-
+display: flex;
+align-items: center;
 background:
 linear-gradient(
-rgba(0, 0, 0, 0.70),
-rgba(0, 0, 0, 0.90)
+rgba(0,0,0,0.70),
+rgba(0,0,0,0.90)
 ),
 url("IMG_0955.png")
 center / cover no-repeat;
@@ -126,7 +143,6 @@ grid-template-columns: 1fr 1fr;
 align-items: center;
 gap: 60px;
 padding: 70px 0;
-min-height: 780px;
 }
 
 .hero-text {
@@ -142,7 +158,7 @@ margin-bottom: 20px;
 }
 
 .hero h1 {
-font-size: clamp(45px, 7vw, 85px);
+font-size: clamp(45px,7vw,85px);
 line-height: 1.05;
 margin-bottom: 25px;
 }
@@ -177,6 +193,7 @@ border-radius: 5px;
 font-family: Arial, sans-serif;
 font-weight: bold;
 transition: 0.3s;
+cursor: pointer;
 }
 
 .btn-gold {
@@ -209,8 +226,7 @@ width: 100%;
 max-width: 500px;
 border-radius: 15px;
 border: 2px solid #d6ae55;
-box-shadow:
-0 0 40px rgba(214, 174, 85, 0.25);
+box-shadow: 0 0 40px rgba(214,174,85,0.25);
 }
 
 /* =========================
@@ -261,9 +277,6 @@ align-items: center;
 }
 
 .about-image img {
-width: 100%;
-max-width: 500px;
-margin: auto;
 border-radius: 12px;
 border: 1px solid #8d6b2f;
 }
@@ -298,11 +311,10 @@ background: #111111;
 }
 
 .ministry-card img {
-width: 100%;
-max-width: 350px;
+width: 300px;
+max-width: 80%;
 margin: 0 auto 30px;
-border-radius: 15px;
-border: 1px solid #d6ae55;
+border-radius: 10px;
 }
 
 .ministry-card h3 {
@@ -317,18 +329,81 @@ margin-bottom: 15px;
 }
 
 /* =========================
-ALTARES EM CINZAS
+LIVRO
+========================= */
+
+#livro {
+background:
+linear-gradient(
+rgba(8,8,8,0.94),
+rgba(8,8,8,0.98)
+);
+}
+
+.book-grid {
+display: grid;
+grid-template-columns: 0.8fr 1.2fr;
+gap: 60px;
+align-items: center;
+max-width: 1050px;
+margin: auto;
+}
+
+.book-cover {
+text-align: center;
+}
+
+.book-cover img {
+width: 100%;
+max-width: 380px;
+margin: auto;
+border-radius: 12px;
+border: 2px solid #d6ae55;
+box-shadow: 0 0 45px rgba(214,174,85,0.25);
+}
+
+.book-text h3 {
+font-size: 40px;
+color: #d6ae55;
+margin-bottom: 15px;
+}
+
+.book-text h4 {
+font-size: 25px;
+margin-bottom: 20px;
+color: #ffffff;
+}
+
+.book-text p {
+color: #dddddd;
+margin-bottom: 20px;
+font-size: 18px;
+}
+
+.coming-soon {
+display: inline-block;
+padding: 12px 22px;
+border: 1px solid #d6ae55;
+border-radius: 5px;
+color: #d6ae55;
+font-family: Arial, sans-serif;
+font-weight: bold;
+letter-spacing: 1px;
+margin-top: 10px;
+}
+
+/* =========================
+ALTARES
 ========================= */
 
 .altar {
 background:
 linear-gradient(
-rgba(0, 0, 0, 0.45),
-rgba(0, 0, 0, 0.85)
+rgba(0,0,0,0.45),
+rgba(0,0,0,0.85)
 ),
 url("IMG_0955.png")
 center / cover no-repeat;
-
 text-align: center;
 min-height: 600px;
 display: flex;
@@ -341,7 +416,7 @@ margin: auto;
 }
 
 .altar h2 {
-font-size: clamp(40px, 7vw, 75px);
+font-size: clamp(40px,7vw,75px);
 color: #d6ae55;
 line-height: 1.1;
 margin-bottom: 25px;
@@ -350,7 +425,7 @@ margin-bottom: 25px;
 .altar p {
 font-size: 23px;
 color: #ffffff;
-margin-bottom: 15px;
+margin-bottom: 12px;
 }
 
 /* =========================
@@ -367,7 +442,7 @@ border: 1px solid #5f4925;
 border-radius: 15px;
 padding: 45px;
 margin-bottom: 40px;
-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+box-shadow: 0 10px 30px rgba(0,0,0,0.35);
 }
 
 .study-number {
@@ -417,7 +492,7 @@ background: #080808;
 
 .messages-grid {
 display: grid;
-grid-template-columns: repeat(2, 1fr);
+grid-template-columns: repeat(2,1fr);
 gap: 25px;
 }
 
@@ -438,7 +513,7 @@ color: #dddddd;
 }
 
 /* =========================
-CONTATO / REDES
+REDES
 ========================= */
 
 #contato {
@@ -447,7 +522,7 @@ background: #101010;
 
 .social-grid {
 display: grid;
-grid-template-columns: repeat(3, 1fr);
+grid-template-columns: repeat(3,1fr);
 gap: 25px;
 }
 
@@ -484,34 +559,19 @@ GALERIA
 background: #080808;
 }
 
-.gallery-grid {
-display: grid;
-grid-template-columns: repeat(3, 1fr);
+.gallery {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
 gap: 25px;
-align-items: start;
 }
 
-.gallery-item {
-background: #111111;
-border: 1px solid #5f4925;
-border-radius: 15px;
-padding: 12px;
-overflow: hidden;
-}
-
-.gallery-item img {
+.gallery img {
 width: 100%;
-height: 420px;
-object-fit: contain;
-border-radius: 10px;
-background: #050505;
-}
-
-.gallery-item p {
-text-align: center;
-color: #d6ae55;
-font-weight: bold;
-padding: 15px 5px 5px;
+max-width: 350px;
+border-radius: 15px;
+border: 1px solid #8d6b2f;
+box-shadow: 0 10px 30px rgba(0,0,0,0.4);
 }
 
 /* =========================
@@ -546,7 +606,7 @@ font-style: italic;
 RESPONSIVO
 ========================= */
 
-@media (max-width: 850px) {
+@media (max-width:850px) {
 
 .nav {
 flex-direction: column;
@@ -564,7 +624,6 @@ min-height: auto;
 .hero-inner {
 grid-template-columns: 1fr;
 text-align: center;
-min-height: auto;
 }
 
 .hero-text {
@@ -575,33 +634,59 @@ text-align: center;
 justify-content: center;
 }
 
-.pastor-photo img {
-max-width: 400px;
-}
-
-.about-grid {
+.about-grid,
+.book-grid {
 grid-template-columns: 1fr;
 }
 
-.messages-grid {
-grid-template-columns: 1fr;
-}
-
+.messages-grid,
 .social-grid {
 grid-template-columns: 1fr;
 }
 
-.gallery-grid {
-grid-template-columns: 1fr;
-}
-
-.gallery-item img {
-height: auto;
-max-height: 600px;
-}
-
 .study {
 padding: 30px 22px;
+}
+
+.section-title h2 {
+font-size: 35px;
+}
+
+}
+
+/* =========================
+IDIOMAS - MOBILE
+========================= */
+
+@media (max-width:600px) {
+
+.brand {
+font-size: 18px;
+text-align: center;
+}
+
+.menu {
+gap: 12px;
+}
+
+.menu a {
+font-size: 14px;
+}
+
+.languages {
+margin-top: 5px;
+}
+
+.hero h1 {
+font-size: 48px;
+}
+
+.hero-subtitle {
+font-size: 21px;
+}
+
+.book-text h3 {
+font-size: 32px;
 }
 
 }
@@ -611,7 +696,6 @@ padding: 30px 22px;
 </head>
 
 <body>
-
 
 <!-- =========================
 CABEÇALHO
@@ -627,29 +711,43 @@ PASTOR ANDERSON VIANA
 
 <nav class="menu">
 
-<a href="#inicio">Início</a>
+<a href="#inicio" data-i18n="inicio">Início</a>
 
-<a href="#sobre">Sobre</a>
+<a href="#sobre" data-i18n="sobre">Sobre</a>
 
-<a href="#ministerio">Ministério</a>
+<a href="#ministerio" data-i18n="ministerio">Ministério</a>
 
-<a href="#estudos">Estudos</a>
+<a href="#livro" data-i18n="livro">Livro</a>
 
-<a href="#mensagens">Mensagens</a>
+<a href="#estudos" data-i18n="estudos">Estudos</a>
 
-<a href="#galeria">Galeria</a>
+<a href="#mensagens" data-i18n="mensagens">Mensagens</a>
 
-<a href="#contato">Contato</a>
+<a href="#contato" data-i18n="contato">Contato</a>
 
 </nav>
+
+<div class="languages">
+
+<button class="lang-btn active" onclick="changeLanguage('pt')">
+🇧🇷 PT
+</button>
+
+<button class="lang-btn" onclick="changeLanguage('it')">
+🇮🇹 IT
+</button>
+
+<button class="lang-btn" onclick="changeLanguage('en')">
+🇬🇧 EN
+</button>
+
+</div>
 
 </div>
 
 </header>
 
-
 <main>
-
 
 <!-- =========================
 INÍCIO
@@ -661,43 +759,37 @@ INÍCIO
 
 <div class="hero-text">
 
-<div class="eyebrow">
+<div class="eyebrow" data-i18n="eyebrow">
 MINISTÉRIO • PALAVRA • FÉ
 </div>
 
 <h1>
-Pastor
-<span>
-Anderson Viana
-</span>
+<span data-i18n="pastor">Pastor</span>
+<br>
+<span>Anderson Viana</span>
 </h1>
 
-<p class="hero-subtitle">
+<p class="hero-subtitle" data-i18n="heroSubtitle">
 Uma voz anunciando o Evangelho de Cristo.
 </p>
 
-<p class="hero-description">
-Uma mensagem de fé, esperança e transformação
-para aqueles que desejam caminhar mais perto
-de Deus.
+<p class="hero-description" data-i18n="heroDescription">
+Uma mensagem de fé, esperança e transformação para aqueles que desejam caminhar mais perto de Deus.
 </p>
 
 <div class="hero-buttons">
 
-<a href="#estudos" class="btn btn-gold">
+<a href="#estudos" class="btn btn-gold" data-i18n="studyButton">
 Estudos Bíblicos
 </a>
 
-<a href="#mensagens" class="btn btn-outline">
+<a href="#mensagens" class="btn btn-outline" data-i18n="messageButton">
 Mensagens
 </a>
 
 </div>
 
 </div>
-
-
-<!-- FOTO REAL DO PASTOR -->
 
 <div class="pastor-photo">
 
@@ -723,21 +815,19 @@ SOBRE
 
 <div class="section-title">
 
-<div class="small">
+<div class="small" data-i18n="sobre">
 Sobre
 </div>
 
-<h2>
+<h2 data-i18n="aboutTitle">
 Uma vida dedicada ao Evangelho
 </h2>
 
-<p>
-Conheça um pouco da caminhada,
-da visão e do propósito do ministério.
+<p data-i18n="aboutIntro">
+Conheça um pouco da caminhada, da visão e do propósito do ministério.
 </p>
 
 </div>
-
 
 <div class="about-grid">
 
@@ -750,33 +840,22 @@ alt="Pastor Anderson Viana"
 
 </div>
 
-
 <div class="about-text">
 
-<h3>
+<h3 data-i18n="aboutHeading">
 Chamado, Palavra e Propósito
 </h3>
 
-<p>
-O ministério cristão não é apenas uma
-posição ou um título. É uma responsabilidade
-diante de Deus e uma oportunidade de servir
-pessoas através da Palavra de Cristo.
+<p data-i18n="aboutP1">
+O ministério cristão não é apenas uma posição ou um título. É uma responsabilidade diante de Deus e uma oportunidade de servir pessoas através da Palavra de Cristo.
 </p>
 
-<p>
-Este espaço foi criado para compartilhar
-estudos bíblicos, mensagens, reflexões,
-ensinamentos e conteúdos que possam
-fortalecer a fé e aproximar pessoas
-da presença de Deus.
+<p data-i18n="aboutP2">
+Este espaço foi criado para compartilhar estudos bíblicos, mensagens, reflexões, ensinamentos e conteúdos que possam fortalecer a fé e aproximar pessoas da presença de Deus.
 </p>
 
-<p>
-O propósito é manter Cristo no centro,
-valorizando as Escrituras e buscando uma
-vida de fé, santidade, oração e compromisso
-com o Evangelho.
+<p data-i18n="aboutP3">
+O propósito é manter Cristo no centro, valorizando as Escrituras e buscando uma vida de fé, santidade, oração e compromisso com o Evangelho.
 </p>
 
 </div>
@@ -798,16 +877,15 @@ MINISTÉRIO
 
 <div class="section-title">
 
-<div class="small">
+<div class="small" data-i18n="ministerio">
 Ministério
 </div>
 
-<h2>
+<h2 data-i18n="ministryTitle">
 Palavra que conduz à presença de Deus
 </h2>
 
 </div>
-
 
 <div class="ministry-card">
 
@@ -820,16 +898,83 @@ alt="Brasão do Ministério Pastor Anderson Viana"
 Ministério Pastor Anderson Viana
 </h3>
 
-<p>
+<p data-i18n="ministryMotto">
 Avivamento • Discipulado • Missão
 </p>
 
-<p>
-O propósito deste ministério é anunciar
-Jesus Cristo, ensinar as Escrituras,
-fortalecer discípulos e despertar a Igreja
-para uma vida de comunhão profunda com Deus.
+<p data-i18n="ministryText">
+O propósito deste ministério é anunciar Jesus Cristo, ensinar as Escrituras, fortalecer discípulos e despertar a Igreja para uma vida de comunhão profunda com Deus.
 </p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+LIVRO
+========================= -->
+
+<section id="livro">
+
+<div class="container">
+
+<div class="section-title">
+
+<div class="small" data-i18n="bookSmall">
+Novo livro
+</div>
+
+<h2 data-i18n="bookTitle">
+Altares em Cinzas
+</h2>
+
+<p data-i18n="bookIntro">
+Um livro sobre restauração, retorno à presença de Deus e reacendimento do fogo espiritual.
+</p>
+
+</div>
+
+<div class="book-grid">
+
+<div class="book-cover">
+
+<img
+src="IMG_0955.png"
+alt="Capa do livro Altares em Cinzas"
+>
+
+</div>
+
+<div class="book-text">
+
+<h3 data-i18n="bookHeading">
+Altares em Cinzas
+</h3>
+
+<h4 data-i18n="bookSubtitle">
+O caminho de volta ao fogo da presença de Deus.
+</h4>
+
+<p data-i18n="bookP1">
+Existem momentos em que aquilo que um dia esteve em chamas parece ter se transformado apenas em cinzas.
+</p>
+
+<p data-i18n="bookP2">
+Mas nem todo altar destruído está perdido. Algumas cinzas ainda guardam brasas. Existe um caminho de volta, um chamado para reconstruir o altar e buscar novamente a presença de Deus.
+</p>
+
+<p data-i18n="bookP3">
+Em breve, este livro estará disponível para aqueles que desejam mergulhar nessa jornada de fé, restauração e renovação espiritual.
+</p>
+
+<div class="coming-soon" data-i18n="comingSoon">
+LANÇAMENTO EM BREVE
+</div>
+
+</div>
 
 </div>
 
@@ -850,14 +995,12 @@ ALTARES EM CINZAS
 ALTARES EM CINZAS
 </h2>
 
-<p>
-Nem todo altar destruído está perdido.
-Alguns ainda guardam brasas.
+<p data-i18n="altarP1">
+Nem todo altar destruído está perdido. Alguns ainda guardam brasas.
 </p>
 
-<p>
-O caminho de volta ao fogo
-da presença de Deus.
+<p data-i18n="altarP2">
+O caminho de volta ao fogo da presença de Deus.
 </p>
 
 </div>
@@ -875,18 +1018,16 @@ ESTUDOS
 
 <div class="section-title">
 
-<div class="small">
+<div class="small" data-i18n="estudos">
 Estudos
 </div>
 
-<h2>
+<h2 data-i18n="studiesTitle">
 Estudos Bíblicos
 </h2>
 
-<p>
-Estudos para aprofundar a fé,
-compreender as Escrituras e desenvolver
-uma vida mais próxima de Deus.
+<p data-i18n="studiesIntro">
+Estudos para aprofundar a fé, compreender as Escrituras e desenvolver uma vida mais próxima de Deus.
 </p>
 
 </div>
@@ -896,99 +1037,66 @@ uma vida mais próxima de Deus.
 
 <article class="study">
 
-<div class="study-number">
+<div class="study-number" data-i18n="study01">
 Estudo 01
 </div>
 
-<h3>
+<h3 data-i18n="study1Title">
 Fé — Quando confiar em Deus se torna uma escolha
 </h3>
 
 <div class="bible">
-"Ora, a fé é a certeza daquilo que esperamos
-e a prova das coisas que não vemos."
+"Ora, a fé é a certeza daquilo que esperamos e a prova das coisas que não vemos."
+<br>
 — Hebreus 11:1
 </div>
 
-<p>
-A fé bíblica não é simplesmente acreditar
-que Deus existe. A fé envolve confiança,
-relacionamento e disposição para obedecer
-mesmo quando ainda não conseguimos enxergar
-o resultado.
+<p data-i18n="study1p1">
+A fé bíblica não é simplesmente acreditar que Deus existe. A fé envolve confiança, relacionamento e disposição para obedecer mesmo quando ainda não conseguimos enxergar o resultado.
 </p>
 
-<p>
-Muitas vezes queremos primeiro ver para
-depois acreditar. Porém, a caminhada com
-Deus frequentemente acontece na direção
-contrária. Deus chama, a pessoa confia,
-obedece e então começa a perceber aquilo
-que Ele estava realizando.
+<p data-i18n="study1p2">
+Muitas vezes queremos primeiro ver para depois acreditar. Porém, a caminhada com Deus frequentemente acontece na direção contrária. Deus chama, a pessoa confia, obedece e então começa a perceber aquilo que Ele estava realizando.
 </p>
 
-<h4>
+<h4 data-i18n="study1h1">
 A fé não depende das circunstâncias
 </h4>
 
-<p>
-Existem momentos em que as circunstâncias
-parecem contradizer as promessas de Deus.
-É justamente nesses períodos que a fé
-precisa deixar de ser apenas uma palavra
-pronunciada e tornar-se uma realidade
-dentro do coração.
+<p data-i18n="study1p3">
+Existem momentos em que as circunstâncias parecem contradizer as promessas de Deus. É justamente nesses períodos que a fé precisa deixar de ser apenas uma palavra pronunciada e tornar-se uma realidade dentro do coração.
 </p>
 
-<p>
-A fé madura não significa ausência de
-dificuldades. Significa permanecer confiando
-em Deus mesmo enquanto as dificuldades
-existem.
+<p data-i18n="study1p4">
+A fé madura não significa ausência de dificuldades. Significa permanecer confiando em Deus mesmo enquanto as dificuldades existem.
 </p>
 
-<h4>
+<h4 data-i18n="study1h2">
 Fé que produz obediência
 </h4>
 
-<p>
-A verdadeira fé conduz a atitudes.
-Quando alguém realmente confia em Deus,
-começa a organizar sua vida de acordo
-com aquilo que Deus ensina.
+<p data-i18n="study1p5">
+A verdadeira fé conduz a atitudes. Quando alguém realmente confia em Deus, começa a organizar sua vida de acordo com aquilo que Deus ensina.
 </p>
 
-<p>
-Por isso, fé e obediência caminham juntas.
-Não basta dizer que confiamos no Senhor;
-precisamos permitir que essa confiança
-transforme nossas decisões, prioridades,
-relacionamentos e maneira de viver.
+<p data-i18n="study1p6">
+Por isso, fé e obediência caminham juntas. Não basta dizer que confiamos no Senhor; precisamos permitir que essa confiança transforme nossas decisões, prioridades, relacionamentos e maneira de viver.
 </p>
 
-<h4>
+<h4 data-i18n="study1h3">
 Aplicação para a vida
 </h4>
 
-<p>
-Talvez você esteja atravessando uma fase
-em que não consegue compreender o que Deus
-está fazendo. Não confunda silêncio com
-abandono. Continue buscando, continue
-orando e continue caminhando.
+<p data-i18n="study1p7">
+Talvez você esteja atravessando uma fase em que não consegue compreender o que Deus está fazendo. Não confunda silêncio com abandono. Continue buscando, continue orando e continue caminhando.
 </p>
 
-<p>
-A fé olha para Deus antes de olhar para
-as circunstâncias. Quando os olhos permanecem
-em Cristo, o coração encontra força para
-continuar.
+<p data-i18n="study1p8">
+A fé olha para Deus antes de olhar para as circunstâncias. Quando os olhos permanecem em Cristo, o coração encontra força para continuar.
 </p>
 
-<div class="bible">
-Pergunta para reflexão:
-Em qual área da minha vida Deus está me
-chamando para confiar mais nEle?
+<div class="bible" data-i18n="study1question">
+Pergunta para reflexão: Em qual área da minha vida Deus está me chamando para confiar mais nEle?
 </div>
 
 </article>
@@ -998,110 +1106,78 @@ chamando para confiar mais nEle?
 
 <article class="study">
 
-<div class="study-number">
+<div class="study-number" data-i18n="study02">
 Estudo 02
 </div>
 
-<h3>
+<h3 data-i18n="study2Title">
 Santidade — Uma vida separada para Deus
 </h3>
 
 <div class="bible">
 "Sede santos, porque eu sou santo."
+<br>
 — 1 Pedro 1:16
 </div>
 
-<p>
-Santidade não significa simplesmente
-apresentar uma aparência religiosa diante
-das pessoas. Santidade começa no interior
-e se manifesta nas escolhas que fazemos
-quando ninguém está olhando.
+<p data-i18n="study2p1">
+Santidade não significa simplesmente apresentar uma aparência religiosa diante das pessoas. Santidade começa no interior e se manifesta nas escolhas que fazemos quando ninguém está olhando.
 </p>
 
-<p>
-Deus não chama seu povo apenas para frequentar
-lugares religiosos. Ele chama homens e mulheres
-para pertencerem a Ele. A santidade nasce
-dessa compreensão: minha vida não pertence
-somente a mim; ela foi entregue ao Senhor.
+<p data-i18n="study2p2">
+Deus não chama seu povo apenas para frequentar lugares religiosos. Ele chama homens e mulheres para pertencerem a Ele. A santidade nasce dessa compreensão: minha vida não pertence somente a mim; ela foi entregue ao Senhor.
 </p>
 
-<h4>
+<h4 data-i18n="study2h1">
 Santidade é relacionamento com Deus
 </h4>
 
-<p>
-A santidade cristã não deve ser compreendida
-apenas como uma lista de coisas que não podemos
-fazer. Ela é, acima de tudo, uma vida que deseja
-agradar a Deus.
+<p data-i18n="study2p3">
+A santidade cristã não deve ser compreendida apenas como uma lista de coisas que não podemos fazer. Ela é, acima de tudo, uma vida que deseja agradar a Deus.
 </p>
 
-<p>
-Quanto mais conhecemos o caráter de Deus,
-mais compreendemos aquilo que precisa ser
-transformado em nós.
+<p data-i18n="study2p4">
+Quanto mais conhecemos o caráter de Deus, mais compreendemos aquilo que precisa ser transformado em nós.
 </p>
 
-<h4>
+<h4 data-i18n="study2h2">
 O coração precisa ser tratado
 </h4>
 
-<p>
-Podemos mudar comportamentos externamente
-e ainda carregar dentro de nós orgulho,
-inveja, amargura, falta de perdão ou desejos
-que nos afastam da vontade de Deus.
+<p data-i18n="study2p5">
+Podemos mudar comportamentos externamente e ainda carregar dentro de nós orgulho, inveja, amargura, falta de perdão ou desejos que nos afastam da vontade de Deus.
 </p>
 
-<p>
-Por isso, a santidade começa no coração.
-Deus trabalha profundamente no interior
-para que a transformação exterior seja
-consequência de uma obra verdadeira.
+<p data-i18n="study2p6">
+Por isso, a santidade começa no coração. Deus trabalha profundamente no interior para que a transformação exterior seja consequência de uma obra verdadeira.
 </p>
 
-<h4>
+<h4 data-i18n="study2h3">
 Santidade exige decisões
 </h4>
 
-<p>
-Existem ambientes que precisamos abandonar,
-conversas que precisamos interromper,
-hábitos que precisamos vencer e caminhos
-que precisamos deixar para trás.
+<p data-i18n="study2p7">
+Existem ambientes que precisamos abandonar, conversas que precisamos interromper, hábitos que precisamos vencer e caminhos que precisamos deixar para trás.
 </p>
 
-<p>
-Não porque queremos parecer melhores que
-outras pessoas, mas porque decidimos viver
-de maneira coerente com aquele que confessamos
-como Senhor.
+<p data-i18n="study2p8">
+Não porque queremos parecer melhores que outras pessoas, mas porque decidimos viver de maneira coerente com aquele que confessamos como Senhor.
 </p>
 
-<h4>
+<h4 data-i18n="study2h4">
 Santidade e graça
 </h4>
 
-<p>
-A santidade não é uma tentativa de comprar
-o amor de Deus. Somos salvos pela graça.
-Entretanto, a graça que nos alcança também
-nos transforma.
+<p data-i18n="study2p9">
+A santidade não é uma tentativa de comprar o amor de Deus. Somos salvos pela graça. Entretanto, a graça que nos alcança também nos transforma.
 </p>
 
-<p>
-Quem experimenta a graça de Cristo não deseja
-permanecer preso aos mesmos caminhos.
-Começa a nascer dentro do coração um desejo
-de agradar ao Senhor.
+<p data-i18n="study2p10">
+Quem experimenta a graça de Cristo não deseja permanecer preso aos mesmos caminhos. Começa a nascer dentro do coração um desejo de agradar ao Senhor.
 </p>
 
-<div class="bible">
-Pergunta para reflexão:
-Existe alguma área da minha vida que preciso
-entregar completamente a Deus?
+<div class="bible" data-i18n="study2question">
+Pergunta para reflexão: Existe alguma área da minha vida que preciso entregar completamente a Deus?
 </div>
 
 </article>
@@ -1111,123 +1187,82 @@ entregar completamente a Deus?
 
 <article class="study">
 
-<div class="study-number">
+<div class="study-number" data-i18n="study03">
 Estudo 03
 </div>
 
-<h3>
+<h3 data-i18n="study3Title">
 Vida com Deus — Permanecer antes de produzir
 </h3>
 
 <div class="bible">
 "Permanecei em mim, e eu permanecerei em vós."
+<br>
 — João 15:4
 </div>
 
-<p>
-Existe uma diferença entre trabalhar para Deus
-e caminhar com Deus. Podemos realizar muitas
-atividades religiosas e, ainda assim, permitir
-que nossa comunhão com o Senhor fique em segundo
-plano.
+<p data-i18n="study3p1">
+Existe uma diferença entre trabalhar para Deus e caminhar com Deus. Podemos realizar muitas atividades religiosas e, ainda assim, permitir que nossa comunhão com o Senhor fique em segundo plano.
 </p>
 
-<p>
-Jesus nos ensina sobre permanência. Antes de
-falar sobre aquilo que produzimos, Ele fala
-sobre permanecer nEle. Isso nos mostra que
-o fruto verdadeiro nasce de um relacionamento
-verdadeiro.
+<p data-i18n="study3p2">
+Jesus nos ensina sobre permanência. Antes de falar sobre aquilo que produzimos, Ele fala sobre permanecer nEle. Isso nos mostra que o fruto verdadeiro nasce de um relacionamento verdadeiro.
 </p>
 
-<h4>
+<h4 data-i18n="study3h1">
 O secreto sustenta o público
 </h4>
 
-<p>
-Uma vida pública forte precisa de uma vida
-privada com Deus. O que acontece diante das
-pessoas nunca deveria ser maior do que aquilo
-que acontece quando estamos sozinhos diante
-do Senhor.
+<p data-i18n="study3p3">
+Uma vida pública forte precisa de uma vida privada com Deus. O que acontece diante das pessoas nunca deveria ser maior do que aquilo que acontece quando estamos sozinhos diante do Senhor.
 </p>
 
-<p>
-O tempo de oração, a leitura das Escrituras,
-a meditação, o arrependimento e a busca pela
-presença de Deus formam raízes que sustentam
-a vida espiritual.
+<p data-i18n="study3p4">
+O tempo de oração, a leitura das Escrituras, a meditação, o arrependimento e a busca pela presença de Deus formam raízes que sustentam a vida espiritual.
 </p>
 
-<h4>
+<h4 data-i18n="study3h2">
 Orar não é apenas pedir
 </h4>
 
-<p>
-A oração é relacionamento. Podemos apresentar
-nossas necessidades a Deus, mas também precisamos
-aprender a permanecer em silêncio, ouvir,
-agradecer, confessar e simplesmente desfrutar
-da presença do Senhor.
+<p data-i18n="study3p5">
+A oração é relacionamento. Podemos apresentar nossas necessidades a Deus, mas também precisamos aprender a permanecer em silêncio, ouvir, agradecer, confessar e simplesmente desfrutar da presença do Senhor.
 </p>
 
-<p>
-Uma vida de oração muda nossa maneira de
-enfrentar problemas porque começamos a levar
-nossas cargas para Deus antes de tentar
-carregá-las sozinhos.
+<p data-i18n="study3p6">
+Uma vida de oração muda nossa maneira de enfrentar problemas porque começamos a levar nossas cargas para Deus antes de tentar carregá-las sozinhos.
 </p>
 
-<h4>
+<h4 data-i18n="study3h3">
 A Palavra alimenta a vida espiritual
 </h4>
 
-<p>
-Não devemos tratar a Bíblia apenas como uma
-fonte de frases para mensagens. A Escritura
-precisa confrontar, ensinar, corrigir,
-consolar e transformar nossa vida.
+<p data-i18n="study3p7">
+Não devemos tratar a Bíblia apenas como uma fonte de frases para mensagens. A Escritura precisa confrontar, ensinar, corrigir, consolar e transformar nossa vida.
 </p>
 
-<p>
-Ler a Palavra significa permitir que Deus
-fale conosco através dela. O objetivo não é
-apenas terminar capítulos, mas permitir que
-aquilo que lemos entre no coração e alcance
-nossas atitudes.
+<p data-i18n="study3p8">
+Ler a Palavra significa permitir que Deus fale conosco através dela. O objetivo não é apenas terminar capítulos, mas permitir que aquilo que lemos entre no coração e alcance nossas atitudes.
 </p>
 
-<h4>
+<h4 data-i18n="study3h4">
 Permanecer quando não sentimos nada
 </h4>
 
-<p>
-Existem dias em que sentimos intensamente
-a presença de Deus e existem dias em que
-não sentimos nada extraordinário.
+<p data-i18n="study3p9">
+Existem dias em que sentimos intensamente a presença de Deus e existem dias em que não sentimos nada extraordinário.
 </p>
 
-<p>
-Nossa fidelidade não pode depender apenas
-de sentimentos. Continuamos buscando porque
-Deus continua sendo Deus, mesmo quando nossas
-emoções mudam.
+<p data-i18n="study3p10">
+Nossa fidelidade não pode depender apenas de sentimentos. Continuamos buscando porque Deus continua sendo Deus, mesmo quando nossas emoções mudam.
 </p>
 
-<p>
-A vida com Deus é construída na constância.
-Um dia de oração pode parecer pequeno, uma
-página da Bíblia pode parecer simples e uma
-escolha correta pode parecer insignificante.
-Mas, ao longo do tempo, essas pequenas
-decisões constroem uma vida profundamente
-enraizada em Cristo.
+<p data-i18n="study3p11">
+A vida com Deus é construída na constância. Um dia de oração pode parecer pequeno, uma página da Bíblia pode parecer simples e uma escolha correta pode parecer insignificante. Mas, ao longo do tempo, essas pequenas decisões constroem uma vida profundamente enraizada em Cristo.
 </p>
 
-<div class="bible">
-Pergunta para reflexão:
-Minha vida com Deus está sendo construída
-somente no público ou também no secreto?
+<div class="bible" data-i18n="study3question">
+Pergunta para reflexão: Minha vida com Deus está sendo construída somente no público ou também no secreto?
 </div>
 
 </article>
@@ -1247,118 +1282,185 @@ MENSAGENS
 
 <div class="section-title">
 
-<div class="small">
+<div class="small" data-i18n="mensagens">
 Mensagens
 </div>
 
-<h2>
+<h2 data-i18n="messagesTitle">
 Palavras para o coração
 </h2>
 
-<p>
-Reflexões para meditar na Palavra de Deus
-durante a caminhada cristã.
+<p data-i18n="messagesIntro">
+Reflexões para meditar na Palavra de Deus durante a caminhada cristã.
 </p>
 
 </div>
-
 
 <div class="messages-grid">
 
 <article class="message">
 
-<h3>
+<h3 data-i18n="msg1Title">
 Deus ainda está trabalhando
 </h3>
 
-<p>
-Nem tudo aquilo que Deus está fazendo
-pode ser visto imediatamente. Existem
-processos que acontecem no silêncio.
-Continue confiando.
+<p data-i18n="msg1">
+Nem tudo aquilo que Deus está fazendo pode ser visto imediatamente. Existem processos que acontecem no silêncio. Continue confiando.
 </p>
 
 </article>
 
-
 <article class="message">
 
-<h3>
+<h3 data-i18n="msg2Title">
 Não abandone o altar
 </h3>
 
-<p>
-O altar representa entrega. Quando
-voltamos ao lugar de oração, entregamos
-novamente nossa vontade e permitimos
-que Deus reacenda aquilo que parecia
-estar se apagando.
+<p data-i18n="msg2">
+O altar representa entrega. Quando voltamos ao lugar de oração, entregamos novamente nossa vontade e permitimos que Deus reacenda aquilo que parecia estar se apagando.
 </p>
 
 </article>
 
-
 <article class="message">
 
-<h3>
+<h3 data-i18n="msg3Title">
 A presença vale mais
 </h3>
 
-<p>
-Não permita que atividades para Deus
-substituam a presença de Deus.
-Antes de fazer alguma coisa para o Senhor,
-aprenda a permanecer diante dEle.
+<p data-i18n="msg3">
+Não permita que atividades para Deus substituam a presença de Deus. Antes de fazer alguma coisa para o Senhor, aprenda a permanecer diante dEle.
 </p>
 
 </article>
 
-
 <article class="message">
 
-<h3>
+<h3 data-i18n="msg4Title">
 Continue caminhando
 </h3>
 
-<p>
-Há dias em que caminhar parece difícil.
-Mesmo assim, não pare. A fidelidade
-construída nos dias difíceis também
-faz parte da obra que Deus está realizando.
+<p data-i18n="msg4">
+Há dias em que caminhar parece difícil. Mesmo assim, não pare. A fidelidade construída nos dias difíceis também faz parte da obra que Deus está realizando.
 </p>
 
 </article>
 
-
 <article class="message">
 
-<h3>
+<h3 data-i18n="msg5Title">
 O fogo precisa de lenha
 </h3>
 
-<p>
-Uma vida espiritual saudável precisa
-de alimento. Palavra, oração, comunhão,
-arrependimento e obediência alimentam
-continuamente a vida com Deus.
+<p data-i18n="msg5">
+Uma vida espiritual saudável precisa de alimento. Palavra, oração, comunhão, arrependimento e obediência alimentam continuamente a vida com Deus.
 </p>
 
 </article>
-
 
 <article class="message">
 
-<h3>
+<h3 data-i18n="msg6Title">
 Cristo no centro
 </h3>
 
-<p>
-Quando Cristo está no centro, o ministério
-deixa de ser sobre nossa imagem e passa
-a ser sobre Sua glória.
+<p data-i18n="msg6">
+Quando Cristo está no centro, o ministério deixa de ser sobre nossa imagem e passa a ser sobre Sua glória.
 </p>
 
 </article>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+CONTATO
+========================= -->
+
+<section id="contato">
+
+<div class="container">
+
+<div class="section-title">
+
+<div class="small" data-i18n="socialSmall">
+Redes sociais
+</div>
+
+<h2 data-i18n="socialTitle">
+Acompanhe o Ministério
+</h2>
+
+<p data-i18n="socialIntro">
+Continue acompanhando mensagens, estudos e conteúdos do ministério.
+</p>
+
+</div>
+
+<div class="social-grid">
+
+<div class="social-card">
+
+<h3>Instagram</h3>
+
+<p data-i18n="instagramText">
+Mensagens e reflexões
+</p>
+
+<a
+class="btn btn-gold"
+href="https://www.instagram.com/pastorandersonviana/"
+target="_blank"
+data-i18n="accessInstagram"
+>
+Acessar Instagram
+</a>
+
+</div>
+
+
+<div class="social-card">
+
+<h3>YouTube</h3>
+
+<p data-i18n="youtubeText">
+Pregações e estudos completos
+</p>
+
+<a
+class="btn btn-gold"
+href="https://youtube.com/@pastorandersonviana?si=xMix5bnVL3-c7CP_"
+target="_blank"
+data-i18n="accessYoutube"
+>
+Acessar YouTube
+</a>
+
+</div>
+
+
+<div class="social-card">
+
+<h3>TikTok</h3>
+
+<p data-i18n="tiktokText">
+Mensagens rápidas e palavras de fé
+</p>
+
+<a
+class="btn btn-gold"
+href="https://www.tiktok.com/@pastorandersonviana?_r=1&_t=ZN-99GrFkDSVLK"
+target="_blank"
+data-i18n="accessTiktok"
+>
+Acessar TikTok
+</a>
+
+</div>
 
 </div>
 
@@ -1377,175 +1479,42 @@ GALERIA
 
 <div class="section-title">
 
-<div class="small">
+<div class="small" data-i18n="gallerySmall">
 Galeria
 </div>
 
-<h2>
+<h2 data-i18n="galleryTitle">
 Imagens do Ministério
 </h2>
 
-<p>
-Conheça algumas imagens relacionadas ao
-ministério Pastor Anderson Viana.
+<p data-i18n="galleryIntro">
+Conheça algumas imagens relacionadas ao ministério e ao livro.
 </p>
 
 </div>
 
-
-<div class="gallery-grid">
-
-
-<div class="gallery-item">
+<div class="gallery">
 
 <img
 src="IMG_0955.png"
 alt="Capa do livro Altares em Cinzas"
 >
 
-<p>
-Altares em Cinzas
-</p>
-
-</div>
-
-
-<div class="gallery-item">
-
 <img
 src="A39D430C-FC73-43D5-A830-57A37706DBCB.png"
 alt="Pastor Anderson Viana"
 >
-
-<p>
-Pastor Anderson Viana
-</p>
-
-</div>
-
-
-<div class="gallery-item">
 
 <img
 src="114160BC-C915-4639-97D6-81EBF2D9FE0C.png"
 alt="Ministério Pastor Anderson Viana"
 >
 
-<p>
-Ministério Pastor Anderson Viana
-</p>
-
-</div>
-
-
 </div>
 
 </div>
 
 </section>
-
-
-<!-- =========================
-CONTATO / REDES
-========================= -->
-
-<section id="contato">
-
-<div class="container">
-
-<div class="section-title">
-
-<div class="small">
-Redes sociais
-</div>
-
-<h2>
-Acompanhe o Ministério
-</h2>
-
-<p>
-Continue acompanhando mensagens,
-estudos e conteúdos do ministério.
-</p>
-
-</div>
-
-
-<div class="social-grid">
-
-
-<div class="social-card">
-
-<h3>
-Instagram
-</h3>
-
-<p>
-Mensagens e reflexões
-</p>
-
-<a
-class="btn btn-gold"
-href="https://www.instagram.com/pastorandersonviana/"
-target="_blank"
-rel="noopener"
->
-Acessar Instagram
-</a>
-
-</div>
-
-
-<div class="social-card">
-
-<h3>
-YouTube
-</h3>
-
-<p>
-Pregações e estudos completos
-</p>
-
-<a
-class="btn btn-gold"
-href="https://youtube.com/@pastorandersonviana?si=xMix5bnVL3-c7CP_"
-target="_blank"
-rel="noopener"
->
-Acessar YouTube
-</a>
-
-</div>
-
-
-<div class="social-card">
-
-<h3>
-TikTok
-</h3>
-
-<p>
-Mensagens rápidas e palavras de fé
-</p>
-
-<a
-class="btn btn-gold"
-href="https://www.tiktok.com/@pastorandersonviana?_r=1&_t=ZN-99GrFkDSVLK"
-target="_blank"
-rel="noopener"
->
-Acessar TikTok
-</a>
-
-</div>
-
-
-</div>
-
-</div>
-
-</section>
-
 
 </main>
 
@@ -1562,13 +1531,12 @@ RODAPÉ
 PASTOR ANDERSON VIANA
 </div>
 
-<p>
+<p data-i18n="footerMotto">
 Ministério • Palavra • Fé
 </p>
 
-<p class="verse">
-"Ensina-me os teus caminhos, ó Senhor;
-quero andar na tua verdade."
+<p class="verse" data-i18n="footerVerse">
+"Ensina-me os teus caminhos, ó Senhor; quero andar na tua verdade."
 </p>
 
 <p>
@@ -1580,6 +1548,271 @@ Salmos 86:11
 </footer>
 
 
-</body>
+<script>
 
-</html>
+/* =====================================================
+TRADUÇÕES
+===================================================== */
+
+const translations = {
+
+pt: {
+
+inicio:"Início",
+sobre:"Sobre",
+ministerio:"Ministério",
+livro:"Livro",
+estudos:"Estudos",
+mensagens:"Mensagens",
+contato:"Contato",
+
+eyebrow:"MINISTÉRIO • PALAVRA • FÉ",
+pastor:"Pastor",
+
+heroSubtitle:"Uma voz anunciando o Evangelho de Cristo.",
+heroDescription:"Uma mensagem de fé, esperança e transformação para aqueles que desejam caminhar mais perto de Deus.",
+
+studyButton:"Estudos Bíblicos",
+messageButton:"Mensagens",
+
+aboutTitle:"Uma vida dedicada ao Evangelho",
+aboutIntro:"Conheça um pouco da caminhada, da visão e do propósito do ministério.",
+aboutHeading:"Chamado, Palavra e Propósito",
+
+aboutP1:"O ministério cristão não é apenas uma posição ou um título. É uma responsabilidade diante de Deus e uma oportunidade de servir pessoas através da Palavra de Cristo.",
+
+aboutP2:"Este espaço foi criado para compartilhar estudos bíblicos, mensagens, reflexões, ensinamentos e conteúdos que possam fortalecer a fé e aproximar pessoas da presença de Deus.",
+
+aboutP3:"O propósito é manter Cristo no centro, valorizando as Escrituras e buscando uma vida de fé, santidade, oração e compromisso com o Evangelho.",
+
+ministryTitle:"Palavra que conduz à presença de Deus",
+ministryMotto:"Avivamento • Discipulado • Missão",
+
+ministryText:"O propósito deste ministério é anunciar Jesus Cristo, ensinar as Escrituras, fortalecer discípulos e despertar a Igreja para uma vida de comunhão profunda com Deus.",
+
+bookSmall:"Novo livro",
+bookTitle:"Altares em Cinzas",
+bookIntro:"Um livro sobre restauração, retorno à presença de Deus e reacendimento do fogo espiritual.",
+bookHeading:"Altares em Cinzas",
+bookSubtitle:"O caminho de volta ao fogo da presença de Deus.",
+
+bookP1:"Existem momentos em que aquilo que um dia esteve em chamas parece ter se transformado apenas em cinzas.",
+
+bookP2:"Mas nem todo altar destruído está perdido. Algumas cinzas ainda guardam brasas. Existe um caminho de volta, um chamado para reconstruir o altar e buscar novamente a presença de Deus.",
+
+bookP3:"Em breve, este livro estará disponível para aqueles que desejam mergulhar nessa jornada de fé, restauração e renovação espiritual.",
+
+comingSoon:"LANÇAMENTO EM BREVE",
+
+altarP1:"Nem todo altar destruído está perdido. Alguns ainda guardam brasas.",
+altarP2:"O caminho de volta ao fogo da presença de Deus.",
+
+studiesTitle:"Estudos Bíblicos",
+studiesIntro:"Estudos para aprofundar a fé, compreender as Escrituras e desenvolver uma vida mais próxima de Deus.",
+
+study01:"Estudo 01",
+study02:"Estudo 02",
+study03:"Estudo 03",
+
+study1Title:"Fé — Quando confiar em Deus se torna uma escolha",
+study1h1:"A fé não depende das circunstâncias",
+study1h2:"Fé que produz obediência",
+study1h3:"Aplicação para a vida",
+
+study1p1:"A fé bíblica não é simplesmente acreditar que Deus existe. A fé envolve confiança, relacionamento e disposição para obedecer mesmo quando ainda não conseguimos enxergar o resultado.",
+
+study1p2:"Muitas vezes queremos primeiro ver para depois acreditar. Porém, a caminhada com Deus frequentemente acontece na direção contrária. Deus chama, a pessoa confia, obedece e então começa a perceber aquilo que Ele estava realizando.",
+
+study1p3:"Existem momentos em que as circunstâncias parecem contradizer as promessas de Deus. É justamente nesses períodos que a fé precisa deixar de ser apenas uma palavra pronunciada e tornar-se uma realidade dentro do coração.",
+
+study1p4:"A fé madura não significa ausência de dificuldades. Significa permanecer confiando em Deus mesmo enquanto as dificuldades existem.",
+
+study1p5:"A verdadeira fé conduz a atitudes. Quando alguém realmente confia em Deus, começa a organizar sua vida de acordo com aquilo que Deus ensina.",
+
+study1p6:"Por isso, fé e obediência caminham juntas. Não basta dizer que confiamos no Senhor; precisamos permitir que essa confiança transforme nossas decisões, prioridades, relacionamentos e maneira de viver.",
+
+study1p7:"Talvez você esteja atravessando uma fase em que não consegue compreender o que Deus está fazendo. Não confunda silêncio com abandono. Continue buscando, continue orando e continue caminhando.",
+
+study1p8:"A fé olha para Deus antes de olhar para as circunstâncias. Quando os olhos permanecem em Cristo, o coração encontra força para continuar.",
+
+study1question:"Pergunta para reflexão: Em qual área da minha vida Deus está me chamando para confiar mais nEle?",
+
+study2Title:"Santidade — Uma vida separada para Deus",
+
+study2h1:"Santidade é relacionamento com Deus",
+study2h2:"O coração precisa ser tratado",
+study2h3:"Santidade exige decisões",
+study2h4:"Santidade e graça",
+
+study2p1:"Santidade não significa simplesmente apresentar uma aparência religiosa diante das pessoas. Santidade começa no interior e se manifesta nas escolhas que fazemos quando ninguém está olhando.",
+
+study2p2:"Deus não chama seu povo apenas para frequentar lugares religiosos. Ele chama homens e mulheres para pertencerem a Ele. A santidade nasce dessa compreensão: minha vida não pertence somente a mim; ela foi entregue ao Senhor.",
+
+study2p3:"A santidade cristã não deve ser compreendida apenas como uma lista de coisas que não podemos fazer. Ela é, acima de tudo, uma vida que deseja agradar a Deus.",
+
+study2p4:"Quanto mais conhecemos o caráter de Deus, mais compreendemos aquilo que precisa ser transformado em nós.",
+
+study2p5:"Podemos mudar comportamentos externamente e ainda carregar dentro de nós orgulho, inveja, amargura, falta de perdão ou desejos que nos afastam da vontade de Deus.",
+
+study2p6:"Por isso, a santidade começa no coração. Deus trabalha profundamente no interior para que a transformação exterior seja consequência de uma obra verdadeira.",
+
+study2p7:"Existem ambientes que precisamos abandonar, conversas que precisamos interromper, hábitos que precisamos vencer e caminhos que precisamos deixar para trás.",
+
+study2p8:"Não porque queremos parecer melhores que outras pessoas, mas porque decidimos viver de maneira coerente com aquele que confessamos como Senhor.",
+
+study2p9:"A santidade não é uma tentativa de comprar o amor de Deus. Somos salvos pela graça. Entretanto, a graça que nos alcança também nos transforma.",
+
+study2p10:"Quem experimenta a graça de Cristo não deseja permanecer preso aos mesmos caminhos. Começa a nascer dentro do coração um desejo de agradar ao Senhor.",
+
+study2question:"Pergunta para reflexão: Existe alguma área da minha vida que preciso entregar completamente a Deus?",
+
+study3Title:"Vida com Deus — Permanecer antes de produzir",
+
+study3h1:"O secreto sustenta o público",
+study3h2:"Orar não é apenas pedir",
+study3h3:"A Palavra alimenta a vida espiritual",
+study3h4:"Permanecer quando não sentimos nada",
+
+study3p1:"Existe uma diferença entre trabalhar para Deus e caminhar com Deus. Podemos realizar muitas atividades religiosas e, ainda assim, permitir que nossa comunhão com o Senhor fique em segundo plano.",
+
+study3p2:"Jesus nos ensina sobre permanência. Antes de falar sobre aquilo que produzimos, Ele fala sobre permanecer nEle. Isso nos mostra que o fruto verdadeiro nasce de um relacionamento verdadeiro.",
+
+study3p3:"Uma vida pública forte precisa de uma vida privada com Deus. O que acontece diante das pessoas nunca deveria ser maior do que aquilo que acontece quando estamos sozinhos diante do Senhor.",
+
+study3p4:"O tempo de oração, a leitura das Escrituras, a meditação, o arrependimento e a busca pela presença de Deus formam raízes que sustentam a vida espiritual.",
+
+study3p5:"A oração é relacionamento. Podemos apresentar nossas necessidades a Deus, mas também precisamos aprender a permanecer em silêncio, ouvir, agradecer, confessar e simplesmente desfrutar da presença do Senhor.",
+
+study3p6:"Uma vida de oração muda nossa maneira de enfrentar problemas porque começamos a levar nossas cargas para Deus antes de tentar carregá-las sozinhos.",
+
+study3p7:"Não devemos tratar a Bíblia apenas como uma fonte de frases para mensagens. A Escritura precisa confrontar, ensinar, corrigir, consolar e transformar nossa vida.",
+
+study3p8:"Ler a Palavra significa permitir que Deus fale conosco através dela. O objetivo não é apenas terminar capítulos, mas permitir que aquilo que lemos entre no coração e alcance nossas atitudes.",
+
+study3p9:"Existem dias em que sentimos intensamente a presença de Deus e existem dias em que não sentimos nada extraordinário.",
+
+study3p10:"Nossa fidelidade não pode depender apenas de sentimentos. Continuamos buscando porque Deus continua sendo Deus, mesmo quando nossas emoções mudam.",
+
+study3p11:"A vida com Deus é construída na constância. Um dia de oração pode parecer pequeno, uma página da Bíblia pode parecer simples e uma escolha correta pode parecer insignificante. Mas, ao longo do tempo, essas pequenas decisões constroem uma vida profundamente enraizada em Cristo.",
+
+study3question:"Pergunta para reflexão: Minha vida com Deus está sendo construída somente no público ou também no secreto?",
+
+messagesTitle:"Palavras para o coração",
+messagesIntro:"Reflexões para meditar na Palavra de Deus durante a caminhada cristã.",
+
+msg1Title:"Deus ainda está trabalhando",
+msg1:"Nem tudo aquilo que Deus está fazendo pode ser visto imediatamente. Existem processos que acontecem no silêncio. Continue confiando.",
+
+msg2Title:"Não abandone o altar",
+msg2:"O altar representa entrega. Quando voltamos ao lugar de oração, entregamos novamente nossa vontade e permitimos que Deus reacenda aquilo que parecia estar se apagando.",
+
+msg3Title:"A presença vale mais",
+msg3:"Não permita que atividades para Deus substituam a presença de Deus. Antes de fazer alguma coisa para o Senhor, aprenda a permanecer diante dEle.",
+
+msg4Title:"Continue caminhando",
+msg4:"Há dias em que caminhar parece difícil. Mesmo assim, não pare. A fidelidade construída nos dias difíceis também faz parte da obra que Deus está realizando.",
+
+msg5Title:"O fogo precisa de lenha",
+msg5:"Uma vida espiritual saudável precisa de alimento. Palavra, oração, comunhão, arrependimento e obediência alimentam continuamente a vida com Deus.",
+
+msg6Title:"Cristo no centro",
+msg6:"Quando Cristo está no centro, o ministério deixa de ser sobre nossa imagem e passa a ser sobre Sua glória.",
+
+socialSmall:"Redes sociais",
+socialTitle:"Acompanhe o Ministério",
+socialIntro:"Continue acompanhando mensagens, estudos e conteúdos do ministério.",
+
+instagramText:"Mensagens e reflexões",
+youtubeText:"Pregações e estudos completos",
+tiktokText:"Mensagens rápidas e palavras de fé",
+
+accessInstagram:"Acessar Instagram",
+accessYoutube:"Acessar YouTube",
+accessTiktok:"Acessar TikTok",
+
+gallerySmall:"Galeria",
+galleryTitle:"Imagens do Ministério",
+galleryIntro:"Conheça algumas imagens relacionadas ao ministério e ao livro.",
+
+footerMotto:"Ministério • Palavra • Fé",
+footerVerse:"\"Ensina-me os teus caminhos, ó Senhor; quero andar na tua verdade.\""
+
+},
+
+it: {
+
+inicio:"Inizio",
+sobre:"Chi siamo",
+ministerio:"Ministero",
+livro:"Libro",
+estudos:"Studi",
+mensagens:"Messaggi",
+contato:"Contatti",
+
+eyebrow:"MINISTERO • PAROLA • FEDE",
+pastor:"Pastore",
+
+heroSubtitle:"Una voce che annuncia il Vangelo di Cristo.",
+heroDescription:"Un messaggio di fede, speranza e trasformazione per coloro che desiderano camminare più vicino a Dio.",
+
+studyButton:"Studi Biblici",
+messageButton:"Messaggi",
+
+aboutTitle:"Una vita dedicata al Vangelo",
+aboutIntro:"Conosci un po' del cammino, della visione e dello scopo del ministero.",
+aboutHeading:"Chiamata, Parola e Proposito",
+
+aboutP1:"Il ministero cristiano non è soltanto una posizione o un titolo. È una responsabilità davanti a Dio e un'opportunità per servire le persone attraverso la Parola di Cristo.",
+
+aboutP2:"Questo spazio è stato creato per condividere studi biblici, messaggi, riflessioni, insegnamenti e contenuti che possano rafforzare la fede e avvicinare le persone alla presenza di Dio.",
+
+aboutP3:"Lo scopo è mantenere Cristo al centro, valorizzando le Scritture e cercando una vita di fede, santità, preghiera e impegno con il Vangelo.",
+
+ministryTitle:"La Parola che conduce alla presenza di Dio",
+ministryMotto:"Risveglio • Discepolato • Missione",
+
+ministryText:"Lo scopo di questo ministero è annunciare Gesù Cristo, insegnare le Scritture, rafforzare i discepoli e risvegliare la Chiesa a una vita di profonda comunione con Dio.",
+
+bookSmall:"Nuovo libro",
+bookTitle:"Altari in Cenere",
+bookIntro:"Un libro sulla restaurazione, sul ritorno alla presenza di Dio e sulla riaccensione del fuoco spirituale.",
+bookHeading:"Altari in Cenere",
+bookSubtitle:"Il cammino di ritorno al fuoco della presenza di Dio.",
+
+bookP1:"Ci sono momenti in cui ciò che un giorno era in fiamme sembra essersi trasformato soltanto in cenere.",
+
+bookP2:"Ma non ogni altare distrutto è perduto. Alcune ceneri conservano ancora delle braci. Esiste una via di ritorno, una chiamata a ricostruire l'altare e cercare nuovamente la presenza di Dio.",
+
+bookP3:"Presto questo libro sarà disponibile per coloro che desiderano immergersi in questo cammino di fede, restaurazione e rinnovamento spirituale.",
+
+comingSoon:"IN USCITA PROSSIMAMENTE",
+
+altarP1:"Non ogni altare distrutto è perduto. Alcuni conservano ancora delle braci.",
+altarP2:"Il cammino di ritorno al fuoco della presenza di Dio.",
+
+studiesTitle:"Studi Biblici",
+studiesIntro:"Studi per approfondire la fede, comprendere le Scritture e sviluppare una vita più vicina a Dio.",
+
+study01:"Studio 01",
+study02:"Studio 02",
+study03:"Studio 03",
+
+study1Title:"Fede — Quando fidarsi di Dio diventa una scelta",
+study1h1:"La fede non dipende dalle circostanze",
+study1h2:"La fede che produce obbedienza",
+study1h3:"Applicazione alla vita",
+
+study1p1:"La fede biblica non significa semplicemente credere che Dio esiste. La fede comprende fiducia, relazione e disponibilità a obbedire anche quando non riusciamo ancora a vedere il risultato.",
+
+study1p2:"Spesso vogliamo prima vedere e poi credere. Tuttavia, il cammino con Dio avviene frequentemente nella direzione opposta. Dio chiama, la persona si fida, obbedisce e poi comincia a vedere ciò che Egli stava realizzando.",
+
+study1p3:"Ci sono momenti in cui le circostanze sembrano contraddire le promesse di Dio. È proprio in questi periodi che la fede deve smettere di essere soltanto una parola pronunciata e diventare una realtà nel cuore.",
+
+study1p4:"La fede matura non significa assenza di difficoltà. Significa continuare a confidare in Dio anche mentre le difficoltà esistono.",
+
+study1p5:"La vera fede conduce ad atteggiamenti. Quando una persona si fida veramente di Dio, comincia a organizzare la propria vita secondo ciò che Dio insegna.",
+
+study1p6:"Per questo fede e obbedienza camminano insieme. Non basta dire che ci fidiamo del Signore; dobbiamo permettere
+...
+
+[Mensagem cortada]  Exibir toda a mensagem
