@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="pt-BR">
 
 <head>
@@ -117,7 +117,7 @@ linear-gradient(
 rgba(0, 0, 0, 0.70),
 rgba(0, 0, 0, 0.90)
 ),
-url("altares-em-cinzas.jpg")
+url("./altares-em-cinzas.jpg")
 center / cover no-repeat;
 }
 
@@ -310,6 +310,43 @@ color: #dddddd;
 }
 
 /* =========================
+ALTARES EM CINZAS
+========================= */
+
+.altar {
+background:
+linear-gradient(
+rgba(0, 0, 0, 0.45),
+rgba(0, 0, 0, 0.85)
+),
+url("./altares-em-cinzas.jpg")
+center / cover no-repeat;
+
+text-align: center;
+min-height: 600px;
+display: flex;
+align-items: center;
+}
+
+.altar-content {
+max-width: 900px;
+margin: auto;
+}
+
+.altar h2 {
+font-size: clamp(40px, 7vw, 75px);
+color: #d6ae55;
+line-height: 1.1;
+margin-bottom: 25px;
+}
+
+.altar p {
+font-size: 23px;
+color: #ffffff;
+margin-bottom: 15px;
+}
+
+/* =========================
 ESTUDOS
 ========================= */
 
@@ -373,8 +410,7 @@ background: #080808;
 
 .messages-grid {
 display: grid;
-grid-template-columns:
-repeat(2, 1fr);
+grid-template-columns: repeat(2, 1fr);
 gap: 25px;
 }
 
@@ -395,39 +431,36 @@ color: #dddddd;
 }
 
 /* =========================
-ALTARES EM CINZAS
+GALERIA
 ========================= */
 
-.altar {
-background:
-linear-gradient(
-rgba(0, 0, 0, 0.45),
-rgba(0, 0, 0, 0.85)
-),
-url("altares-em-cinzas.jpg")
-center / cover no-repeat;
-
-text-align: center;
-min-height: 600px;
-display: flex;
-align-items: center;
+#galeria {
+background: #080808;
+padding: 90px 0;
 }
 
-.altar-content {
-max-width: 900px;
-margin: auto;
+.gallery-grid {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 25px;
+align-items: stretch;
 }
 
-.altar h2 {
-font-size: clamp(40px, 7vw, 75px);
-color: #d6ae55;
-line-height: 1.1;
-margin-bottom: 25px;
+.gallery-item {
+background: #111111;
+border: 1px solid #8d6b2f;
+border-radius: 15px;
+padding: 12px;
+overflow: hidden;
+box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
 }
 
-.altar p {
-font-size: 23px;
-color: #ffffff;
+.gallery-item img {
+width: 100%;
+height: 420px;
+object-fit: contain;
+background: #050505;
+border-radius: 10px;
 }
 
 /* =========================
@@ -440,8 +473,7 @@ background: #101010;
 
 .social-grid {
 display: grid;
-grid-template-columns:
-repeat(3, 1fr);
+grid-template-columns: repeat(3, 1fr);
 gap: 25px;
 }
 
@@ -542,6 +574,15 @@ grid-template-columns: 1fr;
 grid-template-columns: 1fr;
 }
 
+.gallery-grid {
+grid-template-columns: 1fr;
+}
+
+.gallery-item img {
+height: auto;
+min-height: 250px;
+}
+
 .study {
 padding: 30px 22px;
 }
@@ -558,7 +599,7 @@ padding: 30px 22px;
 
 <!-- =========================
 CABEÇALHO
-========================== -->
+========================= -->
 
 <header>
 
@@ -573,29 +614,19 @@ PASTOR ANDERSON VIANA
 
 <nav class="menu">
 
-<a href="#inicio">
-Início
-</a>
+<a href="#inicio">Início</a>
 
-<a href="#sobre">
-Sobre
-</a>
+<a href="#sobre">Sobre</a>
 
-<a href="#ministerio">
-Ministério
-</a>
+<a href="#ministerio">Ministério</a>
 
-<a href="#estudos">
-Estudos
-</a>
+<a href="#estudos">Estudos</a>
 
-<a href="#mensagens">
-Mensagens
-</a>
+<a href="#mensagens">Mensagens</a>
 
-<a href="#contato">
-Contato
-</a>
+<a href="#galeria">Galeria</a>
+
+<a href="#contato">Contato</a>
 
 </nav>
 
@@ -609,7 +640,7 @@ Contato
 
 <!-- =========================
 INÍCIO
-========================== -->
+========================= -->
 
 <section
 class="hero"
@@ -663,12 +694,10 @@ Mensagens
 </div>
 
 
-<!-- SUA FOTO ORIGINAL -->
-
 <div class="pastor-photo">
 
 <img
-src="foto-pastor.png"
+src="./foto-pastor.png"
 alt="Pastor Anderson Viana"
 >
 
@@ -682,7 +711,7 @@ alt="Pastor Anderson Viana"
 
 <!-- =========================
 SOBRE
-========================== -->
+========================= -->
 
 <section id="sobre">
 
@@ -712,7 +741,7 @@ da visão e do propósito do ministério.
 <div class="about-image">
 
 <img
-src="foto-pastor.png"
+src="./foto-pastor.png"
 alt="Pastor Anderson Viana"
 >
 
@@ -759,7 +788,7 @@ com o Evangelho.
 
 <!-- =========================
 MINISTÉRIO
-========================== -->
+========================= -->
 
 <section id="ministerio">
 
@@ -782,7 +811,7 @@ Palavra que conduz à presença de Deus
 
 
 <img
-src="brasao.png"
+src="./brasao.png"
 alt="Brasão do Ministério Pastor Anderson Viana"
 >
 
@@ -814,7 +843,7 @@ para uma vida de comunhão profunda com Deus.
 
 <!-- =========================
 ALTARES EM CINZAS
-========================== -->
+========================= -->
 
 <section class="altar">
 
@@ -841,7 +870,7 @@ da presença de Deus.
 
 <!-- =========================
 ESTUDOS
-========================== -->
+========================= -->
 
 <section id="estudos">
 
@@ -879,13 +908,11 @@ Estudo 01
 Fé — Quando confiar em Deus se torna uma escolha
 </h3>
 
-
 <div class="bible">
 "Ora, a fé é a certeza daquilo que esperamos
 e a prova das coisas que não vemos."
 — Hebreus 11:1
 </div>
-
 
 <p>
 A fé bíblica não é simplesmente acreditar
@@ -903,7 +930,6 @@ contrária. Deus chama, a pessoa confia,
 obedece e então começa a perceber aquilo
 que Ele estava realizando.
 </p>
-
 
 <h4>
 A fé não depende das circunstâncias
@@ -925,7 +951,6 @@ em Deus mesmo enquanto as dificuldades
 existem.
 </p>
 
-
 <h4>
 Fé que produz obediência
 </h4>
@@ -945,7 +970,6 @@ transforme nossas decisões, prioridades,
 relacionamentos e maneira de viver.
 </p>
 
-
 <h4>
 Aplicação para a vida
 </h4>
@@ -964,7 +988,6 @@ as circunstâncias. Quando os olhos permanecem
 em Cristo, o coração encontra força para
 continuar.
 </p>
-
 
 <div class="bible">
 Pergunta para reflexão:
@@ -987,12 +1010,10 @@ Estudo 02
 Santidade — Uma vida separada para Deus
 </h3>
 
-
 <div class="bible">
 "Sede santos, porque eu sou santo."
 — 1 Pedro 1:16
 </div>
-
 
 <p>
 Santidade não significa simplesmente
@@ -1010,7 +1031,6 @@ dessa compreensão: minha vida não pertence
 somente a mim; ela foi entregue ao Senhor.
 </p>
 
-
 <h4>
 Santidade é relacionamento com Deus
 </h4>
@@ -1027,7 +1047,6 @@ Quanto mais conhecemos o caráter de Deus,
 mais compreendemos aquilo que precisa ser
 transformado em nós.
 </p>
-
 
 <h4>
 O coração precisa ser tratado
@@ -1047,7 +1066,6 @@ para que a transformação exterior seja
 consequência de uma obra verdadeira.
 </p>
 
-
 <h4>
 Santidade exige decisões
 </h4>
@@ -1066,7 +1084,6 @@ de maneira coerente com aquele que confessamos
 como Senhor.
 </p>
 
-
 <h4>
 Santidade e graça
 </h4>
@@ -1084,7 +1101,6 @@ permanecer preso aos mesmos caminhos.
 Começa a nascer dentro do coração um desejo
 de agradar ao Senhor.
 </p>
-
 
 <div class="bible">
 Pergunta para reflexão:
@@ -1107,12 +1123,10 @@ Estudo 03
 Vida com Deus — Permanecer antes de produzir
 </h3>
 
-
 <div class="bible">
 "Permanecei em mim, e eu permanecerei em vós."
 — João 15:4
 </div>
-
 
 <p>
 Existe uma diferença entre trabalhar para Deus
@@ -1129,7 +1143,6 @@ sobre permanecer nEle. Isso nos mostra que
 o fruto verdadeiro nasce de um relacionamento
 verdadeiro.
 </p>
-
 
 <h4>
 O secreto sustenta o público
@@ -1150,7 +1163,6 @@ presença de Deus formam raízes que sustentam
 a vida espiritual.
 </p>
 
-
 <h4>
 Orar não é apenas pedir
 </h4>
@@ -1170,7 +1182,6 @@ nossas cargas para Deus antes de tentar
 carregá-las sozinhos.
 </p>
 
-
 <h4>
 A Palavra alimenta a vida espiritual
 </h4>
@@ -1189,7 +1200,6 @@ apenas terminar capítulos, mas permitir que
 aquilo que lemos entre no coração e alcance
 nossas atitudes.
 </p>
-
 
 <h4>
 Permanecer quando não sentimos nada
@@ -1218,7 +1228,6 @@ decisões constroem uma vida profundamente
 enraizada em Cristo.
 </p>
 
-
 <div class="bible">
 Pergunta para reflexão:
 Minha vida com Deus está sendo construída
@@ -1235,12 +1244,11 @@ somente no público ou também no secreto?
 
 <!-- =========================
 MENSAGENS
-========================== -->
+========================= -->
 
 <section id="mensagens">
 
 <div class="container">
-
 
 <div class="section-title">
 
@@ -1367,8 +1375,77 @@ a ser sobre Sua glória.
 
 
 <!-- =========================
+GALERIA
+========================= -->
+
+<section id="galeria">
+
+<div class="container">
+
+<div class="section-title">
+
+<div class="small">
+Galeria
+</div>
+
+<h2>
+Imagens do Ministério
+</h2>
+
+<p>
+Conheça um pouco mais do ministério,
+do livro e da caminhada.
+</p>
+
+</div>
+
+
+<div class="gallery-grid">
+
+
+<div class="gallery-item">
+
+<img
+src="./IMG_0955.png"
+alt="Capa do livro Altares em Cinzas"
+loading="lazy"
+>
+
+</div>
+
+
+<div class="gallery-item">
+
+<img
+src="./A39D430C-FC73-43D5-A830-57A37706DBCB.png"
+alt="Pastor Anderson Viana"
+loading="lazy"
+>
+
+</div>
+
+
+<div class="gallery-item">
+
+<img
+src="./114160BC-C915-4639-97D6-81EBF2D9FE0C.png"
+alt="Ministério Pastor Anderson Viana"
+loading="lazy"
+>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
 CONTATO / REDES
-========================== -->
+========================= -->
 
 <section id="contato">
 
@@ -1396,8 +1473,6 @@ estudos e conteúdos do ministério.
 <div class="social-grid">
 
 
-<!-- INSTAGRAM -->
-
 <div class="social-card">
 
 <h3>
@@ -1412,14 +1487,13 @@ Mensagens e reflexões
 class="btn btn-gold"
 href="https://www.instagram.com/pastorandersonviana/"
 target="_blank"
+rel="noopener noreferrer"
 >
 Acessar Instagram
 </a>
 
 </div>
 
-
-<!-- YOUTUBE -->
 
 <div class="social-card">
 
@@ -1435,14 +1509,13 @@ Pregações e estudos completos
 class="btn btn-gold"
 href="https://youtube.com/@pastorandersonviana?si=xMix5bnVL3-c7CP_"
 target="_blank"
+rel="noopener noreferrer"
 >
 Acessar YouTube
 </a>
 
 </div>
 
-
-<!-- TIKTOK -->
 
 <div class="social-card">
 
@@ -1458,6 +1531,7 @@ Mensagens rápidas e palavras de fé
 class="btn btn-gold"
 href="https://www.tiktok.com/@pastorandersonviana?_r=1&_t=ZN-99GrFkDSVLK"
 target="_blank"
+rel="noopener noreferrer"
 >
 Acessar TikTok
 </a>
@@ -1477,7 +1551,7 @@ Acessar TikTok
 
 <!-- =========================
 RODAPÉ
-========================== -->
+========================= -->
 
 <footer>
 
@@ -1504,25 +1578,7 @@ Salmos 86:11
 
 </footer>
 
-  <section style="padding:40px 20px; text-align:center;">
-  <h2>Galeria</h2>
 
-  <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:20px;">
-
-    <img src="IMG_0955.png"
-         alt="Capa do livro Altares em Cinzas"
-         style="max-width:350px; width:100%; border-radius:15px;">
-
-    <img src="A39D430C-FC73-43D5-A830-57A37706DBCB.png"
-         alt="Pastor Anderson Viana"
-         style="max-width:350px; width:100%; border-radius:15px;">
-
-    <img src="114160BC-C915-4639-97D6-81EBF2D9FE0C.png"
-         alt="Ministério Pastor Anderson Viana"
-         style="max-width:350px; width:100%; border-radius:15px;">
-
-  </div>
-</section>  
 </body>
 
 </html>
